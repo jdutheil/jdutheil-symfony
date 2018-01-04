@@ -1,0 +1,264 @@
+body {
+	font-family: 'Hind', sans-serif;
+	color: #555555;
+
+	font-size: 18px;
+	line-height: 22px;
+
+	background-color: #FFFFFF;
+}
+
+.text-link {
+	color: #555555;
+	text-decoration: none;
+	font-style: italic;
+}
+	.text-link:hover {
+		text-decoration: none;
+		color: #ff841c;
+	}
+
+a:hover { text-decoration: none; }
+
+.txt--blank { color: #ffffff; }
+
+/**
+ * Navbar 
+ */
+
+.navbar { background-color: #ffffff; }
+
+.navbar-brand {
+	font-family: 'Oswald', sans-serif;
+	color: #282828;
+
+	font-size: 24px;
+	font-weight: 600;
+
+	letter-spacing: 2px;
+
+	/*border-bottom: 2px solid #ffc600;*/
+}
+
+.navbar-brand-span { 
+	color: #ff841c; 
+	font-size: 34px;
+	font-weight: 800;
+}
+
+.nav-link {
+	color: #282828;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	
+	font-size: 18px;
+    
+    text-transform: uppercase;
+    transition: background-color .2s ease;
+}
+
+	.nav-link:hover {
+		color: #ffffff !important;
+		background-color: #ff841c;
+	}
+
+/**
+ * Flash section
+ */
+
+.flash {
+	position: relative;
+
+	width: 100%;
+	height: 80vh;
+
+	overflow: hidden;
+} 
+
+.flash-item {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+}
+
+	.flash-item__background {
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: auto;
+
+		z-index: 1;
+	}
+
+.flash-item__content-wrapper {
+	position: relative;
+	height: 100%;
+}
+
+.flash-item__content {
+	z-index: 100;
+}
+
+	.flash-item__content--slide1 {
+		position: absolute; 
+		right: 0; 
+		bottom: 200px;
+	}
+
+.flash-item__content-title {
+	color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 80px;
+    margin: 0 0 31px 0;
+    padding: 34px 0 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.flash-item__content-text {
+	font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    padding: 0 40px 0 0;
+}
+
+.btn-primary, .btn-secondary {
+	background: #282828;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    padding: 12px 29px 11px 32px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+}
+
+.btn-secondary { background-color: #1a1a1a; }
+
+.flash-item__content-btn {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+	.btn-primary:hover, .btn-secondary:hover {
+		background: #282828;
+		border: none;
+		outline: none;
+		color: #ff841c;
+	}
+
+	.btn-secondary:hover { background-color: #1a1a1a; }
+
+/**
+ * Sections
+ */
+
+.edito { background-color: #ffffff; }
+
+.page-section {
+	padding: 50px 0;
+}
+
+	.page-section__content-wrapper {
+		display: flex;
+		align-items: center;		
+	}
+
+	.page-section__img {
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	}
+
+.section-title {
+	font-weight: bold;
+    line-height: 43px;
+    margin: 0 0 28px 0;
+
+    padding: 0;
+    padding-left: 30px;
+    
+    position: relative;
+    text-transform: uppercase;
+
+    color: #2d2d2d;
+    font-size: 50px;
+
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: -1px;
+}
+
+	.section-title--blank { color: #eeeeee; }
+
+	.section-title:after {
+		border-left: 13px solid #ff841c;
+	    content: '';
+	    height: 100%;
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	    width: 13px;
+	}
+
+/**
+ * Sideman
+ */
+
+.sideman {
+	background-color: #262626;
+}
+
+/**
+ * En groupe
+ */
+
+.bands {
+	background-color: #ffffff;
+}
+
+/**
+ * Anims
+ */
+
+.anim {
+	background-color: #262626;
+}
+
+/**
+ * Contact
+ */
+
+.contact {
+	background-color: #000000;
+	border-top: 3px solid #ffffff;
+	padding: 25px 0;
+}
+
+.contact-title {
+	color: #fff;
+    font-weight: 500;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    text-transform: uppercase;
+
+
+}
+
+.contact-txt {
+	text-align: center;
+	color: #ccc;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: -4px;
+    overflow: hidden;
+}

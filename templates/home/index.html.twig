@@ -1,0 +1,161 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<section class="flash">
+		<div class="flash-item">
+			<img src="img/flash-item-1.jpg" alt="" class="flash-item__background">
+
+			<!--<div class="container">-->
+				<div class="flash-item__content ml-auto mr-5 col-sm-5">
+					<h1 class="flash-item__content-title">Accordéoniste <br>pour vos événements</h1>
+
+					<p class="flash-item__content-text">
+						Vous cherchez un accordéoniste pour un anniversaire, <br>une soirée d'entreprise ou une animation seniors ? 
+					</p>
+
+					<a href="#" class="btn btn-secondary flash-item__content-btn">Découvrir les formules</a>	
+				</div>
+				<!-- /.flash-item__content -->
+			<!--</div>-->
+			<!-- /.container -->
+		</div>
+		<!-- /.flash-item -->
+	</section>
+	<!-- /.flash -->
+
+	<section class="edito">
+		<div class="container page-section">
+			<div class="row">
+				<div class="col-sm-8 page-section__content-wrapper">
+					<div>
+						<h2 class="section-title">Artiste polyvalent</h2>
+
+						<p>
+							Basé à Paris, en Ile de France, <strong>Jérémy Dutheil est un accordéoniste</strong> complet abordant un large univers musical, original et résolument moderne. De la <a class="text-link" href="#">guinguette</a> au <a class="text-link" href="#">rock oriental</a>, en passant par la <a class="text-link" href="#">chanson française</a> ou encore le <a class="text-link" href="#">jazz</a>, cet artiste passionné aime toucher à tous les styles. 
+						</p>
+
+						<p>
+							<strong>Musicien professionnel</strong> confirmé, Jérémy tire le meilleur de chaque expérience afin de faire évoluer le son de son accordéon. Loin des flonflons musette (sans toutefois les renier), son piano à bretelles exprime tour à tour la joie, la mélancolie ou encore la tristesse. 
+						</p>
+
+						<p>
+							Seul ou <a class="text-link" href="#">en groupe</a>, Jérémy se produit sur scène dans toute la France, ainsi que dans certains lieux plus intimistes de la capitale. 
+						</p>
+
+						<a href="#" class="btn btn-primary">Lire la biographie</a>
+					</div>
+					<!-- /.page-section__content-wrapper -->
+				</div>
+				<!-- /.col-sm-8 -->
+
+				<div class="col-sm-4">
+					<img src="{{ asset('img/homepic.jpg') }}" alt="" class="img-fluid page-section__img">
+				</div>
+				<!-- /.col-sm-4 -->
+			</div>
+			<!-- /.row -->			
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.edito -->
+
+	<section class="sideman">
+		<div class="container page-section">
+			<div class="row">
+				<div class="col-sm-4 ">
+					<img src="{{ asset('img/elena.jpg') }}" alt="" class="img-fluid page-section__img">
+				</div>
+
+				<div class="col-sm-8 page-section__content-wrapper">
+					<div>
+						<h2 class="section-title section-title--blank">Musicien accompagnateur</h2>
+
+						<p class="txt--blank">
+							Bercé par la chanson française, j'apprécie tout particulièrement l'exercice d'accompagnement en formule dépouillée <strong>accordéon / voix</strong> ; ici, ce sont les textes qui priment, et la musique se fait discrète pour les accompagner et embellir l'arrière plan. L'importante liberté d'expression permet de proposer des arrangements originaux, donnant lieu à une interprétation moderne de morceaux parfois vieux d'une centaine d'années.
+						</p>
+
+						<p class="txt--blank">
+							Je travaille actuellement avec plusieurs <a class="text-link txt--blank" href="#">chanteurs et chanteuses</a>, embrassant un large répertoire au sein même de la chanson ; certaines formations s'orienteront plutôt vers les standards du style (Brel, Piaf, Ferré), d'autres vers des auteurs moins connus du grand public (Leprest, Dimey). Mon accordéon s'invite aussi bien sur de la chanson réaliste (Damia, Fréhel), que de la chanson coquine (Odette Laure, Anne Sylveste) ou révoltée (Renaud, Paccoud).
+ 						</p>
+
+						<p>
+							<a href="#" class="btn-secondary">Voir les artistes accompagnés</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.page-section -->
+	</section>
+	<!-- /.sideman -->
+
+	<section class="bands">
+		<div class="container page-section">
+			<div class="row">
+				<div class="col-sm-8">
+					<h2 class="section-title">Accordéoniste en groupe</h2>
+
+					<p>
+						En groupe, l'espace musical est à partager entre les différents instrumentistes ; les rôles sont définis plus rigoureusement, et chacun contribue à un son global. L'apport notamment d'une <strong>section rythmique</strong> (basse, batterie) va permettre d'obtenir une musique plus puissante, laissant à l'accordéon une place plus <strong>mélodique</strong>.
+					</p>
+
+					<p>
+						C'est aussi et avant tout l'occasion de partager une véritable <strong>aventure humaine</strong>, que ce soit dans la vie quotidienne (répétitions, organisation) ou en tournée sur les scènes françaises. 
+					</p>
+
+					<p>
+						Travailler avec d'autres musiciens me permet enfin d'aborder des styles originaux, moins accessibles à l'accordéon solo ; je joue par exemple de la <a class="text-link" href="#">chanson teintée de jazz</a>, du <a class="text-link" href="#">rock oriental</a> ou de la <a class="text-link" href="#">chanson swing</a>. <br>
+						Avec ces différents projets, nous travaillons essentiellement sur nos <strong>propres compositions</strong>.
+					</p>
+
+					<p>
+						<a href="#" class="btn-secondary">Voir les groupes</a>
+					</p>
+				</div>
+
+				<div class="col-sm-4">
+					<img class="img-fluid page-section__img" src="img/band.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="anim">
+		<div class="container page-section">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="{{ asset('img/anim.jpg') }}" alt="" class="img-fluid page-section__img">
+				</div>
+
+				<div class="col-sm-8 page-section__content-wrapper">
+					<div>
+						<h2 class="section-title section-title--blank">Animations musicales</h2>
+
+						<p class="txt--blank">
+							L'accordéon, de par sa richesse et sa diversité musicales, se prête particulièrement bien au jeu de l'<strong>animation musicale</strong> ; fort d'une certaine expérience, j'évolue au sein d'un répertoire varié qui plaira à tout type de public. Ici il ne s'agit pas d'un concert classique, mais de s'adapter en fonction de votre lieu et de vos attentes ; je peux aussi bien me faire discret et jouer des standards de jazz lors d'un <a class="text-link txt--blank" href="#">repas en musique</a>, que jouer du <a href="#" class="text-link txt--blank">musette</a> pour faire <a href="#" class="text-link txt--blank">danser les seniors</a>.
+						</p>
+
+						<p class="txt--blank">
+							Différentes formules sont disponibles, et de nombreuses options sont discutables en amont de la prestation : acoustique ou sonorisé, styles abordés, ... Suivant vos envies, il m'est également possible d'être accompagné d'autres musiciens (guitare, contrebasse, violon, ...) ou d'<a class="text-link txt--blank" href="#">une chanteuse</a>.
+ 						</p>
+
+						<p>
+							<a href="#" class="btn-secondary">Voir les formules</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.page-section -->
+	</section>
+
+	<section class="contact">
+		<div class="container">
+			<p class="contact-txt">
+				Pour toute information, n'hésitez pas à me contacter : <a href="mailto:dutheil.jeremy@gmail.com" style="color: #ffffff">dutheil.jeremy@gmail.com</a> / 06.85.38.22.16
+			</p>
+		</div>
+	</section>
+{% endblock %}
