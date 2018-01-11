@@ -13,7 +13,7 @@
 						Vous cherchez un accordéoniste pour un anniversaire, <br>une soirée d'entreprise ou une animation seniors ? 
 					</p>
 
-					<a href="#" class="btn btn-secondary flash-item__content-btn">Découvrir les formules</a>	
+					<a href="{{ path('animations') }}" class="btn btn-secondary flash-item__content-btn">Découvrir les formules</a>
 				</div>
 				<!-- /.flash-item__content -->
 			<!--</div>-->
@@ -23,7 +23,9 @@
 	</section>
 	<!-- /.flash -->
 
-	<section class="edito">
+	<section class="flash-ghost"></section>
+
+	<section class="content-section edito">
 		<div class="container page-section">
 			<div class="row">
 				<div class="col-sm-8 page-section__content-wrapper">
@@ -31,7 +33,7 @@
 						<h2 class="section-title">Artiste polyvalent</h2>
 
 						<p>
-							Basé à Paris, en Ile de France, <strong>Jérémy Dutheil est un accordéoniste</strong> complet abordant un large univers musical, original et résolument moderne. De la <a class="text-link" href="#">guinguette</a> au <a class="text-link" href="#">rock oriental</a>, en passant par la <a class="text-link" href="#">chanson française</a> ou encore le <a class="text-link" href="#">jazz</a>, cet artiste passionné aime toucher à tous les styles. 
+							Basé à Paris, en Ile de France, <strong>Jérémy Dutheil est un accordéoniste</strong> complet abordant un large univers musical, original et résolument moderne. De la <a class="text-link" href="#">guinguette</a> au <a class="text-link" href="#">rock oriental</a>, en passant par la <a class="text-link" href="{{ path('duos') }}">chanson française</a> ou encore le <a class="text-link" href="#">jazz</a>, cet artiste passionné aime toucher à tous les styles. 
 						</p>
 
 						<p>
@@ -39,10 +41,10 @@
 						</p>
 
 						<p>
-							Seul ou <a class="text-link" href="#">en groupe</a>, Jérémy se produit sur scène dans toute la France, ainsi que dans certains lieux plus intimistes de la capitale. 
+							Seul ou <a class="text-link" href="{{ path('groupes') }}">en groupe</a>, Jérémy se produit sur scène dans toute la France, ainsi que dans certains lieux plus intimistes de la capitale. 
 						</p>
 
-						<a href="#" class="btn btn-primary">Lire la biographie</a>
+						<a href="{{ path('bio') }}" class="btn btn-primary">Lire la biographie</a>
 					</div>
 					<!-- /.page-section__content-wrapper -->
 				</div>
@@ -59,7 +61,7 @@
 	</section>
 	<!-- /.edito -->
 
-	<section class="sideman">
+	<section class="content-section sideman">
 		<div class="container page-section">
 			<div class="row">
 				<div class="col-sm-4 ">
@@ -75,11 +77,11 @@
 						</p>
 
 						<p class="txt--blank">
-							Je travaille actuellement avec plusieurs <a class="text-link txt--blank" href="#">chanteurs et chanteuses</a>, embrassant un large répertoire au sein même de la chanson ; certaines formations s'orienteront plutôt vers les standards du style (Brel, Piaf, Ferré), d'autres vers des auteurs moins connus du grand public (Leprest, Dimey). Mon accordéon s'invite aussi bien sur de la chanson réaliste (Damia, Fréhel), que de la chanson coquine (Odette Laure, Anne Sylveste) ou révoltée (Renaud, Paccoud).
+							Je travaille actuellement avec plusieurs <a class="text-link txt--blank" href="{{ path('duos') }}">chanteurs et chanteuses</a>, embrassant un large répertoire au sein même de la chanson ; certaines formations s'orienteront plutôt vers les standards du style (Brel, Piaf, Ferré), d'autres vers des auteurs moins connus du grand public (Leprest, Dimey). Mon accordéon s'invite aussi bien sur de la chanson réaliste (Damia, Fréhel), que de la chanson coquine (Odette Laure, Anne Sylveste) ou révoltée (Renaud, Paccoud).
  						</p>
 
 						<p>
-							<a href="#" class="btn-secondary">Voir les artistes accompagnés</a>
+							<a href="{{ path('duos') }}" class="btn-secondary">Voir les artistes accompagnés</a>
 						</p>
 					</div>
 				</div>
@@ -90,7 +92,7 @@
 	</section>
 	<!-- /.sideman -->
 
-	<section class="bands">
+	<section class="content-section bands">
 		<div class="container page-section">
 			<div class="row">
 				<div class="col-sm-8">
@@ -105,12 +107,12 @@
 					</p>
 
 					<p>
-						Travailler avec d'autres musiciens me permet enfin d'aborder des styles originaux, moins accessibles à l'accordéon solo ; je joue par exemple de la <a class="text-link" href="#">chanson teintée de jazz</a>, du <a class="text-link" href="#">rock oriental</a> ou de la <a class="text-link" href="#">chanson swing</a>. <br>
+						Travailler avec d'autres musiciens me permet enfin d'aborder des styles originaux, moins accessibles à l'accordéon solo ; je joue par exemple de la <a class="text-link" href="{{ path('mime') }}">chanson teintée de jazz</a>, du <a class="text-link" href="#">rock oriental</a> ou de la <a class="text-link" href="#">chanson swing</a>. <br>
 						Avec ces différents projets, nous travaillons essentiellement sur nos <strong>propres compositions</strong>.
 					</p>
 
 					<p>
-						<a href="#" class="btn-secondary">Voir les groupes</a>
+						<a href="{{ path('groupes') }}" class="btn-secondary">Voir les groupes</a>
 					</p>
 				</div>
 
@@ -121,7 +123,7 @@
 		</div>
 	</section>
 
-	<section class="anim">
+	<section class="content-section anim">
 		<div class="container page-section">
 			<div class="row">
 				<div class="col-sm-4">
@@ -137,11 +139,11 @@
 						</p>
 
 						<p class="txt--blank">
-							Différentes formules sont disponibles, et de nombreuses options sont discutables en amont de la prestation : acoustique ou sonorisé, styles abordés, ... Suivant vos envies, il m'est également possible d'être accompagné d'autres musiciens (guitare, contrebasse, violon, ...) ou d'<a class="text-link txt--blank" href="#">une chanteuse</a>.
+							Différentes formules sont disponibles, et de nombreuses options sont discutables en amont de la prestation : acoustique ou sonorisé, styles abordés, ... Suivant vos envies, il m'est également possible d'être accompagné d'autres musiciens (guitare, contrebasse, violon, ...) ou d'<a class="text-link txt--blank" href="{{ path('duos') }}">une chanteuse</a>.
  						</p>
 
 						<p>
-							<a href="#" class="btn-secondary">Voir les formules</a>
+							<a href="{{ path('animations') }}" class="btn-secondary">Voir les formules</a>
 						</p>
 					</div>
 				</div>
@@ -149,13 +151,5 @@
 			<!-- /.row -->
 		</div>
 		<!-- /.page-section -->
-	</section>
-
-	<section class="contact">
-		<div class="container">
-			<p class="contact-txt">
-				Pour toute information, n'hésitez pas à me contacter : <a href="mailto:dutheil.jeremy@gmail.com" style="color: #ffffff">dutheil.jeremy@gmail.com</a> / 06.85.38.22.16
-			</p>
-		</div>
 	</section>
 {% endblock %}

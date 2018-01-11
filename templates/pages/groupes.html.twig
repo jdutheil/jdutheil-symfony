@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Groupes de musique - Accordéoniste professionnel
+{% endblock %}
+
+{% block metadesc %}
+    <meta name="description" content="Découvrez les groupes que j'accompagne en tant qu'accordéoniste professionnel.">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/groupes_pic.jpg" alt="" class="flash-item__background flash-item__background--groupes">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Groupes</h1>
+
+
+			<div class="row">
+				<div class="col-sm-4">
+					<h2 class="section-title section-title--small">MimE</h2>
+
+					<img class="img-fluid duos-pic" src="img/duos_mime.jpg" alt="">
+
+					<p>
+						Chansons débraillées ! 
+					</p>
+
+					<a href="{{ path('mime') }}" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="section-title section-title--small">La Marquise</h2>
+
+					<img class="img-fluid duos-pic" src="img/groupes_marquise.jpg" alt="">
+
+					<p>
+						Trio chanson / swing
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="section-title section-title--small">Madjid et Yano Tët</h2>
+
+					<img class="img-fluid duos-pic" src="img/groupes_madjid.jpg" alt="">
+
+					<p>
+						Rock oriental
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="section-title section-title--small">Rue la Môme</h2>
+
+					<img class="img-fluid duos-pic" src="img/groupes_mome.jpg" alt="">
+
+					<p>
+						Spectacle sur Piaf
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="section-title section-title--small">Les Fils de Flûte</h2>
+
+					<img class="img-fluid duos-pic" src="img/groupes_fdf.jpg" alt="">
+
+					<p>
+						Chanson française festive
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+{% endblock %}

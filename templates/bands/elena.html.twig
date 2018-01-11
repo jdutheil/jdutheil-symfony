@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Elena Josse
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/elena_pic.jpg" alt="" class="flash-item__background ">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Elena Josse</h1>
+
+			<p>
+				"Figure marquante du Théâtre du Fil, Eléna Josse a croisé nos chemins comme souvent par hasard, par-dessus le tumulte des villes. Telle une fleur dans le béton, sa voix perçait la foule bruyante et nous transmettait un florilège de chansons inattendues, venues des générations précédentes et que souvent personne ne connaissait. [...] j’ai parfois l’impression de m’entendre chanter comme j’aurai du chanter quand j’avais sa jeunesse." Christian Paccoud
+			</p>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/419163881&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+				</div>
+			</div>
+
+			<a href="{{ path('duos') }}" class="btn btn-primary" style="margin-top: 35px;">Retour</a>
+		</div>
+		<!-- /.container -->
+	</section>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Collaborations artistiques
+{% endblock %}
+
+{% block metadesc %}
+    <meta name="description" content="Accordéoniste professionnel à Paris, Jérémy Dutheil fait partie de plusieurs projets musicaux qu'il vous présente ici.">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/collab_pic.jpg" alt="" class="flash-item__background flash-item__background--collab">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Collaborations artistiques</h1>
+
+			<p>
+				Artiste passionné et touche à tout, je travaille avec différentes formules artistiques aux profils très variés ; parce que l'accordéon est un <strong>instrument complet</strong> et étonnant, je trouve important et formateur de se frotter à plusieurs styles musicaux, ainsi qu'à des configurations scéniques différentes. Chacune de ses expériences me permet d'enrichir mon jeu, proposant ainsi de nouvelles influences à chacun de mes projets.
+			</p>
+
+			<p>
+				Toujours intéressé par d'autres découvertes, je suis <strong>disponible</strong> et <strong>ouvert</strong> à de nouvelles propositions ; que vous soyez une <strong>troupe de théâtre</strong> cherchant un accompagnateur, un <strong>groupe</strong> cherchant son nouvel accordéoniste ou encore tout artiste avec un projet musical, n'hésitez pas à <a href="#" class="text-link">me contacter</a> pour en discuter.
+			</p>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="collab__link">
+						<h2 class="section-title section-title--small">Chanteurs / Chanteuses</h2>
+
+						<p>
+							Peut-être bien ma formule préférée en tant que <strong>musicien accompagnateur</strong>, je vous présente ici des duos accordéon / voix ; chacun des artistes que j'accompagne propose son propre style, et évolue dans un univers marqué et distinct. 
+						</p>
+
+						<a href="{{ path('duos') }}" class="btn btn-primary">Découvrir les duos</a>
+					</div>
+					<!-- /.collab__link -->
+				</div>
+
+				<div class="col-sm-6">
+					<div class="collab__link">
+						<h2 class="section-title section-title--small">Groupes</h2>
+
+						<p>
+							L'accordéon est rejoint par une <strong>section rythmique</strong>, et parfois d'autres instruments mélodiques ; du <a href="#" class="text-link">rock</a> au <a href="#" class="text-link">swing</a> en passant par le <a href="#" class="text-link">jazz</a> ou le <a href="#" class="text-link">reggae</a>, venez découvrir les groupes avec lesquels j'ai plaisir à jouer !
+						</p>
+
+						<a href="{{ path('groupes') }}" class="btn btn-primary">Découvrir les groupes</a>
+					</div>
+					<!-- /.collab__link -->
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</section>
+{% endblock %}

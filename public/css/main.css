@@ -18,6 +18,12 @@ body {
 		color: #ff841c;
 	}
 
+.bg--blank { background-color: #ffffff; }
+.bg--transparent { background-color: rgba(255, 255, 255, 0.7); }
+
+.row--mtop { margin-top: 35px; }
+.col--mbot { margin-bottom: 35px; }
+
 a:hover { text-decoration: none; }
 
 .txt--blank { color: #ffffff; }
@@ -57,7 +63,7 @@ a:hover { text-decoration: none; }
     transition: background-color .2s ease;
 }
 
-	.nav-link:hover {
+	.nav-link:hover, .nav-link--active {
 		color: #ffffff !important;
 		background-color: #ff841c;
 	}
@@ -67,13 +73,25 @@ a:hover { text-decoration: none; }
  */
 
 .flash {
-	position: relative;
+	position: fixed;
 
 	width: 100%;
-	height: 80vh;
+	height: 100vh;
 
 	overflow: hidden;
+
+	z-index: 1;
+	top: 0;
+	left: 0;
 } 
+
+.flash-ghost {
+	position: relative;
+	height: 80vh;
+}
+
+	.flash--limited { height: 80vh; }
+	.flash-ghost--limited { height: 50vh; }
 
 .flash-item {
 	position: relative;
@@ -93,6 +111,14 @@ a:hover { text-decoration: none; }
 		height: auto;
 
 		z-index: 1;
+	}
+
+	.flash-item__background--collab {
+		top: -200px;	
+	}
+
+	.flash-item__background--groupes {
+		top: -550px;
 	}
 
 .flash-item__content-wrapper {
@@ -163,6 +189,11 @@ a:hover { text-decoration: none; }
  * Sections
  */
 
+.content-section {
+	position: relative;
+	z-index: 100;
+}
+
 .edito { background-color: #ffffff; }
 
 .page-section {
@@ -196,8 +227,6 @@ a:hover { text-decoration: none; }
     letter-spacing: -1px;
 }
 
-	.section-title--blank { color: #eeeeee; }
-
 	.section-title:after {
 		border-left: 13px solid #ff841c;
 	    content: '';
@@ -207,6 +236,13 @@ a:hover { text-decoration: none; }
 	    top: 0;
 	    width: 13px;
 	}
+
+	.section-title--small { 
+		font-size: 30px; 
+		line-height: 30px;
+	}
+
+	.section-title--blank { color: #eeeeee; }
 
 /**
  * Sideman
@@ -240,6 +276,9 @@ a:hover { text-decoration: none; }
 	background-color: #000000;
 	border-top: 3px solid #ffffff;
 	padding: 25px 0;
+
+	position: relative;
+	z-index: 100;
 }
 
 .contact-title {
@@ -261,4 +300,17 @@ a:hover { text-decoration: none; }
     line-height: 28px;
     margin-bottom: -4px;
     overflow: hidden;
+}
+
+.collab__link {
+	margin: 30px 0;
+}
+
+.duos-pic {
+	margin-bottom: 30px;
+}
+
+.social-link {
+	font-size: 25px;
+	margin-right: 10px;
 }

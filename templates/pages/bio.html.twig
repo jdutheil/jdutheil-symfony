@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Accordéoniste, Paris - Biographie
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/bio_pic.jpg" alt="" class="flash-item__background">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container bg--blank">
+			<h1 class="section-title">Jérémy DUTHEIL - Biographie</h1>
+
+			<div class="row">
+				<div class="col-sm-8">
+					<div>
+						<p>
+							Bercé par la musique, Jérémy prend ses premières leçons d'accordéon dès l'âge de 4 ans ; suivant une formation complète comprenant également du solfège, il apprend à déchiffrer les notes sur une partition avant de savoir lire et écrire. Suivant des cours réguliers avec plusieurs professeurs durant toute sa scolarité, Jérémy participe à plusieurs concours ACF (<em>Accordéon Club de France</em>) et à des stages au <a href="http://www.cnima.com" class="text-link">CNIMA</a> (<em>Centre National et International de Musique et d'Accordéon</em>), sous la direction de son célèbre directeur Jacques Mornet.<br>
+							En parralèle, Jérémy s'intéresse également au <strong>piano</strong> et à <strong>la guitare</strong>, instruments qu'il pratique toujours aujourd'hui.
+						</p>
+
+						<p>
+							Après le lycée, la musique s'efface quelque temps afin de permettre à Jérémy de poursuivre des études supérieures ; il intègre l'<a href="http://www.utc.fr" class="text-link">UTC</a> (<em>Université de Technologie de Compiègne</em>), où il suit des études d'ingénieurs en informatique ; il en profite alors pour s'investir dans le <strong>milieu associatif</strong>, et oeuvre notamment pour promouvoir les actions artistiques au sein de l'école. Une fois son diplôme obtenu en 2014, il décide de quitter cette casquette scientifique et de vivre de <strong>sa passion</strong> à temps plein.
+						</p>
+
+						<p>
+							C'est également à cette époque qu'il commence à s'intéresser <strong>au jazz</strong>, ainsi qu'aux <strong>musiques improvisées</strong> d'une manière générale ; aujourd'hui, Jérémy suit encore des cours avec l'accordéoniste <a href="https://www.toucastriovasco.com/" class="text-link">Christian Toucas</a>, ainsi que des sessions de stage au <a href="http://www.cnima.com" class="text-link">CNIMA</a>.
+						</p>
+
+						<p>
+							Fort de ces nombreuses expériences, Jérémy possède une <strong>formation musicale complète</strong> (solfège, rythme, ...) mais aussi une capacité d'<strong>improvisation</strong> et une sensitibilité à de nombreux <a href="#" class="text-link">styles musicaux</a> (jazz, musique brésilienne, klezmer, ...). <br>
+							C'est sur scène et dans <a href="{{ path('collaborations') }}" class="text-link">ses différents projets</a> qu'il met à profit ses connaissances, et propose des arrangements modernes et originaux, provenant de nombreuses <strong>influences</strong>.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-sm-4 page-section__content-wrapper">
+					<div>
+						<img src="{{ asset('img/bio-pic1.jpg') }}" alt="" class="img-fluid page-section__img">
+						<img src="{{ asset('img/bio-pic2.jpg') }}" alt="" class="img-fluid page-section__img" style="margin-top: 35px;">
+					</div>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>	
+		<!-- /.container -->
+	</section>
+{% endblock %}

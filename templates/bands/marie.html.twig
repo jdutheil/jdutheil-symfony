@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Marie Pétrolette
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/marie.jpg" alt="" class="flash-item__background flash-item__background--collab">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Marie Pétrolette</h1>
+
+			<p>
+				<a href="https://www.facebook.com/Marie-P%C3%A9trolette-473387396102982/" class="text-link social-link" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://marie-petrolette.jimdo.com/" class="text-link social-link" target="_blank"><i class="fa fa-globe"></i></a>
+			</p>
+
+			<p>
+				[...] Sans quitter l’univers féministe et féminin de ses débuts, les chansons de Marie Pétrolette nous parlent de la vie d’une jeune femme d’aujourd’hui dans une ville moderne. Alternant l’humour grinçant et des airs plus mélancoliques, elles se demandent, et nous demandent, si la peur d’être seul.e ne fausse pas toutes nos actions et si le besoin d’être aimé.e n’est pas le dangereux moteur qui nous fait foncer dans le vide. Sans jamais basculer dans le pathos, soutenues par une musique vivante et par des sentiments portés par les facettes de sa voix, ces chansons nous parlent surtout de nous-mêmes.
+			</p>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/363531098&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+				</div>
+			</div>
+
+			<a href="{{ path('duos') }}" class="btn btn-primary" style="margin-top: 35px;">Retour</a>
+		</div>
+		<!-- /.container -->
+	</section>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - MimE, chanson débraillée !
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/mime.png" alt="" class="flash-item__background">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">MimE</h1>
+
+			<p>
+				<a href="https://www.facebook.com/REMI.MIME" class="text-link social-link" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.youtube.com/channel/UCWBiotlqnlEppd7P-eYrW_Q" class="text-link social-link" target="_blank"><i class="fa fa-youtube"></i></a>
+			</p>
+
+			<p>
+				MimE c'est de la chanson offerte sans papier cadeaux, des airs débraillés chuchotés à l'oreille des copains ou hurlés sous la lune, des chansons originales entrecoupées de reprises d' Allain leprest, de Bernard Dimey et de poèmes de Nazim Hikmet, le tout servis par un trio aussi improbable qu' accidentel : un Orgue Hammond, une Batterie et un Accordéon. Ah pis y a un Chanteur aussi, enfin, il chante pas toujours...enfin... vous verrez bien !
+			</p>
+
+			<p>
+				Une formule en <strong>duo accordéon / voix</strong> est également disponible !
+			</p>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/364596170&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+				</div>
+
+				<div class="col-sm-6">
+					<iframe width="100%" height="300" src="https://www.youtube.com/embed/3myHtS2ZYPo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<a href="{{ path('duos') }}" class="btn btn-primary" style="margin-top: 35px;">Retour</a>
+		</div>
+		<!-- /.container -->
+	</section>
+{% endblock %}

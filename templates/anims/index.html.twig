@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy Dutheil - Accordéoniste professionnel pour animations musicales en Seine et Marne (77)
+{% endblock %}
+
+{% block metadesc %}
+	<meta name="description" content="Jérémy Dutheil est accordéoniste en Seine et Marne (77) ; musicien professionnel et expérimenté, il eest disponible pour des concerts, événements, animations musicales ou soirées privées.">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/anims_pic.jpg" alt="" class="flash-item__background flash-item__background--groupes">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Animations musicales</h1>
+
+			<p>
+				Vous recherchez un accordéoniste pour une soirée ou une animation en Seine et Marne (77) ? N'hésitez plus, et <a href="{{ path('contact') }}" class="text-link">contactez moi</a> dès maintenant ! 
+			</p>
+
+			<p>
+				Seul ou accompagné, formule plutôt rétro ou moderne, je saurai satisfaire vos invités en m'adaptant à <strong>vos envies</strong> ; musicien professionnel avec une grande expérience, je propose un <strong>répertoire varié</strong> et personnalisé pour votre événement. 
+			</p>
+
+			<p>
+				Différentes formules et options sont disponibles, vous contruisez mon intervention <strong>à la carte</strong> ; je vous propose de découvrir quelques exemples ci-dessous.
+			</p>
+
+			<div class="row">
+				<div class="col-sm-4 col--mbot">
+					<h2 class="section-title section-title--small">Animations seniors</h2>
+
+					<p>
+						Intervention au sein de votre établissement : maison de retraite, EHPAD, ...
+					</p>
+
+					<a href="{{ path('animations_seniors') }}" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4 col--mbot">
+					<h2 class="section-title section-title--small">Mariages</h2>
+
+					<p>
+						Une formule discrète pour votre vin d'honneur ?
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4 col--mbot">
+					<h2 class="section-title section-title--small">Anniversaires</h2>
+
+					<p>
+						De la musique au repas, suivie d'un moment de danse après le dessert !
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4 col--mbot">
+					<h2 class="section-title section-title--small">Événements d'entreprise</h2>
+
+					<p>
+						Un ou plusieurs musiciens pour votre réception
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4 col--mbot">
+					<h2 class="section-title section-title--small">Repas en musique</h2>
+
+					<p>
+						Mangez au son de l'accordéon, qui saura se faire discret pour les conversations
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4 col--mbot">
+					<h2 class="section-title section-title--small">Soirées privées</h2>
+
+					<p>
+						Dans votre appartement / maison, ou en extérieur, pour n'importe quelle occasion..
+					</p>
+
+					<a href="#" class="btn btn-primary">En savoir plus</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+{% endblock %}

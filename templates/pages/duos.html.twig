@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Duos accordéon / voix - Accordéoniste professionnel
+{% endblock %}
+
+{% block metadesc %}
+    <meta name="description" content="Découvrez les chanteurs et chanteuses que j'accompagne en tant qu'accordéoniste professionnel.">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/duos_pic.jpg" alt="" class="flash-item__background flash-item__background--collab">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Duos accordéon / voix</h1>
+
+			<p>
+				Être musicien professionnel, c'est aussi savoir <strong>accompagner</strong> ; l'accordéon se met alors au service du texte, ce sont les paroles qui priment et que la musique doit porter. Exercice de style très intéressant, le duo accordéon / voix permet également de jouer dans des lieux <strong>plus intimistes</strong> ; la sonorisation y est accessoire, et le contact avec le public bien réel. 
+			</p>
+
+			<p>
+				Tous les chanteurs et chanteuses que j'accompagne évoluent dans un univers qui leur est propre ; tantôt rétro, tantôt moderne, parfois révolté et parfois coquin, je vous invite à découvrir chacun d'entre eux.
+			</p>
+
+			<div class="row row--mtop">
+				<div class="col-sm-4">
+					<h2 class="section-title section-title--small">MimE</h2>
+
+					<img class="img-fluid duos-pic" src="img/duos_mime.jpg" alt="">
+
+					<p>
+						Chansons débraillées ! 
+					</p>
+
+					<a href="{{ path('mime') }}" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="section-title section-title--small">Marie Pétrolette</h2>
+
+					<img class="img-fluid duos-pic" src="img/duos_marie.jpg" alt="">
+
+					<p>
+						Chansons coquines et réalistes
+					</p>
+
+					<a href="{{ path('marie') }}" class="btn btn-primary">En savoir plus</a>
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="section-title section-title--small">Elena Josse</h2>
+
+					<img class="img-fluid duos-pic" src="img/duos_elena.jpg" alt="">
+
+					<p>
+						Grands standards de la chanson française
+					</p>
+
+					<a href="{{ path('elena') }}" class="btn btn-primary">En savoir plus</a>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+	</section>
+{% endblock %}
