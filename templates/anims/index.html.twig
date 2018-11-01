@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	Jérémy Dutheil - Accordéoniste professionnel pour animations musicales en Seine et Marne (77)
+	Animation musicale à l'accordéon pour vos événements, fêtes ou soirées d'entreprise | Jérémy DUTHEIL
 {% endblock %}
 
 {% block metadesc %}
-	<meta name="description" content="Jérémy Dutheil est accordéoniste en Seine et Marne (77) ; musicien professionnel et expérimenté, il eest disponible pour des concerts, événements, animations musicales ou soirées privées.">
+	<meta name="description" content="Animation musicale à l'accordéon pour événements, fêtes et soirées : jazz, chanson, ... En solo ou groupe.">
 {% endblock %}
 
 {% block body %}
@@ -22,20 +22,63 @@
 			<h1 class="section-title">Animations musicales</h1>
 
 			<p>
-				Vous recherchez un accordéoniste pour une soirée ou une animation à Paris (Ile de France) ou dans une autre région ? N'hésitez plus, et <a href="{{ path('contact') }}" class="text-link">contactez moi</a> dès maintenant !
+				Basé à Paris (Ile de France), Jérémy DUTHEIL vous propose avec son accordéon des formules sur mesures pour <strong>l'animation musicale</strong> de votre cocktail, fête ou soirée d'entreprise ; seul ou accompagné d'autres <strong>musiciens</strong>, dans un style plutôt moderne ou <strong>rétro</strong>, il saura combler vos invités en s'adaptant à leurs envies (et les votres !). Musicien professionnel avec de l'expérience, le répertoire proposé est varié et personnalisé pour votre événement.
 			</p>
 
 			<p>
-				Seul ou accompagné, formule plutôt rétro ou moderne, je saurai satisfaire vos invités en m'adaptant à <strong>vos envies</strong> ; musicien professionnel avec une grande expérience, je propose un <strong>répertoire varié</strong> et personnalisé pour votre événement.
+				Destinées à tout type de public, ces formules s'adressent aussi bien aux <em>particuliers</em> qu'aux <em>professionnels</em> ; grâce aux qualités acoustique de l'instrument, les conditions techniques sont réduites au minimum. En effet, la plupart du temps, la sonorisation n'est pas nécessaire. Pour de plus grands espaces, pas d'inquiétude : Jérémy DUTHEIL (et ses musiciens) sont <strong>autonomes</strong> et installeront un système de diffusion adapté à votre lieu.
 			</p>
 
-			<p>
-				Différentes formules et options sont disponibles, vous contruisez mon intervention <strong>à la carte</strong> ; je vous propose de découvrir quelques exemples ci-dessous.
-			</p>
+			<h2 class="section-title section-title--small" style="margin-top: 25px;">Accordéon solo pour une ambiance discrète</h2>
 
 			<div class="row">
-				<div class="col-sm-4 col--mbot">
-					<h2 class="section-title section-title--small">Animations seniors</h2>
+				<div class="col-md-8">
+					<p>
+						En solo, l'accordéon peut se faire discret, et délivrer une musique de fond agréable pendant votre cocktail ou repas ; ambiance cosy et feutrée assurée ! Vous entendrez alors quelque <strong>standards jazz</strong>, mais aussi des airs de <strong>chanson française</strong> et de <strong>swing musette</strong>.. Le style <em>"guinguette rétro"</em>, fortement apprécié aujourd'hui, donnera sans aucun doute une touche très classe à votre événement !
+					</p>
+
+					<p>
+						Fort de nombreuses années d'expérience, Jérémy propose des prestations pouvant durer jusque <em>plusieurs heures</em> ; n'hésitez pas à lui demander des morceaux particuliers en amont, qu'il se fera un plaisir de préparer pour le jour J !
+					</p>
+				</div>
+
+				<div class="col-md-4">
+					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img">
+				</div>
+				<!-- /.col-sm-4 -->
+			</div>
+
+			<h2 class="section-title section-title--small">En groupe, pour plus d'énergie</h2>
+
+			<p>
+				Vous cherchez un <strong>groupe de musique</strong> pour votre soirée ou événement, plutôt qu'un musicien seul ? Jérémy propose également de nombreuses formules, où lui et son accordéon sont rejoints par d'autres instrumentistes ; les formations sont variées, en fonction de vos envies et de votre budget. En voici quelque exemples, n'hésitez pas à <a href="{{ path('contact') }}">envoyer un message</a> pour plus d'informations.
+			</p>
+
+			<ul>
+				<li>
+					<strong>Duo accordéon / chant</strong> : les grands standards de la <strong>chanson française</strong>, ainsi que quelque pépites moins connues !
+				</li>
+
+				<li>
+					<strong>Duo accordéon / guitare</strong> : répertoire de <strong>standards jazz</strong>, balades, ...
+				</li>
+
+				<li>
+					<strong>Trio accordéon / guitare / contrebasse ou accordéon / 2 guitares</strong> : les grands classiques du <strong>jazz manouche</strong> !
+				</li>
+
+				<li>
+					Et bien d'autres...
+				</li>
+			</ul>
+
+			<hr style="background-color: #2d2d2d; margin: 25px 0;">
+
+			<h2 class="section-title section-title--small" style="margin-top: 20px">Quelque types d'événements </h2>
+
+			<div class="row">
+				<div class="col-sm-6 col--mbot">
+					<h3 class="section-title section-title--smaller">Animations seniors</h3>
 
 					<p>
 						Intervention au sein de votre établissement : maison de retraite, EHPAD, ...
@@ -44,38 +87,38 @@
 					<a href="{{ path('animations_seniors') }}" class="btn btn-primary">En savoir plus</a>
 				</div>
 
-				<div class="col-sm-4 col--mbot">
-					<h2 class="section-title section-title--small">Mariages</h2>
+				<div class="col-sm-6 col--mbot">
+					<h3 class="section-title section-title--smaller">Mariages</h3>
 
 					<p>
-						Une formule discrète pour votre vin d'honneur ? Un repas en musique ?
+						Une formule discrète pour votre vin d'honneur ? Un repas en musique ? Une soirée au son du jazz manouche ?<br>
 					</p>
 
 					<a href="{{ path('animations_mariages') }}" class="btn btn-primary">En savoir plus</a>
 				</div>
 
-				<div class="col-sm-4 col--mbot">
-					<h2 class="section-title section-title--small">Anniversaires</h2>
+				<div class="col-sm-6 col--mbot">
+					<h3 class="section-title section-title--smaller">Anniversaires</h3>
 
 					<p>
-						De la musique au repas, suivie d'un moment de danse après le dessert !
+						Grand moment de partage familial, un anniversaire est l'occasion parfaite pour une animation musicale ; que l'arrivée de l'accordéon soit une surprise ou non, vos invités seront ravis. Plutôt discret pendant le repas, dansant après.. Tout est possible !
 					</p>
 
 					<!--<a href="#" class="btn btn-primary">En savoir plus</a>-->
 				</div>
 
-				<div class="col-sm-4 col--mbot">
-					<h2 class="section-title section-title--small">Événements d'entreprise</h2>
+				<div class="col-sm-6 col--mbot">
+					<h3 class="section-title section-title--smaller">Événements d'entreprise</h3>
 
 					<p>
-						Un ou plusieurs musiciens pour votre réception ou cocktail
+						Votre entreprise souhaite organiser une réception ou un cocktail à l'occasion d'un événement particulier (inauguration, lancement de marque, ...) ? N'hésitez plus, et ajouter une touche musicale chic et décontractée ! En solo ou avec d'autres musiciens, les standards jazz résonneront en toute discrétion au son de l'accordéon, et apporteront LE plus à votre soirée.
 					</p>
 
 					<!--<a href="#" class="btn btn-primary">En savoir plus</a>-->
 				</div>
 
-				<div class="col-sm-4 col--mbot">
-					<h2 class="section-title section-title--small">Repas en musique</h2>
+				<div class="col-sm-6 col--mbot">
+					<h3 class="section-title section-title--smaller">Repas en musique</h3>
 
 					<p>
 						Vous êtes un restaurant et souhaitez animer discrètement vos repas ? Ou simplement un particulier qui invite des amis ? L'accordéon se fond dans l'arrière plan, et distille une musique d'ambiance agréable.
@@ -84,11 +127,11 @@
 					<!--<a href="#" class="btn btn-primary">En savoir plus</a>-->
 				</div>
 
-				<div class="col-sm-4 col--mbot">
-					<h2 class="section-title section-title--small">Soirées privées</h2>
+				<div class="col-sm-6 col--mbot">
+					<h3 class="section-title section-title--smaller">Soirées privées</h3>
 
 					<p>
-						Dans votre appartement / maison, ou en extérieur, pour n'importe quelle occasion..
+						Dans votre appartement / maison, ou en extérieur, pour n'importe quelle occasion.. Invitez vos amis et profitez d'un concert dans un cadre familial unique ; les formules en duo <strong>accordéon / voix</strong> autour de la chanson française sont particulièrement appréciées dans ce contexte.
 					</p>
 
 					<!--<a href="#" class="btn btn-primary">En savoir plus</a>-->

@@ -244,6 +244,8 @@ a:hover { text-decoration: none; }
 		line-height: 30px;
 	}
 
+	.section-title--smaller { font-size: 24px; line-height: 24px; }
+
 	.section-title--blank { color: #eeeeee; }
 
 /**
