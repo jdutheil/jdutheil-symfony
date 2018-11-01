@@ -40,6 +40,8 @@
 
         {% block stylesheets %}{% endblock %}
 
+        <meta name="google-site-verification" content="1PGa-HjhRJoyN5SLrUG5rKOh6chzypvwrtXmKVe7zBE" />
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-57123259-1"></script>
         <script>
@@ -140,8 +142,12 @@
 
         <section class="contact">
             <div class="container">
-                <p class="contact-txt">
-                    Pour toute information, n'hésitez pas à me contacter : <a href="mailto:dutheil.jeremy@gmail.com" style="color: #ffffff">dutheil.jeremy@gmail.com</a> / 06.85.38.22.16
+                <p class="contact-txt" itemscope itemtype="http://schema.org/Person">
+                    N'hésitez pas à me contacter pour toute information :<br>
+                    <span itemprop="name">Jérémy DUTHEIL</span> - <a href="mailto:dutheil.jeremy@gmail.com" style="color: #ffffff" itemprop="email">dutheil.jeremy@gmail.com</a> - <span itemprop="telephone">06.85.38.22.16</span><br>
+                    <div class="text-center" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">1B Place Moutier</span>, <span itemprop="postalCode">77170</span> <span itemprop="addressLocality">Brie Comte Robert</span>
+                    </div>
                 </p>
             </div>
         </section>
