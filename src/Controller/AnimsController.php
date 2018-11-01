@@ -26,4 +26,12 @@ class AnimsController extends Controller
 		return $this->render('anims/seniors.html.twig', array());
 	}
 
+	/**
+	 *	@Route("/animations-mariages", name="animations_mariages")
+	 */
+	 public function mariagesAction()
+	 {
+		 return $this->render('anims/mariages.html.twig', array());
+	 }
+
 }

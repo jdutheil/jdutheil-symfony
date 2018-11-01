@@ -29,7 +29,7 @@
         {% block metadesc %}
             <meta name="description" content="Jérémy Dutheil est accordéoniste à Paris ; musicien professionnel et expérimenté, il intervient seul ou en groupe lors de concerts, événements, animations ou soirées privées.">
         {% endblock %}
-        
+
         <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
@@ -45,7 +45,7 @@
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ path('homepage') }}"><span class="navbar-brand-span">J</span>érémy <span class="navbar-brand-span">D</span>UTHEIL</a>
-            
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Ouvrir le menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -63,7 +63,11 @@
                         </li>
 
                         <li class="nav-item px-2 py-1">
-                            <a class="nav-link {% if route == 'collaborations' 
+                    <a class="nav-link {% if app.request.attributes.get('_route') == 'videos' %}nav-link--active{% endif %}" href="{{ path('videos') }}">Vidéos / Audio</a>
+                        </li>
+
+                        <li class="nav-item px-2 py-1">
+                            <a class="nav-link {% if route == 'collaborations'
                                                   or route == 'duos'
                                                   or route == 'mime'
                                                   or route == 'marie'
@@ -131,7 +135,7 @@
                 </p>
             </div>
         </section>
-        
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>

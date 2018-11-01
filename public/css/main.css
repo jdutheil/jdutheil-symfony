@@ -29,7 +29,7 @@ a:hover { text-decoration: none; }
 .txt--blank { color: #ffffff; }
 
 /**
- * Navbar 
+ * Navbar
  */
 
 .navbar { background-color: #ffffff; }
@@ -46,8 +46,8 @@ a:hover { text-decoration: none; }
 	/*border-bottom: 2px solid #ffc600;*/
 }
 
-.navbar-brand-span { 
-	color: #ff841c; 
+.navbar-brand-span {
+	color: #ff841c;
 	font-size: 34px;
 	font-weight: 800;
 }
@@ -56,9 +56,9 @@ a:hover { text-decoration: none; }
 	color: #282828;
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
-	
+
 	font-size: 18px;
-    
+
     text-transform: uppercase;
     transition: background-color .2s ease;
 }
@@ -83,7 +83,7 @@ a:hover { text-decoration: none; }
 	z-index: 1;
 	top: 0;
 	left: 0;
-} 
+}
 
 .flash-ghost {
 	position: relative;
@@ -99,7 +99,7 @@ a:hover { text-decoration: none; }
 	height: 100%;
 
 	display: flex;
-	align-items: center;
+	align-items: top;
 }
 
 	.flash-item__background {
@@ -114,7 +114,7 @@ a:hover { text-decoration: none; }
 	}
 
 	.flash-item__background--collab {
-		top: -200px;	
+		top: -200px;
 	}
 
 	.flash-item__background--groupes {
@@ -128,11 +128,12 @@ a:hover { text-decoration: none; }
 
 .flash-item__content {
 	z-index: 100;
+	margin-top: 150px;
 }
 
 	.flash-item__content--slide1 {
-		position: absolute; 
-		right: 0; 
+		position: absolute;
+		right: 0;
 		bottom: 200px;
 	}
 
@@ -153,6 +154,7 @@ a:hover { text-decoration: none; }
     line-height: 30px;
     margin-bottom: 30px;
     padding: 0 40px 0 0;
+	color: #FFFFFF;
 }
 
 .btn-primary, .btn-secondary {
@@ -202,7 +204,7 @@ a:hover { text-decoration: none; }
 
 	.page-section__content-wrapper {
 		display: flex;
-		align-items: center;		
+		align-items: center;
 	}
 
 	.page-section__img {
@@ -216,7 +218,7 @@ a:hover { text-decoration: none; }
 
     padding: 0;
     padding-left: 30px;
-    
+
     position: relative;
     text-transform: uppercase;
 
@@ -237,8 +239,8 @@ a:hover { text-decoration: none; }
 	    width: 13px;
 	}
 
-	.section-title--small { 
-		font-size: 30px; 
+	.section-title--small {
+		font-size: 30px;
 		line-height: 30px;
 	}
 

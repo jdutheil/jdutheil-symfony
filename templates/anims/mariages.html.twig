@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy Dutheil - Accordéoniste professionnel pour votre mariage - France entière
+{% endblock %}
+
+{% block metadesc %}
+	<meta name="description" content="Vous recherchez une animation musicale pour votre mariage ? Accordéoniste professionnel, je me déplace dans votre établissement et m'adapte à vos besoins !">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/flash-item-1.jpg" alt="" class="flash-item__background flash-item__background--groupes">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Mariages</h1>
+
+			<p>
+				Accordéoniste professionnel basé en Seine et Marne (77), je suis disponible pour des <strong>animations musicales</strong> lors de votre mariage et me déplace dans la France entière ; les formules et le répertoire sont variés, en accord avec vos envies (vin d'honneur, soirée, ...). <br>
+				Fort d'une expérience musicale conséquente, je vous propose un répertoire <strong>varié</strong> parcourant tous les styles et toutes les générations ; du musette au jazz, en passant par la chanson française et le tango, il y en aura pour <strong>tous les goûts</strong>.
+			</p>
+
+			<p>
+				Suivant les envies de vos pensionnaires, nous préparerons en amont l'orientation du spectacle ; plutôt dansant, plutôt chanson, plutôt discret.. C'est vous (et vos invités !) qui décidez tout. Je travaille avec des <strong>tarifs abordables</strong>, et des formules <strong>tout compris</strong> (sonorisation éventuelle, ...).
+			</p>
+
+			<p>
+				N'hésitez pas à <a href="{{ path('contact') }}" class="text-link">me contacter</a> pour en discuter !
+			</p>
+		</div>
+		<!-- /.container -->
+	</section>
+{% endblock %}

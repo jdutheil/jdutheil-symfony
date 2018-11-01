@@ -53,4 +53,12 @@ class PagesController extends Controller
 		return $this->render('pages/contact.html.twig', array());
 	}
 
+	/**
+	 * @Route("/videos", name="videos")
+	 */
+	 public function videos()
+	 {
+		 return $this->render('pages/videos.html.twig', array());
+	 }
+
 }
