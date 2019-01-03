@@ -93,7 +93,7 @@ a:hover { text-decoration: none; }
 	height: 35vh;*/
 }
 
-	
+
 
 .flash-item {
 	position: relative;
@@ -207,8 +207,8 @@ a:hover { text-decoration: none; }
 }
 
 	.page-section__content-wrapper {
-		display: flex;
-		align-items: center;
+		/*display: flex;
+		align-items: center;*/
 	}
 
 	.page-section__img {
