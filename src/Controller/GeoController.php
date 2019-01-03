@@ -14,4 +14,30 @@ class GeoController extends Controller
     {
         return $this->render('geo/melun.html.twig', array());
     }
+
+    /**
+     * @Route("/accordeoniste-fontainebleau", name="fontainebleau")
+     */
+    public function fontainebleauAction()
+    {
+        return $this->render('geo/fontainebleau.html.twig', array());
+    }
+
+    /**
+     * @Route("/accordeoniste-meaux", name="meaux")
+     */
+    public function meauxAction()
+    {
+        return $this->render('geo/meaux.html.twig', array());
+    }
+
+    /**
+     * @Route("/accordeoniste-seine-et-marne", name="seineetmarne")
+     */
+    public function seineetmarneAction()
+    {
+        return $this->render('geo/77.html.twig', array());
+    }
+
+
 }
