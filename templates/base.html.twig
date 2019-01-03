@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+
         <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('img/favicon/apple-icon-57x57.png') }}">
         <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('img/favicon/apple-icon-60x60.png') }}">
         <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('img/favicon/apple-icon-72x72.png') }}">
@@ -37,6 +39,7 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
         {% block stylesheets %}{% endblock %}
 
@@ -93,40 +96,6 @@
                                 Animations
                             </a>
                         </li>
-
-                        <!--<li class="nav-item px-2 py-1 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Animations
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Animations seniors</a>
-                                <a class="dropdown-item" href="#">Mariages</a>
-                                <a class="dropdown-item" href="#">Anniversaires</a>
-                                <a class="dropdown-item" href="#">Événements d'entreprise</a>
-                                <a class="dropdown-item" href="#">Repas en musique</a>
-                                <a class="dropdown-item" href="#">Soirées privées</a>
-                            </div>
-                        </li>-->
-
-                        <!--<li class="nav-item px-2 py-1">
-                            <a class="nav-link {% if route == 'styles' %}nav-link--active{% endif %}"
-                                href="#">
-                                Styles
-                            </a>
-                        </li>-->
-
-                        <!--<li class="nav-item px-2 py-1 dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Styles
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Guinguette</a>
-                                <a class="dropdown-item" href="#">Chanson française</a>
-                                <a class="dropdown-item" href="#">Jazz</a>
-                            </div>
-                        </li>-->
 
                         <li class="nav-item px-2 py-1">
                             <a class="nav-link {% if route == 'contact' %}nav-link--active{% endif %}" href="{{ path('contact') }}">Contact</a>

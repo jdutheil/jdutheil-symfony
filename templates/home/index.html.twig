@@ -3,13 +3,13 @@
 {% block body %}
 	<section class="flash">
 		<div class="flash-item">
-			<img src="img/flash-item-1.jpg" alt="Jérémy DUTHEIL, accordéoniste professionnel" class="flash-item__background">
+			<img src="img/flash-item-1.jpg" alt="Accordéoniste en concert" title="Accordéoniste professionnel à Paris" class="flash-item__background">
 
 			<div class="flash-item__content mr-auto ml-5 col-sm-5">
 				<h2 class="flash-item__content-title">Accordéoniste <br>pour vos événements</h1>
 
 				<p class="flash-item__content-text">
-					Vous cherchez un accordéoniste pour un anniversaire, <br>une soirée d'entreprise ou une animation seniors ?
+					Vous cherchez un accordéoniste pour un anniversaire, <br>une soirée d'entreprise ou une animation seniors à Paris ou en Ile de France ?
 				</p>
 
 				<a href="{{ path('animations') }}" class="btn btn-secondary flash-item__content-btn">Découvrir les formules d'animations musicales</a>
@@ -41,14 +41,16 @@
 							Seul ou <em class="text-link">en groupe</em>, Jérémy se produit sur scène dans toute la France, ainsi que dans certains lieux plus intimistes de la capitale.
 						</p>
 
-						<a href="{{ path('bio') }}" class="btn btn-primary">Lire la biographie</a>
+						<p>
+							<a href="{{ path('bio') }}" class="btn-secondary">Lire la biographie</a>
+						</p>
 					</div>
 					<!-- /.page-section__content-wrapper -->
 				</div>
 				<!-- /.col-sm-8 -->
 
 				<div class="col-sm-4">
-					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img">
+					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" title="Accordéoniste parisien en concert" class="img-fluid page-section__img">
 				</div>
 				<!-- /.col-sm-4 -->
 			</div>
@@ -60,9 +62,9 @@
 
 	<section class="content-section sideman">
 		<div class="container page-section">
-			<div class="row">
+			<div class="row flex-column-reverse flex-md-row">
 				<div class="col-sm-4 ">
-					<img src="{{ asset('img/elena.jpg') }}" alt="En duo accordéon / voix" class="img-fluid page-section__img">
+					<img src="{{ asset('img/elena.jpg') }}" alt="Chanteuse et accordéoniste" title="Elena Josse et Jérémy DUTHEIL, accordéon / voix" class="img-fluid page-section__img">
 				</div>
 
 				<div class="col-sm-8 page-section__content-wrapper">
@@ -114,7 +116,7 @@
 				</div>
 
 				<div class="col-sm-4">
-					<img class="img-fluid page-section__img" src="img/band.jpg" alt="Jérémy DUTHEIL, accordéoniste en groupe">
+					<img class="img-fluid page-section__img" src="img/band.jpg" alt="Le groupe MimE sur scène" title="Le groupe MimE sur scène, avec Jérémy Dutheil à l'accordéon">
 				</div>
 			</div>
 		</div>
@@ -122,9 +124,9 @@
 
 	<section class="content-section anim">
 		<div class="container page-section">
-			<div class="row">
+			<div class="row flex-column-reverse  flex-md-row">
 				<div class="col-sm-4">
-					<img src="{{ asset('img/anim.jpg') }}" alt="Jérémy DUTHEIL, animations musicales à l'accordéon" class="img-fluid page-section__img">
+					<img src="{{ asset('img/anim.jpg') }}" alt="Accordéoniste à la campagne" title="Jérémy Dutheil, accordéoniste à Paris" class="img-fluid page-section__img">
 				</div>
 
 				<div class="col-sm-8 page-section__content-wrapper">
