@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - La Marquise
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/groupes_marquise.jpg" alt="" class="flash-item__background flash-item__background--collab">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">La Marquise</h1>
+
+			<p>
+				<a href="https://www.facebook.com/LA-MARQUISE-36246416221/" class="text-link social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCxMuztzrLJG9LB_sDl7qbLQ" class="text-link social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="http://www.lesitedelamarquise.com/" class="text-link social-link" target="_blank"><i class="fas fa-globe"></i></a>
+			</p>
+
+            <p>
+                Pas toujours facile à suivre cette Marquise là ! Car si le groupe est né à Paris il y a une dizaine d’années, il a suivi les déplacements de son fondateur/leader – Daniel Ferrat – venu vivre à Marseille au début des années 2000 avant de décider, sans doute pour rester dans le rythme, de vivre entre Paris et …Marseille !
+            </p>
+
+            <p>
+                Ce qui tombe plutôt bien pour un groupe qui a choisi la scène (près de 500 concerts à ce jour) comme axe principal de son développement. Ce sera donc 15 années de cafés-concerts, de salles, de festivals et des premières parties à la pelle (Cabrel, Maurane, Arthur H, Kent, Raoul Petite…).
+                <br>Une Marquise saltimbanque donc ! Qui, pour marquer ses dix ans de scène opte pour le format duo à l’énergie et la créativité démultipliées : duo de choc à deux voix qui envoient une chanson swing, funky, reggae souvent drôle, faussement légère. Avec en prime des reprises « sauce Marquise » qui valent le détour !
+            </p>
+
+            <iframe style="display: block; margin: 25px auto;" width="560" height="315" src="https://www.youtube.com/embed/qY6eJWCQSGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <a href="{{ path('collaborations') }}" class="btn btn-primary" style="margin-top: 35px;">Retour</a>
+        </div>
+    </section>
+{% endblock %}

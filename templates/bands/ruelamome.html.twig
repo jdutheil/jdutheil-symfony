@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Rue la Môme
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/ruelamome.jpg" alt="" class="flash-item__background flash-item__background--collab">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Rue la Môme</h1>
+
+            <p>
+				<a href="https://www.facebook.com/CidetKris/" class="text-link social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCii-DeR-F5xFCjN0vHr7uwQ" class="text-link social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+				<a href="http://www.ruelamome.fr" class="text-link social-link" target="_blank"><i class="fa fa-globe"></i></a>
+			</p>
+
+            <p>
+                Rue la Môme est un spectacle dédié à Edith Piaf, qui revisite ses plus grands succès mais aussi certains trésors méconnus. Ce trio de musiciens professionnels et talenteux, portés par l'étonnante Cid au chant, vous fera revivre différentes périodes de la vie de La Môme, de ses débuts dans la rue à la consécration à l'Olympia. L'accordéon et le violon font place égale dans le spectacle, la guitare change de main et le piano s'invite sur certain morceaux toujours pour sublimer une incroyable voix. L'imitation n'est pas cherchée, mais le décor est là sans aucun doute ; installez vous confortablement, et laissez vous embarquer pour un retour dans le temps !
+            </p>
+
+            <iframe style="display: block; margin: 25px auto;" width="560" height="315" src="https://www.youtube.com/embed/_nUkmR_LQNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p>
+                Quelques morceaux que vous entendrez :
+                <ul>
+                    <li>
+                        La Foule
+                    </li>
+
+                    <li>
+                        La vie en rose
+                    </li>
+
+                    <li>
+                        L'accordéoniste
+                    </li>
+
+                    <li>
+                        Sous le ciel de Paris
+                    </li>
+
+                    <li>
+                        Les amants d'un jour
+                    </li>
+
+                    <li>
+                        L'homme à la moto
+                    </li>
+
+                    <li>
+                        L'hymne à l'amour
+                    </li>
+
+                    <li>
+                        Milord
+                    </li>
+
+                    <li>
+                        Mon apéro
+                    </li>
+
+                    <li>
+                        Mon dieu
+                    </li>
+
+                    <li>
+                        Mon manège à moi
+                    </li>
+
+                    <li>
+                        ...
+                    </li>
+                </ul>
+            </p>
+
+            <a href="{{ path('collaborations') }}" class="btn btn-primary" style="margin-top: 35px;">Retour</a>
+        </div>
+    </section>
+{% endblock %}

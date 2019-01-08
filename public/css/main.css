@@ -314,8 +314,26 @@ a:hover { text-decoration: none; }
 	margin: 30px 0;
 }
 
+.collab-txt { text-align: center; }
+.collab-col { margin-bottom: 30px; }
+
+.collab-pic-container {
+	position: relative;
+	width: 100%;
+	min-height: 200px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
 .duos-pic {
 	margin-bottom: 30px;
+	max-width: 100%;
+	display: block;
+	position: absolute;
+	max-height: 200px;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	left: 50%;
 }
 
 .social-link {

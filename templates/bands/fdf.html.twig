@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Les Fils de Flûte
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/groupes_fdf.jpg" alt="" class="flash-item__background flash-item__background--collab">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Les Fils de Flûte</h1>
+
+			<p>
+				<a href="https://www.facebook.com/lesfilsdeflute.groupe/" class="text-link social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCobgQojoJK6HruFeocmEAVQ" class="text-link social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+			</p>
+
+
+            <p>
+                "En équilibre dans leur univers qui n’flûte pas rond, entre poésie, humour et histoires folles, ces troubadours vous invitent à prendre le large et à les suivre dans leur voyage musical. Un accordéon, une contrebasse, une guitare et une batterie mènent leur barque au fil des chansons, naviguant sur le flow de leurs voix ; ils vous proposent une croisière de bonne humeur. Juste le temps d’prendre son temps, de voyager en dansant, et d’profiter des mots. Embarquez m’sieurs dames !"
+            </p>
+
+            <iframe style="display: block; margin: 25px auto;" width="560" height="315" src="https://www.youtube.com/embed/wcG5FxfCw2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <p>
+                Les Fils de Flûte, c'est la rencontre de trois étudiants en école d'ingénieur, mais surtout de trois passionnés de musique ! Les influences sont variées, mais le style du groupe se résume bien par l'appellation "musique de rue" : des textes à déguster, une musique ensoleillée, et beaucoup de bonne humeur ! Très inspirés par des artistes tels que La Rue Kétanou, Les Ogres de Barback, Yves Jamait, Les Têtes Raides… Les premières compositions sont écrites tout en travaillant sur des reprises du même style. De concerts en concerts, Les Fils de Flûte se font connaître dans le nord et la Belgique et partagent quelques jolies scènes (The Inspector Cluzo, La Belle Bleue, Guerilla Frasca).
+            </p>
+
+            <p>
+                A l’été 2011 sort le 1er EP, fait maison : "C'est pas du pipeau !"
+            </p>
+
+            <p>
+            Après une première tournée d’été principalement en spectacles de rue (Paris, La Rochelle, Bordeaux, Lyon...), les concerts reprennent de plus belle et de nombreuses dates en festivals sont au rendez-vous : Nomad, Berzyk, Le Mix Up (avec Les Têtes Raides, Danakil et Hubert-Felix Thiefaine)…
+Le premier album "Sur notre fil", toujours autoproduit, sort fin 2012, 14 titres oscillants entre poésie, humour et histoires folles. S’en suivent deux années de concerts, entre festivals, bars ou tout type d'évènement convivial ; on notera en particulier Agitation Générale avec Les Ogres de Barback, l'inauguration du Tigre de Compiègne, ou encore La Fête de l'Humain D'abord avec Hk & Les Saltimbanks, Tournée Générale, Flavia Coelho, ...
+            </p>
+
+            <p>
+                En 2015 la famille s’agrandie : la section rythmique s'enrichit d'une batterie et d’un nouveau contrebassiste. Les concerts se feront désormais à 4 ou 5 sur scène. Une nouvelle formule, un nouveau spectacle et toujours plus d'envie !
+            </p>
+
+            <img class="img-fluid" src="img/fdf2.jpg" alt="Les Fils de Flûte sur scène !">
+
+            <a href="{{ path('collaborations') }}" class="btn btn-primary" style="margin-top: 35px;">Retour</a>
+        </div>
+    </section>
+{% endblock %}

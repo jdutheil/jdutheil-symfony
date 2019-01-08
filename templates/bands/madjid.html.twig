@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy DUTHEIL - Madjid et Yano Tët
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/madjid.jpg" alt="" class="flash-item__background flash-item__background--collab">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Madjid et Yano Tët</h1>
+
+			<p>
+				<a href="https://www.facebook.com/madjidelectronlibre/" class="text-link social-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCRnPscTzfPCkJxCef_B9QsA" class="text-link social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+			</p>
+
+
+            <p>
+                Tantôt rebelle, tantôt bohème YANO TËT évolue dans un univers world. Originaire d’Ivry-sur Seine, le groupe est porté part Madjid Djeddi. Chanteur à la route bien tracée d'un enfant qui sort des rangs, il nous transporte avec des textes tranchants et sincères. Entre couscous et pot-au-feu, YANO TËT cuisine en chanson une sauce Rock Orientale qui dégage une énergie hors du commun.
+            </p>
+
+            <iframe style="display: block; margin: 25px auto;" width="560" height="315" src="https://www.youtube.com/embed/PaksJgIHHRk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <a href="{{ path('collaborations') }}" class="btn btn-primary" style="margin-top: 35px;">Retour</a>
+        </div>
+    </section>
+{% endblock %}

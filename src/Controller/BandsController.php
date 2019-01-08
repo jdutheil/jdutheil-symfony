@@ -34,4 +34,36 @@ class BandsController extends Controller
 
 		return $this->render('bands/elena.html.twig', array());
 	}
+
+	/**
+	 * @Route("/ruelamome", name="ruelamome")
+	 */
+	 public function ruelamomeAction()
+	 {
+		 return $this->render('bands/ruelamome.html.twig', array());
+	 }
+
+	 /**
+	  *	@Route("/majid-yano-tet", name="madjid")
+	  */
+	  public function madjidAction()
+	  {
+		  return $this->render('bands/madjid.html.twig', array());
+	  }
+
+	  /**
+	   * @Route("/les-fils-de-flute", name="fdf")
+	   */
+	public function fdfAction()
+   	{
+		 return $this->render('bands/fdf.html.twig', array());
+   	}
+
+	/**
+	 * @Route("/la-marquise", name="marquise")
+	 */
+ 	public function marquiseAction()
+	{
+		return $this->render('bands/marquise.html.twig', array());
+	}
 }
