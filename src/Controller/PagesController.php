@@ -61,4 +61,11 @@ class PagesController extends Controller
 		 return $this->render('pages/videos.html.twig', array());
 	 }
 
+	 /**
+	  * @Route("/jazz-manouche", name="manouche")
+	  */
+	  public function manouche()
+	  {
+		  return $this->render('pages/manouche.html.twig', array());
+	  }
 }

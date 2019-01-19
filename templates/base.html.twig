@@ -27,7 +27,7 @@
         </title>
 
         {% block metadesc %}
-            <meta name="description" content="Jérémy Dutheil est accordéoniste professionnel à Paris ; disponible seul ou en groupe pour concerts, événements, animations ou soirées privées.">
+            <meta name="description" content="Accordéoniste professionnel à Paris ; disponible seul ou en groupe pour concerts, événements, animations ou soirées privées.">
         {% endblock %}
 
         <meta property="og:title" content="Accordéoniste profesionnel, Paris | Jérémy DUTHEIL">
@@ -94,7 +94,7 @@
                         </li>
 
                         <li class="nav-item px-2 py-1">
-                    <a class="nav-link {% if app.request.attributes.get('_route') == 'videos' %}nav-link--active{% endif %}" href="{{ path('videos') }}">Vidéos / Audio</a>
+                    <a class="nav-link {% if app.request.attributes.get('_route') == 'videos' %}nav-link--active{% endif %}" href="{{ path('videos') }}">Vidéos</a>
                         </li>
 
                         <li class="nav-item px-2 py-1">
@@ -103,7 +103,13 @@
                                                   or route == 'mime'
                                                   or route == 'marie'
                                                   or route == 'elena'
-                                                  or route == 'groupes' %}nav-link--active{% endif %}" href="{{ path('collaborations') }}">Collaborations</a>
+                                                  or route == 'groupes'
+                                              or route == 'madjid'
+                                          or route == 'ruelamome' or route == 'fdf' %}nav-link--active{% endif %}" href="{{ path('collaborations') }}">Collaborations</a>
+                        </li>
+
+                        <li class="nav-item px-2 py-1">
+                            <a class="nav-link {% if route == 'manouche' %}nav-link--active{% endif %}" href="{{ path('manouche') }}">Jazz manouche</a>
                         </li>
 
                         <li class="nav-item px-2 py-1">

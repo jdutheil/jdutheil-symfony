@@ -1,5 +1,4 @@
 User-Agent: *
-Disallow: /videos
 Disallow: /ruelamome/*
 Disallow: /duos-accordeon-voix
 Disallow: /groupes

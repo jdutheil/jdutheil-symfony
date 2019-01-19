@@ -346,3 +346,8 @@ a:hover { text-decoration: none; }
 	text-align: center;
 	margin: 0;
 }
+
+.video-center {
+	display: block;
+	margin: auto;
+}

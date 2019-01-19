@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Groupe jazz manouche pour vos événements | Jérémy DUTHEIL, accordéoniste à Paris
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/triomanouche.jpg" alt="" class="flash-item__background" style="top: -50%;">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container bg--blank">
+			<h1 class="section-title">Groupe jazz manouche pour vos événements</h1>
+
+            <p>
+                Vous recherchez un groupe de <strong>jazz manouche</strong> pour votre mariage, anniversaire, cocktail ou tout autre événement ? N'hésitez plus et <a href="{{ path('contact') }}">contactez-nous</a>. Musiciens professionnels complètement autonomes, nous nous occupons de l'ambiance musicale de votre soirée de A à Z.
+            </p>
+
+            <p>
+                Grâce à la géométrie variable du groupe, vous pouvez nous accueillir très facilement quelle que soit la taille de votre lieu ; avec le <strong>jazz manouche</strong>, vous assurez une ambiance classe et agréable à vos invités.
+            </p>
+
+            <h2 class="section-title section-title--small">En duo</h2>
+
+            <p>
+				En duo avec l'excellent guitariste Solal Poux, nous vous proposons une formule facile à mettre en place, convenant aux lieux les plus intimistes (et budgets modestes). En acoustique ou légèrement sonorisé, nous assurons le déroulement musical de votre soirée dans une ambiance chic et élégante ; alternant les morceaux virtuoses et les balades langoureuses, le répertoire est varié et plaira à tous !
+			</p>
+
+            <div class="row">
+				<div class="col-md-12">
+					<iframe class="video-center" width="800" height="500" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<p class="text-center" style="margin-top: 15px;">
+						Ici avec notre propre arrangement de <i>La Foule</i>, célèbre morceau d'<strong>Edith Piaf</strong> ; nous avons choisi de l'interpréter dans une version douce et intimiste, pour un moment relaxant..
+						<br><a href="https://www.youtube.com/watch?v=W_uOwoGcBuE" target="_blank">https://www.youtube.com/watch?v=W_uOwoGcBuE</a>
+					</p>
+				</div>
+			</div>
+
+            <h2 class="section-title section-title--small">En trio</h2>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <iframe class="video-center" width="800" height="500" src="https://www.youtube.com/embed/CXq4DWhwqSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <!--<p class="text-center" style="margin-top: 15px;">
+                        Quelques extraits en trio : <a href="https://www.youtube.com/watch?v=CXq4DWhwqSU" target="_blank">https://www.youtube.com/watch?v=CXq4DWhwqSU</a>
+                    </p>-->
+                </div>
+            </div>
+
+            <h2 class="section-title section-title--small" style="margin-top: 15px;">Quartet et plus</h2>
+
+            <p>
+                Nous pouvons également venir à 4 ou plus : ajout d'une seconde guitare rythmique pour plus de punch, arrivée d'un violon pour d'autres possibilités mélodiques, une chanteuse pour les thèmes, ... N'hésitez pas à <a href="{{ path('contact') }}">nous contacter</a> pour établir une formule sur mesure pour votre événement.
+            </p>
+
+            <h2 class="section-title section-title--small">Quelques titres du répertoire</h2>
+
+            <ul>
+                <li>
+                    Minor Swing
+                </li>
+
+                <li>
+                    Bossa Dorado
+                </li>
+
+                <li>
+                    Ménilmontant
+                </li>
+
+                <li>
+                    Sunny Side of the Street
+                </li>
+
+                <li>
+                    Nuages
+                </li>
+
+                <li>
+                    All of Me
+                </li>
+
+                <li>
+                    Autumn Leaves
+                </li>
+
+                <li>
+                    <i>Et bien d'autres...</i>
+                </li>
+            </ul>
+        </div>
+    </section>
+{% endblock %}

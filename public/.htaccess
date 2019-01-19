@@ -17,6 +17,9 @@ DirectoryIndex index.php
     Options -MultiViews
 </IfModule>
 
+Redirect 301 /duos-accordeon-voix http://www.jeremy-dutheil.fr/collaborations-artistiques
+Redirect 301 /groupes http://www.jeremy-dutheil.fr/collaborations-artistiques
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 

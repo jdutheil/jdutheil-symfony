@@ -37,16 +37,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://www.jeremy-dutheil.fr/duos-accordeon-voix</loc>
-  <lastmod>2019-01-03T16:30:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/groupes</loc>
-  <lastmod>2019-01-03T16:30:42+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>http://www.jeremy-dutheil.fr/animations-seniors-seine-et-marne</loc>
   <lastmod>2019-01-03T16:30:42+00:00</lastmod>
   <priority>0.64</priority>
@@ -91,6 +81,25 @@
   <lastmod>2019-01-03T16:30:42+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
+<url>
+  <loc>http://www.jeremy-dutheil.fr/ruelamome</loc>
+  <lastmod>2019-01-19T16:30:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.jeremy-dutheil.fr/madjid-yano-tet</loc>
+  <lastmod>2019-01-19T16:30:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.jeremy-dutheil.fr/les-fils-de-flute</loc>
+  <lastmod>2019-01-19T16:30:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.jeremy-dutheil.fr/la-marquise</loc>
+  <lastmod>2019-01-19T16:30:42+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 </urlset>
