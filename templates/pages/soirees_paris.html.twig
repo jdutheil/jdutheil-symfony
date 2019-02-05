@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accordéoniste pour vos soirées à Paris | Jérémy Dutheil{% endblock %}
+{% block metadesc %}
+    <meta name="description" content="Accordéoniste professionnel, Jérémy Dutheil est disponible pour l'animation de vos soirées à Paris : cocktail, inauguration, repas en musique, ...">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/flash-item-1.jpg" alt="" class="flash-item__background">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Accordéoniste pour vos soirées à Paris</h1>
+
+            <p>
+                Seul à l'accordéon, ou bien accompagné d'autres musiciens, Jérémy Dutheil propose des concerts et animations musicales pour vos soirées à Paris (et proche banlieue) ; qu'il s'agisse d'un cocktail ou soirée d'entreprise, de l'inauguration d'un nouveau lieu, de l'animation d'un <i>afterwork</i> ou d'un repas en musique, l'accordéon saura trouver sa place et ravire à coup sûr vos invités ! <br>
+                Dôté d'un répertoire varié, essentiellement axé sur le jazz et la chanson française, Jérémy saura s'adapter à votre événement et vos envies musicales ; d'une durée de 1h30 à 4h, en acoustique ou sonorisée, la prestation est définie en amont suivant <strong>votre</strong> cahier des charges, et personnalisée à votre goût.
+            </p>
+
+            <h2 class="section-title section-title--small">En solo, ambiance jazz et élégante</h2>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        En solo, l'accordéon se fait discret et distille une musique d'ambiance feutrée ; Jérémy vous propose des standards de jazz essentiellement, mais également des morceaux issus de la chanson française, ré-arrangés dans un style <i>jazzy</i>. Le répertoire balaie une large période temporelle, passant des morceaux très lents au <i>bebop</i>, s'arrêtant sur un air de Piaf ou une valse de Jo Privat...
+                    </p>
+
+                    <p>
+                        Quelque morceaux du répertoire :
+
+                        <ul>
+                            <li>
+                                Ain't Misbehavin
+                            </li>
+
+                            <li>
+                                Sunny Side of the Street
+                            </li>
+
+                            <li>
+                                La vie en Rose
+                            </li>
+
+                            <li>
+                                Minor Swing
+                            </li>
+
+                            <li>
+                                Donna Lee
+                            </li>
+
+                            <li>
+                                Billie's Bounce
+                            </li>
+
+                            <li>
+                                ...
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img">
+				</div>
+				<!-- /.col-sm-4 -->
+            </div>
+
+            <div class="row" style="margin-top: 25px;">
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mv3DgoYPCds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VVWMhc7LNcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <h2 class="section-title section-title--small" style="margin-top: 25px;">Accompagné par d'autres musiciens</h2>
+
+            <p>
+                Vous cherchez des musiciens pour animer votre soirée à Paris ? Nous vous proposons des formules clefs en main pour l'animation musicale de votre événement, en fonction de vos envies ou de votre budget ; l'accordéon est rejoint par d'autres instruments, comme par exemple la guitare ou la contrebasse, pour vous proposer des formules plus complètes et des styles spécifiques, comme par exemple le <strong>jazz manouche</strong>.<br>
+                Du duo (accordéon / guitare, accordéon / chant, ...) au quintet (accordéon / guitare / contrebasse / batterie / trompette), tout est envisageable.. N'hésitez pas à <a href="{{ path('contact') }}">nous contacter</a> afin d'en discuter !
+            </p>
+
+            <div class="row">
+				<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/gtqG5br0M60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+
+            <h2 class="section-title section-title--small" style="margin-top: 25px;">Quelque références</h2>
+
+            <p>
+                Voici quelques lieux de la capitale (et proche banlieue) où Jérémy s'est produit, seul à l'accordéon ou bien en tant que musicien accompagnateur : La péniche El Alamein, Le Connétable, La Ravigote, La Tête de Chou, La péniche Antipode, le 96, Les Deux Marches, Le Moki, l'Impondérable, La Maison Sainte Germaine, La Fête de l'Humanité, Le Forum Léo Ferré, Le Hangar ...
+            </p>
+
+            <hr>
+
+            <p>
+                Jérémy est également disponible pour des animations musicales dans toute la France ; pour plus d'informations, veuillez consulter <a href="{{ path('animations')}}">cette page</a>.
+            </p>
+        </div>
+    </section>
+{% endblock %}

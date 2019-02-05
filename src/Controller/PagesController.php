@@ -68,4 +68,12 @@ class PagesController extends Controller
 	  {
 		  return $this->render('pages/manouche.html.twig', array());
 	  }
+
+	/**
+	 * @Route("/soirees-paris", name="soirees_paris")
+	 */
+	public function soireesParis()
+	{
+		return $this->render('pages/soirees_paris.html.twig', array());
+	}
 }
