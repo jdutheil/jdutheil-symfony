@@ -1,5 +1,5 @@
 User-Agent: *
-Disallow: /ruelamome/*
 Disallow: /duos-accordeon-voix
 Disallow: /groupes
 Allow: /*
+sitemap: http://www.jeremy-dutheil.fr/sitemap.xml
