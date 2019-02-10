@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Accordéoniste professionnel | Jérémy Dutheil
+{% endblock %}
+
+{% block metadesc %}
+    <meta name="description" content="Jérémy Dutheil est un accordéoniste française ; musicien professionnel, il évolue principalement dans le jazz et la chanson française.">
+{% endblock %}
+
+{% block body %}
+	<section class="flash">
+		<div class="flash-item">
+			<img src="img/flash-item-1.jpg" alt="Accordéoniste en concert" title="Accordéoniste professionnel à Paris" class="flash-item__background">
+
+			<div class="flash-item__content mr-auto ml-5 col-sm-5">
+				<h1 class="flash-item__content-title">Accordéoniste professionnel</h1>
+
+				<p class="flash-item__content-text">
+		             Jérémy Dutheil est un accordéoniste français professionnel, évoluant dans le jazz et la chanson française.
+				</p>
+			</div>
+			<!-- /.flash-item__content -->
+		</div>
+		<!-- /.flash-item -->
+	</section>
+	<!-- /.flash -->
+
+	<section class="flash-ghost"></section>
+
+    <section class="content-section bg--blank page-section">
+		<div class="container">
+			<h2 class="section-title">Accordéoniste polyvalent</h2>
+
+            <p>
+                L'accordéon est un instrument complet, et c'est en tant que tel que Jérémy l'a toujours considéré ; tantôt soliste, tantôt musicien accompagnateur, il aime à toucher à tous les styles. Spécialisé plus particulièrement dans le jazz, jazz manouche et la chanson française, il collabore avec de nombreux artistes (<a href="{{ path('collaborations') }}">plus d'informations</a>). Avec son accordéon, c'est un son résolument moderne que Jérémy propose, empruntant tantôt au rock, tantôt à la musique balkanique...
+            </p>
+
+            <p>
+                Ouvert à toute collaboration (projet théâtral, accompagnement chanteur / chanteuse, enregistrement), Jérémy est un accordéoniste disponible ; n'hésitez pas à <a href="{{ path('contact') }}">le contacter</a> pour toute proposition.
+            </p>
+
+            <h2 class="section-title">Extraits musicaux</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8eY4FsHf7g0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <p>
+                <a href="{{ path('videos') }}" class="btn btn-primary">Voir plus de vidéos</a>
+            </p>
+        </div>
+    </section>
+{% endblock %}
