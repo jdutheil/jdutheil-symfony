@@ -84,4 +84,12 @@ class PagesController extends Controller
 	{
 		return $this->render('pages/accordeon_jazz_manouche.html.twig', array());
 	}
+
+	/**
+	 * @Route("/musiciens-soiree", name="musiciens_soirees")
+	 */
+	public function musiciensSoiree()
+	{
+		return $this->render('pages/musiciens_soirees.html.twig', array());
+	}
 }

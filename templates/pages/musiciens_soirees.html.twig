@@ -1,0 +1,69 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Musiciens pour soirées | Jérémy Dutheil
+{% endblock %}
+
+{% block metadesc %}
+	<meta name="description" content="Vous cherchez des musiciens pour animer votre mariage, soirée, cocktail ? Jazz manouche, chanson, ... déplacements dans toute la France !">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/triomanouche.jpg" alt="" class="flash-item__background flash-item__background--groupes" style="top: -50%;">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Musiciens pour soirées</h1>
+
+            <p>
+                Vous cherchez un groupe de musique pour prendre en charge l'<strong>animation musicale</strong> de votre cocktail, fête ou soirée d'entreprise ? Artistes professionnels, nous vous proposons des formules sur mesure en fonction de vos envies et votre budget ; complètement autonomes, nous gérons l'animation musicale de votre soirée de A à Z.
+            </p>
+
+			<p>
+				Destinées à tout type de public, ces formules s'adressent aussi bien aux <em>particuliers</em> qu'aux <em>professionnels</em> ; grâce aux qualités acoustique de l'instrument, les conditions techniques sont réduites au minimum. En effet, la plupart du temps, la sonorisation n'est pas nécessaire. Pour de plus grands espaces, pas d'inquiétude : Jérémy Dutheil (et ses musiciens) sont <strong>autonomes</strong> et installeront un système de diffusion adapté à votre lieu.
+			</p>
+
+            <p>
+                Retrouvez ci-dessous quelques exemples de prestations que nous pouvons vous proposer, classées par style musical. N'hésitez pas à <a href="{{ path('contact') }}">nous contacter</a> pour plus d'informations.
+            </p>
+
+			<h2 class="section-title section-title--small" style="margin-top: 15px;">Jazz manouche</h2>
+
+            <p>
+                Notre groupe de musiciens jazz manouche propose un répertoire axé autour des grands standards du style popularisé par Django Reinhardt : <i>Minor Swing, All of Me, Les Yeux Noirs, ...</i>. L'accordéon peut s'entourer d'une guitare, une contrebasse, mais également un violon ou des cuivres... selon vos envies ! De 2 à 4h de musique, acoustique ou sonorisé.
+            </p>
+
+            <div class="row">
+				<div class="col-md-6">
+					<iframe class="video-center" width="560" height="315" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+
+				<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Iklby0R-WyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+
+            <h2 class="section-title section-title--small" style="margin-top: 15px;">Chanson française</h2>
+
+            <p>
+                Nous proposons des duos accordéon / voix autour de la chanson française, en toute intimité ; de Piaf à Brel, en passant par Aznavour ou encore Odette Laure, il y en a pour tous les goûts...
+            </p>
+
+            <div class="row">
+				<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/gtqG5br0M60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/_cyzXvBjHkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+        </div>
+		<!-- /.container -->
+	</section>
+{% endblock %}
