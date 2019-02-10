@@ -4,6 +4,10 @@
 	Groupe jazz manouche pour vos événements | Jérémy Dutheil, accordéoniste à Paris
 {% endblock %}
 
+{% block metadesc %}
+	<meta name="description" content="Vous cherchez un groupe de jazz manouche pour votre vin d'honneur, soirée privée ou cocktail d'entreprise ? Musiciens professionnels, nous vous proposons des formules sur mesure.">
+{% endblock %}
+
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
@@ -18,7 +22,7 @@
 			<h1 class="section-title">Groupe jazz manouche pour vos événements</h1>
 
             <p>
-                Vous recherchez un groupe de <strong>jazz manouche</strong> pour votre mariage, anniversaire, cocktail ou tout autre événement ?
+                Vous recherchez un groupe de <strong>jazz manouche</strong> pour votre mariage, anniversaire, cocktail d'entreprise ou tout autre événement ?
 			</p>
 
 			<p>
@@ -26,31 +30,39 @@
 			</p>
 
 			<p>
-				Afin de s'adapter au mieux à vos envies et votre budget, nous proposons <strong>différentes formules</strong> à partir du duo (voir ci-dessous) ; nous sommes également complètement autonomes en matériel de sonorisation. Nous nous occupons de tout, vous n'avez plus qu'à apprécier !
+				Afin de s'adapter au mieux à vos envies et votre budget, nous proposons <strong>différentes formules</strong> (toutes avec un <a href="{{ path('accordeon_jazz_manouche') }}" style="color: #000000;">accordéoniste jazz manouche</a> bien sûr !) à partir du duo (voir ci-dessous) ; nous sommes également complètement autonomes en matériel de sonorisation. Nous nous occupons de tout, vous n'avez plus qu'à apprécier !
 			</p>
 
 			<p>
 				N'hésitez plus et <a href="{{ path('contact') }}">contactez-nous</a> pour plus d'informations.
 			</p>
 
-            <h2 class="section-title section-title--small">En duo</h2>
+            <h2 class="section-title section-title--small">Duo jazz manouche (accordéon / guitare)</h2>
 
             <p>
 				En duo avec l'excellent guitariste Solal Poux, nous vous proposons une formule facile à mettre en place, convenant aux lieux les plus intimistes (et budgets modestes). En acoustique ou légèrement sonorisé, nous assurons le déroulement musical de votre soirée dans une ambiance chic et élégante ; alternant les morceaux virtuoses et les balades langoureuses, le répertoire est varié et plaira à tous !
 			</p>
 
             <div class="row">
-				<div class="col-md-12">
-					<iframe class="video-center" width="800" height="500" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="col-md-6">
+					<iframe class="video-center" width="560" height="315" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 					<p class="text-center" style="margin-top: 15px;">
 						Ici avec notre propre arrangement de <i>La Foule</i>, célèbre morceau d'<strong>Edith Piaf</strong> ; nous avons choisi de l'interpréter dans une version douce et intimiste, pour un moment relaxant..
 						<br><a href="https://www.youtube.com/watch?v=W_uOwoGcBuE" target="_blank">https://www.youtube.com/watch?v=W_uOwoGcBuE</a>
 					</p>
 				</div>
+
+				<div class="col-md-6">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Iklby0R-WyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					<p class="text-center" style="margin-top: 15px;">
+						Un grand classique parmi les standards jazz : <i>Sunny Side of the Street</i> !
+					</p>
+				</div>
 			</div>
 
-            <h2 class="section-title section-title--small">En trio</h2>
+            <h2 class="section-title section-title--small">Trio jazz manouche (accordéon / guitare / contrebasse)</h2>
 
 			<p>
 				Le duo s'enrichit d'une contrebasse, permettant une assise plus solide de la rythmique ; l'instrument apporte également une touche visuelle non négligeable pour l'ambiance !
@@ -61,7 +73,7 @@
                     <iframe class="video-center" width="800" height="500" src="https://www.youtube.com/embed/CXq4DWhwqSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     <p class="text-center" style="margin-top: 15px;">
-                        Quelques extraits en trio : Bossa Dorado, Autumn Leaves, All of Me, Fly me to the Moon
+                        Quelques extraits en trio jazz manouche : Bossa Dorado, Autumn Leaves, All of Me, Fly me to the Moon
                     </p>
                 </div>
             </div>
