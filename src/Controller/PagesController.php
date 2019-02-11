@@ -100,4 +100,12 @@ class PagesController extends Controller
 	{
 		return $this->render('pages/accordeoniste.html.twig', array());
 	}
+
+	/**
+	 * @Route("/tarif-groupe-musique-soiree", name="tarifs")
+	 */
+	public function tarifs()
+	{
+		return $this->render('pages/tarifs.html.twig', array());
+	}
 }

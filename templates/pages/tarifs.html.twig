@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Quel est le tarif d'un groupe de musique pour votre soirée ? | Jérémy Dutheil
+{% endblock %}
+
+{% block metadesc %}
+    <meta name="description" content="Vous cherchez un groupe de musique (professionnel) pour votre soirée, et vous demandez quels sont les tarifs pratiqués ? Nos réponses ici !">
+{% endblock %}
+
+{% block body %}
+    <section class="flash flash--limited">
+        <div class="flash-item">
+            <img src="img/triomanouche.jpg" alt="" class="flash-item__background" style="top: -50%;">
+        </div>
+    </section>
+
+    <section class="flash-ghost flash-ghost--limited"></section>
+
+    <section class="content-section bg--blank page-section">
+        <div class="container bg--blank">
+            <h1 class="section-title">Tarif d'un groupe de musique pour votre soirée</h1>
+
+            <p>
+                Ça y est, la date de votre soirée est définie, les invitations sont prêtes à être envoyées, et pour rendre ce moment vraiment exceptionnel vous cherchez maintenant des musiciens professionnels qui pourront s'occuper de l'<strong>animation musicale</strong> de votre événement. Qu'il s'agisse du vin d'honneur de votre mariage, d'un repas d'anniversaire, d'un cocktail pour une soirée d'entreprise ou d'une soirée privée... Toutes les occasions sont bonnes pour profiter d'un <strong>groupe de musique</strong> en <i>live</i>, plutôt qu'une simple <i>playlist</i> !
+            </p>
+
+            <p>
+                Arrivés à cette étape vous êtes sur la bonne voie, vous avez commencé à définir le style musical qui vous plairait, consulté quelques sites d'artistes et vidéos sur youtube.. Seulement, vous n'avez aucune idée des <strong>tarifs pratiqués</strong> ! Vous décidez de contacter les musiciens que vous avez repérés, et leurs devis varient de manière non négligeable ; mais alors, qui est trop cher ? Qui l'est si peu qu'il ne vous inspire plus confiance ? Vous êtes perdus et ne savez plus vers qui vous tournez, car cette animation essentielle doit être réalisée avec <strong>le plus grand soin</strong> et professionnalisme, tout en restant abordable en terme de budget...
+            </p>
+
+            <p>
+                Dans cet article, je vous explique d'une manière simple ce qui détermine le prix d'un groupe de musique pour votre soirée, quels sont les éléments indispensables à prendre en compte ; après votre lecture, vous aurez toutes les informations nécessaires à votre décision. À noter que nous proposons sur ce site même des <a href="{{ path('animations') }}">animations musicales pour votre événement</a>, notamment avec notre <a href="{{ path('manouche') }}">groupe de jazz manouche</a> ; n'hésitez pas à <a href="{{ path('contact') }}">nous contacter</a> pour plus d'informations, ou pour établir un devis.
+            </p>
+
+            <img src="img/triomanouche.jpg" class="img-fluid" style="display: block; width: 80%; margin: auto;">
+
+            <p class="text-center" style="margin-top: 5px;">
+                <i>L'orchestre jazz manouche avec lequel nous proposons des concerts et animations musicales... <a href="{{ path('manouche') }}">plus d'informations</a></i>
+            </p>
+
+            <h2 class="section-title" style="margin-top: 25px;">L'artiste professionnel</h2>
+
+            <h3 class="section-title section-title--small">Un régime spécifique : intermittent du spectacle</h3>
+
+            <p>
+                En France, un artiste professionnel (qui gagne sa vie grâce à la musique, donc) est placé sous le régime spécifique d'assurance chômage de <strong>l'intermittence du spectacle</strong>. Ce régime introduit en 1936, unique au monde, permet aux artistes (dont par nature l'activité fluctue au cours de l'année) d'être indemnisé par Pole Emploi en dehors des périodes de travail, et donc par conséquent de <strong>vivre de son art</strong>. <br>
+                Le dossier du musicien est examiné chaque année, et reconduit pour l'année suivante sous réserve d'avoir effectué un nombre d'heures suffisant (ou pour vulgariser, de représentations).
+            </p>
+
+            <h3 class="section-title section-title--small">Des cotisations...</h3>
+
+            <p>
+                Qui dit régime spécifique et heures de travail, dit bien évidemment également <strong>contrats</strong> et <strong>déclarations</strong> ; à moins bien sûr de travailler <i>au noir</i>, ce qui est interdit par la loi française. Lorsqu'un musicien se produit (lors de votre soirée, par exemple), il est embauché grâce à un type de CDD (sur une journée) ; tout comme pour votre emploi, l'artiste professionnel doit s'acquitter de <strong>charges sociales</strong> et de <strong>cotisations</strong> aux différentes caisses de l'état (retraite, chômage, ursaff, ...). La différence entre le budget global alloué au musicien, et le salaire net qu'il perçoit est très importante car le total des charges représente <strong>45%</strong> du budget ; lorsque vous rémunérez un artiste 200 €, il touche en réalité 110 € nets. Evidemment, dans ce cas de figure, on ne prend pas en compte une éventuelle boîte de production (intermédiaire souvent nécessaire à l'établissement des contrats), qui prendra elle aussi en moyenne 10 % sur le cachet de l'artiste pour ses propres frais de fonctionnement. En pratique, vous pouvez environ diviser par deux ce que reçoit réellement le musicien par rapport à ce que vous payez.
+            </p>
+
+            <h3 class="section-title section-title--small">...et des minimas légaux obligatoires</h3>
+
+            <p>
+                Qui dit contrat de travail, dit également <strong>protection des salariés</strong> ; les intermittents du spectacle n'y échappe pas, et heureusement ! Des conventions collectives ont été créées afin d'encadrer le travail des intermittents du spectacle, et sont ré-évalués régulièrement ; ces textes décrivent en quelque sorte le <strong>SMIC du spectacle</strong>. Ainsi, afin de pouvoir déclarer son travail, un artiste professionnel n'a <strong>pas le droit</strong> de se vendre en dessous d'une certaine somme ! Chaque situation est particulière et a des règles spécifiques, mais de manière générale (avec un très léger arrondi), on compte au minimum <strong>200 €</strong> par musicien. <br>
+                Lors de l'organisation de votre soirée (vin d'honneur, cocktail, ...), vous pouvez d'hors et déjà éliminer les groupes de musique qui vous proposent un tarif inférieur ; en-dessous de ces minimas, ils ne pourront pas déclarer cette représentation et vous proposent donc en réalité du travail <i>au noir</i>.
+            </p>
+
+            <h3 class="section-title section-title--small">D'autres critères à prendre en compte</h3>
+
+            <p>
+                Tout d'abord, lorsque vous demandez à un musicien (ou un groupe de musiciens) de venir jouer à votre soirée pendant 2h, vous ne pouvez pas simplement prendre en compte la durée du concert pour réfléchir à un nombre d'heures ; généralement, les musiciens arrivent 1 à 2h avant le début de la prestation, afin de repérer les lieux, installer éventuellement le matériel de sonorisation, ... De même, à l'issu du spectacle, un temps de démontage est nécessaire, de 30mn à 1h suivant les situations. À cela, vous devez rajouter les temps de transport, en moyenne une heure par trajet (soit 2h au total). On voit bien ici qu'on ne parle plus de 2h, mais d'une journée de ... 8h environ !
+            </p>
+
+            <p>
+                À cela s'ajoutent évidemment le temps de répétition (seul et en groupe), nécessaire pour proposer une musique de qualité ; la plupart des musiciens professionnels travaillent leur instrument plusieurs heures par jour, afin de pouvoir vous proposer ces prestations. S'ajoutent également le temps nécessaire à l'établissement des contrats, la gestion administrative, la recherche de dates, l'entretien des instruments de musique (très couteux) ... Autant de critères qui ne sont pas rémunérés "en tant que tel", mais inclus dans les prix des cachets, dans la mesure du possible.
+            </p>
+
+            <p>
+                En moyenne, un groupe de musique professionnel vous demandera <strong>entre 250 € et 400 €</strong> par musicien pour une animation musicale de 2h ; à cela, vous devez rajouter les éventuels frais de déplacement, et hébergement dans certain cas. Ces tarifs sont bien entendu <strong>indicatifs</strong>, et peuvent dépendre d'autres critères (temps de jeu demandé, matériel de sonorisation à installer, etc.) ; chaque cas est unique, c'est pourquoi un bon prestataire vous proposera un devis sur mesure.
+            </p>
+
+            <h2 class="section-title">Vous cherchez un groupe de musique professionnel avec expérience ?</h2>
+
+            <p>
+                N'hésitez plus, et <a href="{{ path('contact') }}">contactez nous</a> ! Découvrez nos différentes formules d'<a href="{{ path('animations') }}">animations musicales</a> et laissez vous séduire...
+            </p>
+        </div>
+
+
+    </section>
+{% endblock %}
