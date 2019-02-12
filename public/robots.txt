@@ -1,5 +1,7 @@
 User-Agent: *
 Disallow: /duos-accordeon-voix
 Disallow: /groupes
+Disallow: /login/*
+Disallow: /admin/*
 Allow: /*
 sitemap: http://www.jeremy-dutheil.fr/sitemap.xml

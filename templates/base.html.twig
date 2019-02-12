@@ -123,6 +123,17 @@
                             <a class="nav-link {% if route == 'contact' %}nav-link--active{% endif %}" href="{{ path('contact') }}">Contact</a>
                         </li>
 
+                        <!--
+                        <li class="nav-item px-2 py-1">
+                            <a class="nav-link {% if route == '/blog' %}nav-link--active{% endif %}" href="">Blog</a>
+                        </li>
+                        -->
+
+                        {% if app.user %}
+                            <li><a href="{{ path("author_create") }}">Admin</a></li>
+                            <li><a href="{{ logout_url("secured_area") }}">Logout</a></li>
+                        {% endif %}
+
                         <li class="nav-item ">
                             <a title="Retrouvez moi sur Facebook" rel="nofollow" style="font-size: 24px;" class="nav-link" href="https://www.facebook.com/jeremydutheilaccordeoniste/" target="_blank"><i class="fab fa-facebook"></i></a>
                         </li>
