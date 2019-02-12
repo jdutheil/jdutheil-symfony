@@ -85,36 +85,36 @@
 
                 <div class="collapse navbar-collapse" id="navbar-content">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item px-2 py-1">
-                            <a class="nav-link {% if app.request.attributes.get('_route') == 'homepage' %}nav-link--active{% endif %}" href="{{ path('homepage') }}">Accueil</a>
-                        </li>
-
-                        <li class="nav-item px-2 py-1">
-                            <a class="nav-link {% if app.request.attributes.get('_route') == 'bio' %}nav-link--active{% endif %}" href="{{ path('bio') }}">Biographie</a>
-                        </li>
-
-                        <li class="nav-item px-2 py-1">
-                    <a class="nav-link {% if app.request.attributes.get('_route') == 'videos' %}nav-link--active{% endif %}" href="{{ path('videos') }}">Vidéos</a>
-                        </li>
-
-                        <li class="nav-item px-2 py-1">
-                            <a class="nav-link {% if route == 'collaborations'
+                        <li class="nav-item dropdown">
+                            <a title="Jérémy Dutheil est un accordéoniste français, basé à Paris" class="nav-link dropdown-toggle {% if route == 'collaborations'
                                                   or route == 'duos'
                                                   or route == 'mime'
                                                   or route == 'marie'
                                                   or route == 'elena'
                                                   or route == 'groupes'
                                               or route == 'madjid'
-                                          or route == 'ruelamome' or route == 'fdf' %}nav-link--active{% endif %}" href="{{ path('collaborations') }}">Collaborations</a>
+                                          or route == 'ruelamome' or route == 'fdf'
+                                      or route == 'bio' %}nav-link--active{% endif %}" href="#" id="about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Accordéoniste
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="about">
+                                <a class="dropdown-item" href="{{ path('bio') }}">Biographie</a>
+                                <a class="dropdown-item" href="{{ path('collaborations') }}">Collaborations artistiques</a>
+                            </div>
                         </li>
 
                         <li class="nav-item px-2 py-1">
-                            <a class="nav-link {% if route == 'manouche' %}nav-link--active{% endif %}" href="{{ path('manouche') }}">Jazz manouche</a>
+                            <a class="nav-link {% if app.request.attributes.get('_route') == 'videos' %}nav-link--active{% endif %}" href="{{ path('videos') }}">Vidéos</a>
+                        </li>
+
+                        <li class="nav-item px-2 py-1">
+                            <a class="nav-link {% if route == 'manouche' %}nav-link--active{% endif %}" href="{{ path('manouche') }}" title="Groupe de jazz manouche pour votre soirée">Jazz manouche</a>
                         </li>
 
                         <li class="nav-item px-2 py-1">
                             <a class="nav-link {% if route == 'animations' %}nav-link--active{% endif %}"
-                                href="{{ path('animations') }}">
+                                href="{{ path('animations') }}" title="Trouver un musicien ou groupe de musique pour votre soirée">
                                 Animations
                             </a>
                         </li>

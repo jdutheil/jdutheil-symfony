@@ -19,6 +19,7 @@ DirectoryIndex index.php
 
 Redirect 301 /duos-accordeon-voix http://www.jeremy-dutheil.fr/collaborations-artistiques
 Redirect 301 /groupes http://www.jeremy-dutheil.fr/collaborations-artistiques
+Redirect 301 /integrer-sass-compass-projet-symfony2 http://www.jeremy-dutheil.fr
 
 <IfModule mod_rewrite.c>
     RewriteEngine On

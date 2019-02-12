@@ -70,6 +70,28 @@ a:hover { text-decoration: none; }
 		background-color: #ff841c;
 	}
 
+.nav-item.dropdown {
+	margin-top: 4px;
+}
+
+	.nav-item.dropdown.show {
+		color: #FFFFFF !important;
+		background-color: #ff841c;
+	}
+
+	.nav-item.dropdown.show > .nav-link { color: #FFFFFF !important; }
+
+.dropdown-menu.show > .dropdown-item {
+	font-family: 'Oswald', sans-serif;
+	color: #282828;
+	font-size: 18px;
+}
+
+	.dropdown-menu.show > .dropdown-item:hover {
+		color: #FFFFFF !important;
+		background-color: #ff841c;
+	}
+
 /**
  * Flash section
  */
