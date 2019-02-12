@@ -29,6 +29,7 @@ Redirect 301 /sld http://www.jeremy-dutheil.fr
 Redirect 301 /tag/image http://www.jeremy-dutheil.fr
 Redirect 301 /tag/tips http://www.jeremy-dutheil.fr
 Redirect 301 /un-champ-dadresse-avec-auto-completion-grace-google-maps-api http://www.jeremy-dutheil.fr
+Redirect 301 /barconniere http://www.jeremy-dutheil.fr
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
