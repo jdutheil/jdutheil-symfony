@@ -1,117 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>http://www.jeremy-dutheil.fr/</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/jeremy-dutheil-accordeoniste</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/videos</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/collaborations-artistiques</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/jazz-manouche</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/animations</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/contact</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/accordeoniste</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/musiciens-soiree</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/soirees-paris</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/mime</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/marie-petrolette</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/ruelamome</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/majid-yano-tet</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/la-marquise</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/elena-josse</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/les-fils-de-flute</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/accordeoniste-jazz-manouche</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/animations-seniors-seine-et-marne</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/animations-mariages</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://www.jeremy-dutheil.fr/tarif-groupe-musique-soiree</loc>
-  <lastmod>2019-02-11T12:52:11+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
-</urlset>
+   <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <sitemap>
+      <loc>http://www.jeremy-dutheil.fr/sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>http://www.jeremy-dutheil.fr/blog/post-sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>http://www.jeremy-dutheil.fr/blog/page-sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>http://www.jeremy-dutheil.fr/blog/category-sitemap.xml</loc>
+   </sitemap>
+   <sitemap>
+      <loc>http://www.jeremy-dutheil.fr/blog/author-sitemap.xml</loc>
+   </sitemap>
+   </sitemapindex>
