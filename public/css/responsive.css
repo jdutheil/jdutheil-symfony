@@ -12,6 +12,9 @@
     .flash--limited { height: 80vh; }
 	.flash-ghost--limited { height: 50vh; }
 
+    .flash--blog { height: 20vh; }
+    .flash-ghost--blog { height: 10vh; }
+
 	.flash-item__content {
 		display: block;
 	}
