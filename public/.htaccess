@@ -39,6 +39,7 @@ Redirect 301 /acteurfete https://www.jeremy-dutheil.fr?utm_source=acteurfete&utm
 Redirect 301 /linkedin https://www.jeremy-dutheil.fr?utm_source=linkedin&utm_medium=website
 Redirect 301 /musiciensfr https://www.jeremy-dutheil.fr?utm_source=musiciensfr&utm_medium=website
 Redirect 301 /facebook https://www.jeremy-dutheil.fr?utm_source=facebook&utm_medium=website
+Redirect 301 /artesine https://www.jeremy-dutheil.fr?utm_source=artesine&utm_medium=website
 
 
 <IfModule mod_rewrite.c>
