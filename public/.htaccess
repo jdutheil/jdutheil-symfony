@@ -32,6 +32,11 @@ Redirect 301 /un-champ-dadresse-avec-auto-completion-grace-google-maps-api https
 Redirect 301 /barconniere https://www.jeremy-dutheil.fr
 Redirect 301 /tarif-groupe-musique-soiree https://www.jeremy-dutheil.fr/blog/quel-est-le-tarif-dun-groupe-de-musique-pour-votre-soiree/
 
+
+# Referrer
+Redirect 301 /spectable https://www.jeremy-dutheil.fr?utm_source=spectable&utm_medium=website
+
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
