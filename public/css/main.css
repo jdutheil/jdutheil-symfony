@@ -373,3 +373,5 @@ a:hover { text-decoration: none; }
 	display: block;
 	margin: auto;
 }
+
+#sidebar > ul { padding: 0; }
