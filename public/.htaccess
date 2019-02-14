@@ -36,7 +36,7 @@ Redirect 301 /tarif-groupe-musique-soiree https://www.jeremy-dutheil.fr/blog/que
 # Referrer
 Redirect 301 /spectable https://www.jeremy-dutheil.fr?utm_source=spectable&utm_medium=website
 Redirect 301 /acteurfete https://www.jeremy-dutheil.fr?utm_source=acteurfete&utm_medium=website
-
+Redirect 301 /linkedin https://www.jeremy-dutheil.fr?utm_source=linkedin&utm_medium=website
 
 
 <IfModule mod_rewrite.c>
