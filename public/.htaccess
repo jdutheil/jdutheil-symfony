@@ -17,19 +17,20 @@ DirectoryIndex index.php
     Options -MultiViews
 </IfModule>
 
-Redirect 301 /duos-accordeon-voix http://www.jeremy-dutheil.fr/collaborations-artistiques
-Redirect 301 /groupes http://www.jeremy-dutheil.fr/collaborations-artistiques
-Redirect 301 /integrer-sass-compass-projet-symfony2 http://www.jeremy-dutheil.fr
-Redirect 301 /animations_seniors.html http://www.jeremy-dutheil.fr
-Redirect 301 /arc/node/49 http://www.jeremy-dutheil.fr
-Redirect 301 /barconniere/pages/locate http://www.jeremy-dutheil.fr
-Redirect 301 /page/projects http://www.jeremy-dutheil.fr
-Redirect 301 /project/kierszbaum-interieurs http://www.jeremy-dutheil.fr
-Redirect 301 /sld http://www.jeremy-dutheil.fr
-Redirect 301 /tag/image http://www.jeremy-dutheil.fr
-Redirect 301 /tag/tips http://www.jeremy-dutheil.fr
-Redirect 301 /un-champ-dadresse-avec-auto-completion-grace-google-maps-api http://www.jeremy-dutheil.fr
-Redirect 301 /barconniere http://www.jeremy-dutheil.fr
+Redirect 301 /duos-accordeon-voix https://www.jeremy-dutheil.fr/collaborations-artistiques
+Redirect 301 /groupes https://www.jeremy-dutheil.fr/collaborations-artistiques
+Redirect 301 /integrer-sass-compass-projet-symfony2 https://www.jeremy-dutheil.fr
+Redirect 301 /animations_seniors.html https://www.jeremy-dutheil.fr
+Redirect 301 /arc/node/49 https://www.jeremy-dutheil.fr
+Redirect 301 /barconniere/pages/locate https://www.jeremy-dutheil.fr
+Redirect 301 /page/projects https://www.jeremy-dutheil.fr
+Redirect 301 /project/kierszbaum-interieurs https://www.jeremy-dutheil.fr
+Redirect 301 /sld https://www.jeremy-dutheil.fr
+Redirect 301 /tag/image https://www.jeremy-dutheil.fr
+Redirect 301 /tag/tips https://www.jeremy-dutheil.fr
+Redirect 301 /un-champ-dadresse-avec-auto-completion-grace-google-maps-api https://www.jeremy-dutheil.fr
+Redirect 301 /barconniere https://www.jeremy-dutheil.fr
+Redirect 301 /tarif-groupe-musique-soiree https://www.jeremy-dutheil.fr/blog/quel-est-le-tarif-dun-groupe-de-musique-pour-votre-soiree/
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
