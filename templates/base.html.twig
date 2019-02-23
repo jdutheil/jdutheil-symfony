@@ -83,6 +83,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <style>
+                .navbar-toggler-icon:before {
+                    content:"Menu";
+                    margin-left:-125px;
+                    top:5px;
+                    position:relative;
+                    width:50px;
+                }
+                </style>
+
                 {% set route = app.request.attributes.get('_route') %}
 
                 <div class="collapse navbar-collapse" id="navbar-content">
