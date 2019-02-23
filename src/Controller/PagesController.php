@@ -44,14 +44,7 @@ class PagesController extends Controller
 		return $this->render('pages/groupes.html.twig', array());
 	}
 
-	/**
-	 * @Route("/contact", name="contact")
-	 */
-	public function contactAction()
-	{
-
-		return $this->render('pages/contact.html.twig', array());
-	}
+	
 
 	/**
 	 * @Route("/videos", name="videos")
