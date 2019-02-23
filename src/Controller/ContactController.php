@@ -31,7 +31,7 @@ class ContactController extends AbstractController
 
             $message = (new \Swift_Message('Contact depuis jeremy-dutheil.fr'))
                 ->setFrom('dutheil.jeremy@gmail.com')
-                ->setTo('dutheil.jeremy@gmail.com')
+                ->setTo('jeremy@jeremy-dutheil.fr')
                 ->setReplyTo($datas['from'])
                 ->setBody(
                     $content,
