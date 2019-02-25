@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	Animation musicale à l'accordéon pour mariage : jazz, chanson française, ...
+	Un accordéoniste chic pour votre mariage : jazz, chanson française, ...
 {% endblock %}
 
 {% block metadesc %}
@@ -28,23 +28,102 @@
 
 			<p>
 				Suivant vos envies et celles de vos convives, nous préparerons en amont l'orientation du spectacle pour votre mariage ; plutôt dansant, plutôt chanson, plutôt discret.. Qu'il s'agisse plutôt d'animer le vin d'honneur, le repas ou la soirée.. C'est vous (et vos invités !) qui décidez tout. <br>
-				Je propose des <a href="{{ path('tarifs') }}">tarifs abordables</a>, et des formules <strong>tout compris</strong> (sonorisation éventuelle, ...).
+				Je propose des tarifs abordables, et des formules <strong>tout compris</strong> (sonorisation éventuelle, ...).
 			</p>
 
 			<p>
-				Vous trouverez des informations détaillées sur les possibilités d'animations sur <a href="{{ path('animations') }}">cette page</a> ; n'hésitez pas à <a href="{{ path('contact') }}" class="text-link">me contacter</a> pour en discuter !
+				Ci-dessous, vous trouverez quelques exemples de formules proposées, et des informations détaillées sont disponibles sur <a href="{{ path('animations') }}">cette page</a> ; n'hésitez pas à <a href="{{ path('contact') }}">me contacter</a> pour en discuter !
 			</p>
 
+			<h2 class="section-title section-title--small">Accordéoniste jazz pour vin d'honneur</h2>
+
+			<div class="row">
+				<div class="col-md-8">
+					<p>
+						L'accordéon est un instrument magnifique et très riche en musicalité ; en tant qu'accordéoniste professionnel, je suis tout à fait en mesure de vous proposer des animations musicales <strong>en solo</strong>. Parfaitement adapté au vin d'honneur ou au repas de votre mariage, le répertoire s'articule autour des standards jazz et chanson française. En toute discrétion, je délivrerai à vos invités une musique d'ambiance chic et élégante pour une atmosphère tendance <i>rétro</i>.
+					</p>
+
+					<p>
+						De Django Reinhardt à Edith Piaf, en passant par Charlie Parker ou encore Charles Aznavour, laissez vous emporter par des mélodies si souvent entendues ! Peu fréquent, l'accordéon apportera de plus une touche d'originalité à votre événement, qui restera gravé dans les mémoires !
+					</p>
+
+					<p>
+						<a class="btn btn-primary" href="{{ path('accordeoniste_soiree') }}">Plus d'informations</a>
+					</p>
+				</div>
+
+				<div class="col-md-4">
+					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img">
+				</div>
+				<!-- /.col-sm-4 -->
+			</div>
+
+			<div class="row" style="margin-top: 15px; margin-bottom: 15px;">
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8eY4FsHf7g0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mv3DgoYPCds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
 			<h2 class="section-title section-title--small">Vous préférez un groupe de musique pour votre mariage ?</h2>
+
+			<p>
+				Si vous cherchez plutôt un groupe de musique pour votre mariage, vous êtes également au bon endroit ! L'accordéon s'intègre parfaitement avec d'autres instruments (guitare, contrebasse, batterie, violon, saxophone..) dans un style plutôt jazz / jazz manouche, mais est aussi l'instrument roi lorsqu'il s'agit d'accompagner une chanteuse ! Je propose de nombreuses formules qui vont du duo au quintet, suivants vos envies et votre budget. Vous trouverez ci-dessous quelques exemples qui me paraissent particulièrement adapté à <strong>votre mariage</strong>.
+			</p>
+
+			<h3 class="section-title section-title--smaller">Jazz manouche pour votre mariage</h3>
 
 			<img src="img/triomanouche.jpg" class="img-fluid" style="display: block; width: 80%; margin: auto;">
 
 			<p style="margin-top: 20px;">
-				Pour votre mariage, je propose des concerts en <strong>solo à l'accordéon</strong>, mais peux également être accompagné d'autres <a style="color: #555555;" href="{{ path('musiciens_soirees') }}">musiciens professionnels</a> (guitariste, chanteuse, contrebassiste, ...). <br>
-				Pour ce type d'événement, l'une des formules les plus demandées est <a href="{{ path('manouche') }}">le groupe de jazz manouche</a>, mais je propose également d'autres groupes de musique, comme des duos avec chanteuses ; vous trouverez plus d'informations sur <a href="{{ path('animations') }}">cette page</a>.
+				Pour une musique d'ambiance réussie, le jazz manouche est sans contexte le répertoire idéal ! Style virtuose par excellence, les morceaux altèrnent entre balades langoureuses et <i>swing</i> très rapide ; toujours en toute discrétion et dans l'élégance. <br>
+				Nous proposons des formules du duo au quintet, autour des standards du genre popularisé par Django Reinhardt (Minor Swing, All of Me, Les Yeux Noirs, ...) ; vous entendrez également quelques chansons françaises revisitées (Ménilmontant, C'est si bon, J'attendrai...).
 			</p>
 
+			<div class="row">
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
 
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CXq4DWhwqSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<p>
+				<a class="btn btn-primary" href="{{ path('manouche') }}" style="margin-top: 15px;">Plus d'informations</a>
+			</p>
+
+			<h3 class="section-title section-title--smaller" style="margin-top: 20px;">Chanson française pour votre mariage</h3>
+
+			<p>
+				Vous souhaitez un événement plus participatif, où vos invités peuvent chanter les airs qu'ils connaissent ? Je travaille avec plusieurs chanteuses, avec lesquelles nous vous proposons un répertoire balayant la chanson française (Piaf, Aznavour, Brel, Trenet, ...).
+			</p>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o91BGe2Xaac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- /.container -->
 	</section>
