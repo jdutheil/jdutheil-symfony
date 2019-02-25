@@ -154,8 +154,17 @@ a:hover { color: #ff841c; text-decoration: none; }
 
 .flash-item__content {
 	z-index: 100;
-	margin-top: 150px;
-	display: none;
+	/*display: none;*/
+
+	position: absolute;
+	top: 5%;
+	left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+	.flash-item__content {
+		margin-left: 0 !important;
+	}
 }
 
 	.flash-item__content--slide1 {
@@ -166,21 +175,24 @@ a:hover { color: #ff841c; text-decoration: none; }
 
 .flash-item__content-title {
 	color: #fff;
-    font-size: 60px;
+
     font-weight: bold;
-    line-height: 80px;
-    margin: 0 0 31px 0;
-    padding: 34px 0 0;
+
     position: relative;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+
+	font-size: 20px;
+	line-height: 30px;
+
+	padding-top: 10px;
 }
 
 .flash-item__content-text {
-	font-size: 24px;
-    line-height: 30px;
-    margin-bottom: 30px;
-    padding: 0 40px 0 0;
+	font-size: 16px;
+	line-height: 18px;
+
+    margin-bottom: 10px;
 	color: #FFFFFF;
 }
 
@@ -201,8 +213,9 @@ a:hover { color: #ff841c; text-decoration: none; }
 .btn-secondary { background-color: #1a1a1a; }
 
 .flash-item__content-btn {
-	font-size: 18px;
-	line-height: 26px;
+	font-size: 14px;
+	padding: 5px;
+	line-height: 18px;
 }
 
 	.btn-primary:hover, .btn-secondary:hover {
