@@ -44,7 +44,7 @@ class PagesController extends Controller
 		return $this->render('pages/groupes.html.twig', array());
 	}
 
-	
+
 
 	/**
 	 * @Route("/videos", name="videos")
@@ -108,5 +108,13 @@ class PagesController extends Controller
 	public function accordeonisteSoiree()
 	{
 		return $this->render('pages/accordeoniste_soiree.html.twig');
+	}
+
+	/**
+	 * @Route("/groupe-jazz-manouche-mariage", name="groupe_jazz_manouche_mariage_paris")
+	 */
+	public function groupeJazzManoucheMariageParis()
+	{
+		return $this->render('pages/groupe_jazz_manouche_mariage_paris.html.twig');
 	}
 }
