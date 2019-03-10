@@ -24,19 +24,59 @@
                 N'hésitez pas à m'envoyer un message à l'aide du formulaire suivant, je vous répondrai dans les plus brefs délais.
 			</p>
 
-            {% if form_ok == false %}
-                <div style="margin-bottom: 25px;">
-                    {{ form_start(form) }}
-                    {{ form_widget(form) }}
+			<div class="row">
+				<div class="col-sm-8">
+					<h2 class="section-title section-title__small">Formulaire</h2>
 
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                    {{ form_end(form) }}
-                </div>
-            {% else %}
-                <p class="alert alert-success">
-                    Votre message a bien été envoyé, merci ! Je reviendrai vers vous dès que possible.
-                </p>
-            {% endif %}
+					{% if form_ok == false %}
+						<div style="margin-bottom: 25px;">
+							{{ form_start(form) }}
+							{{ form_widget(form) }}
+
+							<button type="submit" class="btn btn-primary">Envoyer</button>
+							{{ form_end(form) }}
+						</div>
+					{% else %}
+						<p class="alert alert-success">
+							Votre message a bien été envoyé, merci ! Je reviendrai vers vous dès que possible.
+						</p>
+					{% endif %}
+				</div>
+
+				<div class="col-sm-4">
+					<h2 class="section-title section-title__small">Informations</h2>
+
+					<p>
+						<strong>Pour les demandes liées à l'événementiel, merci de préciser :</strong>
+
+						<ul>
+							<li>
+								La date et le lieu de votre événement
+							</li>
+
+							<li>
+								Le style de musique préféré
+							</li>
+
+							<li>
+								Le temps de jeu désiré, et les horaires estimées
+							</li>
+
+							<li>
+								Votre budget approximatif (afin de pouvoir vous conseiller au mieux sur les formules)
+							</li>
+
+							<li>
+								Le plus de détails possible sur votre événement !
+							</li>
+						</ul>
+					</p>
+
+					<p>
+						Je reviendrai vers vous très rapidement afin de vous conseiller, et de vous proposer un devis.
+					</p>
+				</div>
+			</div>
 
 			<p>
 				Vous pouvez également me contacter par mail : <a href="mailto:dutheil.jeremy@gmail.com" class="text-link">dutheil.jeremy@gmail.com</a> ou téléphone : 06.85.38.22.16
