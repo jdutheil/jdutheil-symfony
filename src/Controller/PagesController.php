@@ -117,4 +117,12 @@ class PagesController extends Controller
 	{
 		return $this->render('pages/groupe_jazz_manouche_mariage_paris.html.twig');
 	}
+
+	/**
+	 * @Route("/mentions-legales", name="mentions_legales")
+	 */
+	public function mentions()
+	{
+		return $this->render('pages/mentions.html.twig');
+	}
 }
