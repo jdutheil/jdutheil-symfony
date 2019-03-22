@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	Un accordéoniste chic pour votre mariage : jazz, chanson française.
+	Accordéoniste pour votre mariage - Jazz - Chanson française
 {% endblock %}
 
 {% block metadesc %}
-	<meta name="description" content="Vous cherchez un accordéoniste ou un groupe de musique pour votre mariage (vin d'honneur, repas, ...) ? Découvrez nos formules : jazz manouche, chanson, ..!">
+	<meta name="description" content="Vous êtes à la recherche d'un accordéoniste pour votre mariage ? Seul ou en groupe, Jérémy propose des animations pour vin d'honneur ou repas. Devis gratuit !">
 {% endblock %}
 
 {% block body %}
@@ -26,7 +26,10 @@
 			</p>
 
 			<p>
-				Musicien professionnel basé à Paris (Ile de France), je suis disponible pour des <strong>animations musicales</strong> lors de votre mariage et me déplace dans la France entière ; les formules et le répertoire sont variés, en accord avec vos envies (vin d'honneur, soirée, ...). <br>
+				Musicien professionnel basé à Paris (Ile de France), je suis disponible pour des <strong>animations musicales</strong> ou concert lors de votre mariage. Je me déplace dans la France entière et suis autonome en matériel de sonorisation. Les formules et le répertoire sont variés, en accord avec vos envies (vin d'honneur, soirée, ...).
+			</p>
+
+			<p>
 				Fort d'une expérience musicale conséquente, je vous propose un répertoire <strong>varié</strong> parcourant tous les styles et toutes les générations ; du musette au jazz, en passant par la chanson française et le tango, il y en aura pour <strong>tous les goûts</strong>.
 			</p>
 
@@ -44,7 +47,7 @@
 			<div class="row">
 				<div class="col-md-8">
 					<p>
-						L'accordéon est un instrument magnifique et très riche en musicalité ; en tant qu'accordéoniste professionnel, je suis tout à fait en mesure de vous proposer des animations musicales <strong>en solo</strong>. Parfaitement adapté au vin d'honneur ou au repas de votre mariage, le répertoire s'articule autour des standards jazz et chanson française. En toute discrétion, je délivrerai à vos invités une musique d'ambiance chic et élégante pour une atmosphère tendance <i>rétro</i>.
+						L'accordéon est un instrument magnifique et très riche en musicalité ; en tant qu'accordéoniste professionnel, je suis tout à fait en mesure de vous proposer des animations musicales <strong>en solo</strong> lors de votre mariage. Parfaitement adapté au vin d'honneur ou au repas, le répertoire s'articule autour des standards jazz et chanson française. En toute discrétion, je délivrerai à vos invités une musique d'ambiance chic et élégante pour une atmosphère tendance <i>rétro</i>.
 					</p>
 
 					<p>
@@ -95,7 +98,7 @@
 			<h2 class="section-title section-title--small">Vous préférez un groupe de musique pour votre mariage ?</h2>
 
 			<p>
-				Si vous cherchez plutôt un groupe de musique pour votre mariage, vous êtes également au bon endroit ! L'accordéon s'intègre parfaitement avec d'autres instruments (guitare, contrebasse, batterie, violon, saxophone..) dans un style plutôt jazz / jazz manouche, mais est aussi l'instrument roi lorsqu'il s'agit d'accompagner une chanteuse ! Je propose de nombreuses formules qui vont du duo au quintet, suivants vos envies et votre budget. Vous trouverez ci-dessous quelques exemples qui me paraissent particulièrement adapté à <strong>votre mariage</strong>.
+				Si vous cherchez plutôt un <a href="{{ path('groupe_musique_mariage') }}">groupe de musique pour votre mariage</a>, vous êtes également au bon endroit ! L'accordéon s'intègre parfaitement avec d'autres instruments (guitare, contrebasse, batterie, violon, saxophone..) dans un style plutôt jazz / <a href="{{ path('manouche') }}">jazz manouche</a>, mais est aussi l'instrument roi lorsqu'il s'agit d'accompagner une chanteuse ! Je propose de nombreuses formules qui vont du duo au quintet, suivants vos envies et votre budget. Vous trouverez ci-dessous quelques exemples qui me paraissent particulièrement adapté à <strong>votre mariage</strong>.
 			</p>
 
 			<h3 class="section-title section-title--smaller">Jazz manouche pour votre mariage</h3>
@@ -122,7 +125,7 @@
 			</div>
 
 			<p>
-				<a class="btn btn-primary" href="{{ path('manouche') }}" style="margin-top: 15px;">Plus d'informations</a>
+				<a class="btn btn-primary" href="{{ path('groupe_jazz_manouche_mariage_paris') }}" style="margin-top: 15px;">Plus d'informations</a>
 			</p>
 
 			<h3 class="section-title section-title--smaller" style="margin-top: 20px;">Chanson française pour votre mariage</h3>
