@@ -393,3 +393,6 @@ a:hover { color: #ff841c; text-decoration: none; }
 #sidebar > ul { padding: 0; }
 .wp-post-image { height: auto; }
 .post { overflow: hidden; }
+.broken_link, a.broken_link {
+	text-decoration: none !important;
+}
