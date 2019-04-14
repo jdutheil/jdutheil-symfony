@@ -1,17 +1,17 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	Marie Pétrolette | Chanson française
+	Marie Pétrolette | Chanson française | Duo accordéon / voix
 {% endblock %}
 
 {% block metadesc %}
-	<meta name="description" content="Marie Pétrolette : chansons fémino-humoristiques, accompagnées à l'accordéon par Jérémy Dutheil">
+	<meta name="description" content="Marie Pétrolette : chansons fémino-humoristiques, accompagnées à l'accordéon par Jérémy Dutheil. Répertoire de compositions, et reprises du patrimoine.">
 {% endblock %}
 
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/marie.jpg" alt="" class="flash-item__background flash-item__background--collab">
+			<img src="img/marie-petrolette-chanson-francaise.jpg" alt="Marie Pétrolette - Chanson française avec accordéon" class="flash-item__background flash-item__background--collab" style="top: -30%;">
 		</div>
 	</section>
 
@@ -31,12 +31,22 @@
 			</p>
 
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o91BGe2Xaac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="col-md-6">
 					<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/363531098&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 				</div>
 			</div>
 
-			<a href="{{ path('collaborations') }}" class="btn btn-primary" style="margin-top: 35px;">Retour</a>
+			<p style="margin-top: 20px;">
+				Avec Marie Pétrolette, nous proposons deux concepts différents, à chaque fois en duo accordéon / voix. Nous nous produisons tout d'abord dans le cadre public, avec un répertoire essentiellement axé sur des compositions originales. Mais nous proposons également pour vos événements un répertoire "Montmartre", les grands classiques de la chanson française (Piaf, Brel, Aznavour, Ferré, ...). Nous pouvons jouer l'un ou l'autre de ces répertoires selon vos préférences, ou même un mix des deux !
+			</p>
+
+			<a href="{{ path('collaborations') }}" class="btn btn-primary" style="margin-top: 35px;">Voir toutes les collaborations</a>
 		</div>
 		<!-- /.container -->
 	</section>
