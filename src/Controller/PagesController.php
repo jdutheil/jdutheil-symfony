@@ -126,4 +126,12 @@ class PagesController extends Controller
 	{
 		return $this->render('pages/mentions.html.twig');
 	}
+
+	/**
+	 * @Route("/soiree-guinguette", name="guinguette")
+	 */
+	public function guinguette()
+	{
+		return $this->render('pages/guinguette.html.twig');
+	}
 }
