@@ -86,13 +86,14 @@ class PagesController extends Controller
 		return $this->render('pages/musiciens_soirees.html.twig', array());
 	}
 
-	/**
+	/*/**
 	 * @Route("/accordeoniste", name="accordeoniste")
-	 */
+	 *
 	public function accordeoniste()
 	{
 		return $this->render('pages/accordeoniste.html.twig', array());
 	}
+	*/
 
 	/**
 	 * @Route("/tarif-groupe-musique-soiree", name="tarifs")
