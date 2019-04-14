@@ -1,0 +1,70 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Soirée guinguette avec un accordéoniste : rétro & chic !{% endblock %}
+
+{% block metadesc %}
+	<meta name="description" content="Vous êtes à la recherche d'un accordéoniste pour animer votre soirée guinguette ? En solo ou duo avec chanteuse, découvrez nos prestations.">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/flash-item-1.jpg" alt="Accordéoniste pour soirée guinguette" class="flash-item__background">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Une soirée guinguette au son de l'accordéon</h1>
+
+            Vous vous lancez dans l'organisation d'une soirée, et souhaitez donner une touche <i>rétro</i> à votre événement ? L'accordéon est l'instrument par excellence pour un thème guinguette : nappes à carreaux, décoration champêtre et chansons des années 50 !
+
+            <h2 style="margin-top: 15px;" class="section-title section-title--small">Les origines de la guinguette</h2>
+
+            <p>
+                Les premières guinguettes apparaissent au début du XIXe siècle en banlieue parisienne. Ces cabarets populaires où l'on vient danser s'installent sur les bords de la Seine ou de la Marne, afin d'échapper à la taxe sur les marchandises qui a lieu à Paris. Lieux emblématiques et très liés à l'histoire de l'accordéon, certaines sont très connues, notamment à Joinville-le-Pont ou Nogent-sur-Marne.
+            </p>
+
+            <p>
+                L'interdiction de la baignade dans les rivières et l'arrivée des musiques anglo-saxonnes en France provoque le déclin des guinguettes dans les années 1960. Cependant, on assiste à un renouveau à partir des années 1980 ; les guinguettes ré-ouvrent, se modernisent mais pérpétuent tout de même une certaine "tradition" !
+            </p>
+
+            <h2 style="margin-top: 15px;" class="section-title section-title--small">Une soirée guinguette aujourd'hui</h2>
+
+            <div class="row">
+				<div class="col-md-8">
+					<p>
+                        L'esprit <i>guinguette</i> revient en force de nos jours, apportant une touche rétro mais très élégante à votre événement. On retrouve ce thème aussi bien dans des soirées privées entre amis, lors du vin d'honneur d'un mariage ou dans des cocktails d'entreprise.
+                    </p>
+
+                    <p>
+                        L'accordéoniste y est présent, de par la musique d'ambiance qu'il distille, mais également par un aspect visuel qui rappelle l'époque. Seul ou accompagné d'une chanteuse, je vous propose un répertoire autour des grandes chansons françaises des années 50-60 : Piaf, Brel, Montant, Aznavour, ... À ces chansons s'ajoutent des standards de jazz et jazz manouche, des morceaux qui swinguent et apportent une certaine originalité à ce moment.
+                    </p>
+				</div>
+
+				<div class="col-md-4">
+					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img">
+				</div>
+				<!-- /.col-sm-4 -->
+			</div>
+
+            <h2 style="margin-top: 15px;" class="section-title section-title--small">Quelques extraits d'accordéon guinguette</h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VVWMhc7LNcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
