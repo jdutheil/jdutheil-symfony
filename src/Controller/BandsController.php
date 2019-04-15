@@ -7,10 +7,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class BandsController extends Controller
 {
-
+/*
 	/**
 	 * @Route("/mime", name="mime")
-	 */
+	 *
 	public function mimeAction()
 	{
 
@@ -19,7 +19,7 @@ class BandsController extends Controller
 
 	/**
 	 * @Route("/marie-petrolette", name="marie")
-	 */
+	 *
 	public function marieAction()
 	{
 
@@ -28,7 +28,7 @@ class BandsController extends Controller
 
 	/**
 	 * @Route("/elena-josse", name="elena")
-	 */
+	 *
 	public function elenaAction()
 	{
 
@@ -37,7 +37,7 @@ class BandsController extends Controller
 
 	/**
 	 * @Route("/ruelamome", name="ruelamome")
-	 */
+	 *
 	 public function ruelamomeAction()
 	 {
 		 return $this->render('bands/ruelamome.html.twig', array());
@@ -45,7 +45,7 @@ class BandsController extends Controller
 
 	 /**
 	  *	@Route("/majid-yano-tet", name="madjid")
-	  */
+	  *
 	  public function madjidAction()
 	  {
 		  return $this->render('bands/madjid.html.twig', array());
@@ -53,7 +53,7 @@ class BandsController extends Controller
 
 	  /**
 	   * @Route("/les-fils-de-flute", name="fdf")
-	   */
+	   *
 	public function fdfAction()
    	{
 		 return $this->render('bands/fdf.html.twig', array());
@@ -61,9 +61,10 @@ class BandsController extends Controller
 
 	/**
 	 * @Route("/la-marquise", name="marquise")
-	 */
+	 *
  	public function marquiseAction()
 	{
 		return $this->render('bands/marquise.html.twig', array());
 	}
+	*/
 }

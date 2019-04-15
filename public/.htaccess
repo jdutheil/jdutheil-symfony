@@ -33,6 +33,13 @@ Redirect 301 /barconniere https://www.jeremy-dutheil.fr
 Redirect 301 /tarif-groupe-musique-soiree https://www.jeremy-dutheil.fr/blog/quel-est-le-tarif-dun-groupe-de-musique-pour-votre-soiree/
 Redirect 301 /animations-mariages https://www.jeremy-dutheil.fr/accordeoniste-mariages
 Redirect 301 /accordeoniste https://www.jeremy-dutheil.fr
+Redirect 301 /mime https://www.jeremy-dutheil.fr/collaborations-artistiques#mime
+Redirect 301 /marie-petrolette https://www.jeremy-dutheil.fr/collaborations-artistiques#marie
+Redirect 301 /ruelamome https://www.jeremy-dutheil.fr/collaborations-artistiques#ruelamome
+Redirect 301 /madjid-yano-tet https://www.jeremy-dutheil.fr/collaborations-artistiques#madjid
+Redirect 301 /la-marquise https://www.jeremy-dutheil.fr/collaborations-artistiques#marquise
+Redirect 301 /elena-josse https://www.jeremy-dutheil.fr/collaborations-artistiques#elena
+Redirect 301 /les-fils-de-flute https://www.jeremy-dutheil.fr/collaborations-artistiques#fdf
 
 
 # Referrer
