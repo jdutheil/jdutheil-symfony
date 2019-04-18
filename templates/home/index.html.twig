@@ -1,26 +1,70 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-	<section class="flash">
-		<div class="flash-item">
-			<img src="img/accordeoniste-paris.jpg" alt="Accordéoniste à Paris - En concert" title="Accordéoniste professionnel à Paris" class="flash-item__background">
+{% block old %}
+<section class="flash">
+	<div class="flash-item">
+		<img src="img/accordeoniste-paris.jpg" alt="Accordéoniste à Paris - En concert" title="Accordéoniste professionnel à Paris" class="flash-item__background">
 
-			<div class="flash-item__content mr-auto ml-5 col-sm-5">
-				<p class="flash-item__content-title">Musicien <br>pour vos événements</p>
+		<div class="flash-item__content mr-auto ml-5 col-sm-5">
+			<p class="flash-item__content-title">Musicien <br>pour vos événements</p>
 
-				<p class="flash-item__content-text">
-					Vous cherchez un accordéoniste pour un mariage, un anniversaire, <br>une soirée d'entreprise ou une animation seniors à Paris, Ile de France ou dans toute la France ?
-				</p>
+			<p class="flash-item__content-text">
+				Vous cherchez un accordéoniste pour un mariage, un anniversaire, <br>une soirée d'entreprise ou une animation seniors à Paris, Ile de France ou dans toute la France ?
+			</p>
 
-				<a href="{{ path('animations') }}" class="btn btn-secondary flash-item__content-btn">Découvrir les formules <span class="d-none d-md-inline">d'animations musicales</span></a>
-			</div>
-			<!-- /.flash-item__content -->
+			<a href="{{ path('animations') }}" class="btn btn-secondary flash-item__content-btn">Découvrir les formules <span class="d-none d-md-inline">d'animations musicales</span></a>
 		</div>
-		<!-- /.flash-item -->
-	</section>
-	<!-- /.flash -->
+		<!-- /.flash-item__content -->
+	</div>
+	<!-- /.flash-item -->
+</section>
+<!-- /.flash -->
+{% endblock %}
 
-	<section class="flash-ghost"></section>
+{% block body %}
+	<section class="flash-new">
+		<div class="flash-new-item">
+			<!--<img src="img/accordeoniste-paris.jpg" alt="Accordéoniste à Paris - En concert" title="Accordéoniste professionnel à Paris" class="flash-item__background">-->
+
+			<div class="container-fluid flash-new-item__content">
+				<div class="row flash-item-row">
+					<div class="col-md-4 flash-item-col">
+						<h2 class="flash-item__content-title">Accordéoniste pour votre soirée</h2>
+
+						<p class="flash-item__content-text">
+							Vous organisez une soirée et souhaitez un accordéoniste pour l'animation musicale, dans un style jazz ou guinguette ?
+						</p>
+
+						<a href="{{ path('accordeoniste_soiree') }}" class="btn btn-secondary flash-item__content-btn">En savoir plus</a>
+
+
+					</div>
+
+					<div class="col-md-4 flash-item-col">
+						<h2 class="flash-item__content-title">Groupe de jazz manouche pour vos événéments</h2>
+
+						<p class="flash-item__content-text">
+							Notre groupe de musiciens jazz manouche professionnels vous propose des formules pour événements, du duo au quartet.
+						</p>
+
+						<a href="{{ path('manouche') }}" class="btn btn-secondary flash-item__content-btn">En savoir plus</a>
+					</div>
+
+					<div class="col-md-4 flash-item-col">
+						<h2 class="flash-item__content-title">Animations musicales</h2>
+
+						<p class="flash-item__content-text">
+							Vous cherchez une animation musicale ? Je propose des formules jazz et chanson française, du solo au quartet.
+						</p>
+
+						<a href="{{ path('animations') }}" class="btn btn-secondary flash-item__content-btn">En savoir plus</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--	<section class="flash-ghost"></section>-->
 
 	<section class="content-section page-section edito">
 		<div class="container">
