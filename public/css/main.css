@@ -396,3 +396,64 @@ a:hover { color: #ff841c; text-decoration: none; }
 .broken_link, a.broken_link {
 	text-decoration: none !important;
 }
+
+/* Responsive */
+@media screen and (min-width: 1000px) {
+    .flash {
+        position: fixed;
+        height: 100vh;
+    }
+
+	.flash-ghost {
+        position: relative;
+		height: 80vh;
+	}
+
+    .flash--limited { height: 80vh; }
+	.flash-ghost--limited { height: 50vh; }
+
+    .flash--blog { height: 20vh; }
+    .flash-ghost--blog { height: 10vh; }
+
+	.flash-item__content {
+        margin-top: 150px;
+		display: block;
+        position: relative;
+	}
+
+    .flash-item {
+        height: 100%;
+
+    	display: flex;
+    	align-items: top;
+    }
+
+    	.flash-item__background {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    	}
+
+    .section-title {
+        font-size: 50px;
+    }
+
+    .flash-item__content-title {
+        font-size: 60px;
+    	line-height: 80px;
+        margin: 0 0 31px 0;
+        padding: 34px 0 0;
+    }
+
+    .flash-item__content-text {
+        font-size: 24px;
+        line-height: 30px;
+        padding: 0 40px 0 0;
+        margin-bottom: 30px;
+    }
+
+    .flash-item__content-btn {
+    	font-size: 18px;
+    	line-height: 26px;
+    }
+}
