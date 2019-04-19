@@ -18,7 +18,9 @@ class ContactType extends AbstractType
         $builder
             ->add('name', TextType::class, array('label' => 'Votre nom'))
             ->add('from', EmailType::class, array('label' => 'Votre email (indispensable pour vous recontacter !)'))
-            ->add('message', TextareaType::class, array('label' => 'Votre message', 'attr' => array('rows' => '10')));
+            ->add('phone', TextType::class, array('label' => 'Votre téléphone'))
+            ->add('message', TextareaType::class, array('label' => 'Votre message', 'attr' => array('rows' => '10',
+                                                                                                    'placeholder' => 'Merci de préciser : la date de l\'événement, le lieu, le style musical et toute information que vous jugerez utile.')));
         ;
     }
 
