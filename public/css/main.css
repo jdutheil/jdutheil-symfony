@@ -471,8 +471,20 @@ a:hover { color: #ff841c; text-decoration: none; }
 	padding: 25px 0;
 }
 
-.flash-item-row .flash-item-col {
-	border-right: 5px solid #ff841c;
+.flash-item-col {
+	border-bottom: 2px solid #ff841c;
+	padding-bottom: 10px;
 }
 
-.flash-item-row .flash-item-col:last-child { border-right: none; }
+@media screen and (min-width: 800px) {
+	.flash-item-row .flash-item-col {
+		border-right: 5px solid #ff841c;
+	}
+
+	.flash-item-row .flash-item-col:last-child { border-right: none; }
+
+	.flash-item-col {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+}
