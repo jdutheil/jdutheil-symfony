@@ -192,10 +192,93 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="http://malsup.github.com/jquery.form.js"></script>
 
         <!-- Start of HubSpot Embed Code -->
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5519214.js"></script>
         <!-- End of HubSpot Embed Code -->
         {% block javascripts %}{% endblock %}
+
+        <div class="exit-popup-container" style="display: none;">
+            <div class="exit-popup" >
+                <div class="exit-popup-close">X</div>
+                <h2 class="exit-popup-title">Parlez moi de votre projet</h2>
+
+                <p class="exit-popup-txt">
+                    Décrivez moi votre projet et laissez moi vos coordonnées, je vous recontacte sous 24h avec une formule sur mesure et un devis gratuit.
+                </p>
+
+                {{ render(controller('App\\Controller\\ContactController:form')) }}
+            </div>
+        </div>
+
+        <script>
+        // set the cookie for 1 hour
+            function setCookie(cname, cvalue, exhours) {
+                var d = new Date();
+                // add cookie expiry date to be one hour from the current time
+                d.setTime(d.getTime() + (exhours * 60 * 60 * 1000));
+                var expires = "expires=" + d.toGMTString();
+                // Pass the name, cookie value and expiry time into the cookie
+                document.cookie = cname + "=" + cvalue + "; " + expires;
+            }
+
+            function getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            function checkCookie() {
+                var popUp = getCookie("poppedUp");
+                // if the cookie isn't empty, then don't show the modal, otherwise show the modal
+                if (popUp != "") {} else {
+                    // show modal
+                    $('.exit-popup-container').show();
+                    // Send event to Google Analytics
+                    ga('send', 'event', 'exitModal', 'Modal Displayed', 'exitModal');
+                    // change the value of the cookie so that we know the visitor has seent the cookie
+                    var popUp = 1;
+                    setCookie("poppedUp", popUp, 24);
+                }
+            }
+
+            $(document).ready(function() {
+                $('html').mouseleave(function() {
+                    checkCookie();
+                });
+
+                $('.exit-popup-close').click(function() {
+                    $('.exit-popup-container').hide();
+                });
+            });
+
+            $('.exit-popup form').submit(function(e) {
+                e.preventDefault();
+
+                $form = $(e.target);
+
+                $form.ajaxSubmit({
+                    type: 'post',
+                    success: function(data) {
+                        $('.exit-popup .form-content').hide();
+                        $('.exit-popup .valid-msg').show();
+                    },
+                    error: function(jqXHR, status, error) {
+                        console.log('error');
+                    }
+                });
+
+            });
+        </script>
     </body>
 </html>
