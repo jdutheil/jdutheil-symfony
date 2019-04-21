@@ -411,6 +411,7 @@ a:hover { color: #ff841c; text-decoration: none; }
 
     .flash--limited { height: 80vh; }
 	.flash-ghost--limited { height: 50vh; }
+	.flash-ghost--superlimited { height: 20vh; }
 
     .flash--blog { height: 20vh; }
     .flash-ghost--blog { height: 10vh; }
