@@ -39,7 +39,7 @@
 
 					</div>
 
-					
+
 
 					<div class="col-md-4 flash-item-col">
 						<h2 class="flash-item__content-title">Groupe de jazz manouche pour vos événéments</h2>
@@ -137,11 +137,7 @@
 
 	<section class="content-section page-section bands">
 		<div class="container">
-			<div class="row flex-column-reverse flex-md-row">
-				<div class="col-md-4 ">
-					<img src="{{ asset('img/elena.jpg') }}" alt="Chanteuse et accordéoniste" title="Elena Josse et Jérémy DUTHEIL, accordéon / voix" class="img-fluid page-section__img">
-				</div>
-
+			<div class="row ">
 				<div class="col-md-8 page-section__content-wrapper">
 					<div>
 						<h2 class="section-title">Musicien accompagnateur</h2>
@@ -163,6 +159,10 @@
 						</p>
 					</div>
 				</div>
+
+				<div class="col-md-4 ">
+					<img src="{{ asset('img/elena.jpg') }}" alt="Chanteuse et accordéoniste" title="Elena Josse et Jérémy DUTHEIL, accordéon / voix" class="img-fluid page-section__img">
+				</div>
 			</div>
 			<!-- /.row -->
 		</div>
@@ -172,7 +172,11 @@
 
 	<section class="content-section page-section sideman">
 		<div class="container">
-			<div class="row">
+			<div class="row flex-column-reverse flex-md-row">
+				<div class="col-md-4">
+					<img class="img-fluid page-section__img" src="img/band.jpg" alt="Le groupe MimE sur scène" title="Le groupe MimE sur scène, avec Jérémy Dutheil à l'accordéon">
+				</div>
+
 				<div class="col-md-8">
 					<h2 class="section-title section-title--blank">En groupe</h2>
 
@@ -196,10 +200,6 @@
 					<p>
 						<a href="{{ path('collaborations') }}" class="btn-secondary">Voir les groupes</a>
 					</p>
-				</div>
-
-				<div class="col-md-4">
-					<img class="img-fluid page-section__img" src="img/band.jpg" alt="Le groupe MimE sur scène" title="Le groupe MimE sur scène, avec Jérémy Dutheil à l'accordéon">
 				</div>
 			</div>
 		</div>
