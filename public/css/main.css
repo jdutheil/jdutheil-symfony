@@ -546,3 +546,11 @@ a:hover { color: #ff841c; text-decoration: none; }
 		left: 0;
 	}
 }
+
+.reviews {
+	margin: auto;
+}
+
+.reviews-flash {
+	top: -50px;
+}
