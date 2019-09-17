@@ -24,22 +24,25 @@ class ContactController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $datas = $form->getData();
 
-            $content = 'De : ' . $datas['name'] . PHP_EOL;
-            $content .= 'Email : ' . $datas['from'] . PHP_EOL;
-            $content .= 'Téléphone : ' . $datas['phone'] . PHP_EOL . PHP_EOL;
+            if ($datas['ghost'] == '') {
+                $content = 'De : ' . $datas['name'] . PHP_EOL;
+                $content .= 'Email : ' . $datas['from'] . PHP_EOL;
+                $content .= 'Téléphone : ' . $datas['phone'] . PHP_EOL . PHP_EOL;
 
-            $content .= $datas['message'];
+                $content .= $datas['message'];
 
-            $message = (new \Swift_Message('Contact depuis jeremy-dutheil.fr'))
-                ->setFrom('dutheil.jeremy@gmail.com')
-                ->setTo('dutheil.jeremy@gmail.com')
-                ->setReplyTo($datas['from'])
-                ->setBody(
-                    $content,
-                    'text/plain'
-                );
+                $message = (new \Swift_Message('Contact depuis jeremy-dutheil.fr'))
+                    ->setFrom('dutheil.jeremy@gmail.com')
+                    ->setTo('dutheil.jeremy@gmail.com')
+                    ->setReplyTo($datas['from'])
+                    ->setBody(
+                        $content,
+                        'text/plain'
+                    );
 
-            $mailer->send($message);
+                $mailer->send($message);
+            }
+
             $form_ok = true;
         }
 

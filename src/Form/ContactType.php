@@ -10,12 +10,14 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 
 class ContactType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+            ->add('ghost', TextType::class, array('label' => 'ghost', 'required' => false))
             ->add('name', TextType::class, array('label' => 'Votre nom'))
             ->add('from', EmailType::class, array('label' => 'Votre email (indispensable pour vous recontacter !)'))
             ->add('phone', TextType::class, array('label' => 'Votre téléphone'))
