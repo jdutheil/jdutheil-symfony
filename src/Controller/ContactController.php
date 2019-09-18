@@ -24,12 +24,10 @@ class ContactController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $datas = $form->getData();
 
-            if ($datas['ghost'] == '') {
+            if ($datas['firstname'] == '') {
                 $content = 'De : ' . $datas['name'] . PHP_EOL;
                 $content .= 'Email : ' . $datas['from'] . PHP_EOL;
                 $content .= 'Téléphone : ' . $datas['phone'] . PHP_EOL . PHP_EOL;
-
-                $content .= 'Ghost : ' . $datas['ghost']  . PHP_EOL . PHP_EOL;
 
                 $content .= $datas['message'];
 
