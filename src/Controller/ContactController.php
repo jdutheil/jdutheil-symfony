@@ -29,6 +29,8 @@ class ContactController extends AbstractController
                 $content .= 'Email : ' . $datas['from'] . PHP_EOL;
                 $content .= 'Téléphone : ' . $datas['phone'] . PHP_EOL . PHP_EOL;
 
+                $content .= 'Ghost : ' . $datas['ghost']  . PHP_EOL . PHP_EOL;
+
                 $content .= $datas['message'];
 
                 $message = (new \Swift_Message('Contact depuis jeremy-dutheil.fr'))
