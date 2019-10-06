@@ -3,6 +3,5 @@ Disallow: /duos-accordeon-voix
 Disallow: /groupes
 Disallow: /login/*
 Disallow: /admin/*
-Disallow: /mentions-legales
 Allow: /*
 sitemap: https://www.jeremy-dutheil.fr/sitemap.xml

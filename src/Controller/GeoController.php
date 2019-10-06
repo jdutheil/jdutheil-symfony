@@ -7,29 +7,30 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class GeoController extends Controller
 {
-    /**
-     * @Route("/accordeoniste-melun", name="melun")
-     */
+    /*
+     * Route("/accordeoniste-melun", name="melun")
+
     public function melunAction()
     {
         return $this->render('geo/melun.html.twig', array());
     }
 
-    /**
-     * @Route("/accordeoniste-fontainebleau", name="fontainebleau")
-     */
+    /*
+     * Route("/accordeoniste-fontainebleau", name="fontainebleau")
+
     public function fontainebleauAction()
     {
         return $this->render('geo/fontainebleau.html.twig', array());
     }
 
-    /**
-     * @Route("/accordeoniste-meaux", name="meaux")
-     */
+    /*
+     * Route("/accordeoniste-meaux", name="meaux")
+
     public function meauxAction()
     {
         return $this->render('geo/meaux.html.twig', array());
     }
+    */
 
     /**
      * @Route("/accordeoniste-seine-et-marne", name="seineetmarne")
