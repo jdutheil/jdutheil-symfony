@@ -55,6 +55,14 @@ class PagesController extends Controller
 	 }
 
 	 /**
+	  * @Route("/agenda", name="agenda")
+	  */
+	 public function agenda()
+	 {
+		 return $this->render('pages/agenda.html.twig', array());
+	 }
+
+	 /**
 	  * @Route("/jazz-manouche", name="manouche")
 	  */
 	  public function manouche()

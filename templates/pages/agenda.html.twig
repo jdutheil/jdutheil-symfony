@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Jérémy Dutheil - Accordéoniste - Agenda, Concerts
+{% endblock %}
+
+{% block metadesc %}
+	<meta name="description" content="Retrouvez Jérémy Dutheil, accordéoniste, en concert dans toute la France !">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/manouchebg.jpg" alt="Un groupe de jazz manouche pour vos événements - Avec accordéon" class="flash-item__background" style="top: -50%;">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container bg--blank">
+			<h1 class="section-title">
+				Agenda - Les concerts
+			</h1>
+
+            <p>
+                Retrouvez ci-dessous les prochaines dates de concert avec Jérémy Dutheil.
+            </p>
+
+            <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script><a class="bit-widget-initializer" data-artist-name="Jérémy Dutheil" data-display-local-dates="false" data-language="fr" data-display-past-dates="true" data-auto-style="false" data-text-color="#000000" data-link-color="#ff841c" data-background-color="rgba(0,0,0,0)" data-display-limit="15" data-display-start-time="false" data-link-text-color="#2D2D2D" data-display-lineup="false" data-display-play-my-city="false" data-separator-color="rgba(124,124,124,0.25)"></a>
+		</div>
+    </section>
+{% endblock %}
