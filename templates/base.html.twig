@@ -78,7 +78,7 @@
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ path('homepage') }}"><span class="navbar-brand-span">J</span>érémy <span class="navbar-brand-span">D</span>UTHEIL</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Ouvrir le menu">
@@ -120,6 +120,10 @@
 
                         <li class="nav-item px-2 py-1">
                             <a class="nav-link {% if app.request.attributes.get('_route') == 'videos' %}nav-link--active{% endif %}" href="{{ path('videos') }}">Vidéos</a>
+                        </li>
+
+                        <li class="nav-item px-2 py-1">
+                            <a class="nav-link {% if app.request.attributes.get('_route') == 'agenda' %}nav-link--active{% endif %}" href="{{ path('agenda') }}">Agenda</a>
                         </li>
 
                         <li class="nav-item px-2 py-1">
