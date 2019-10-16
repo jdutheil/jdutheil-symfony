@@ -142,4 +142,12 @@ class PagesController extends Controller
 	{
 		return $this->render('pages/guinguette.html.twig');
 	}
+
+	/**
+	 * @Route("/soiree-entreprise", name="entreprise")
+	 */
+	public function entreprise()
+	{
+		return $this->render('pages/entreprise.html.twig');
+	}
 }
