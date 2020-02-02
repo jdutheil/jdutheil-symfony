@@ -150,4 +150,12 @@ class PagesController extends Controller
 	{
 		return $this->render('pages/entreprise.html.twig');
 	}
+
+	/**
+	 * @Route("/jeremy-dutheil-solal-poux", name="jdsp")
+	 */
+	public function jdsp()
+	{
+		return $this->render('pages/jdsp.html.twig');
+	}
 }

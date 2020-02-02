@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Jérémy Dutheil & Solal Poux - Jazz manouche avec accordéon !
+{% endblock %}
+
+{% block metadesc %}
+	<meta name="description" content="Jérémy Dutheil & Solal Poux proposent un répertoire jazz manouche avec accordéon, du duo accordéon / guitare au quartet avec contrebasse et guitare rythmique.">
+{% endblock %}
+
+{% block body %}
+
+<section class="flash flash--limited">
+    <div class="flash-item">
+        <img src="img/jdsp.png" alt="Jérémy Dutheil & Solal Poux" class="flash-item__background">
+    </div>
+</section>
+
+<section class="flash-ghost flash-ghost--limited"></section>
+
+<section class="content-section bg--blank page-section">
+    <div class="container bg--blank">
+        <img class="img-responsive" src="img/dates_fev_2020.png">
+
+        <h1 class="section-title" style="margin-top: 25px;">
+            Jérémy Dutheil & Solal Poux
+            <small>Jazz manouche avec accordéon</small>
+        </h1>
+
+        <p>
+            Autour du jazz manouche, Jérémy Dutheil & Solal Poux proposent un duo original : accordéon et guitare. Une formule musicale dépouillée qui offre une énergie brute, sans superflu. Le répertoire fait la part belle aux standards de Django Reinhardt, mais s’octroie également quelques incursions dans d’autres univers (chanson française, jazz). De Swing 42 à Ménilmontant, en passant par Daphné ou Billie’s Bounce, un concert guidé par un fil conducteur : le swing !
+        </p>
+
+        <div class="row">
+            <div class="col-md-6" style="margin-bottom: 15px;">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/isBmjLhhl8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="margin-bottom: 15px;">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u8re-Ba8RQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CWUY-repj8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BGGrRG-q4VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <p style="margin-top: 15px;">
+            Jérémy Dutheil & Solal Poux se produisent du duo (accordéon / guitare) au quartet (accordéon / 2 guitares / contrebasse), dans toute la France. Vous trouverez l'ensemble des dates programmées dans la rubrique <a href="{{ path('agenda') }}">"Concerts"</a>.
+        </p>
+    </div>
+</section>
+{% endblock %}
