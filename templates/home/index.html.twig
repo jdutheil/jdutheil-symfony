@@ -24,8 +24,34 @@
 {% block body %}
 	<section class="flash-new">
 		<div class="flash-new-item">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-h2oJAjzAtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oSiWQ_thsn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+
+				<p style="color: #ffffff; text-align: center; margin-top: 20px; margin-bottom: 0;">
+					Abonnez-vous à <a href="https://www.youtube.com/channel/UCTHC327qYeB34ri8Fgzubjw" target="_blank">ma chaîne Youtube</a> pour voir toutes les vidéos !
+				</p>
+			</div>
 			<!--<img src="img/accordeoniste-paris.jpg" alt="Accordéoniste à Paris - En concert" title="Accordéoniste professionnel à Paris" class="flash-item__background">-->
 
+			<!--
 			<div class="container-fluid flash-new-item__content">
 				<div class="row flash-item-row">
 					<div class="col-md-4 flash-item-col">
@@ -38,8 +64,6 @@
 						<a href="{{ path('accordeoniste_soiree') }}" class="btn btn-secondary flash-item__content-btn">En savoir plus</a>
 
 					</div>
-
-
 
 					<div class="col-md-4 flash-item-col">
 						<h2 class="flash-item__content-title">Groupe de jazz manouche pour vos événéments</h2>
@@ -62,10 +86,11 @@
 					</div>
 				</div>
 			</div>
+			-->
 		</div>
 	</section>
 
-<!--	<section class="flash-ghost"></section>-->
+	<!--<section class="flash-ghost"></section>-->
 
 	<section class="content-section page-section edito">
 		<div class="container">
@@ -83,7 +108,7 @@
 						</p>
 
 						<p>
-							Même s'il est accordéoniste à Paris, Jérémy se produit sur scène dans toute la France, seul ou en groupe, notamment avec son <a style="color: #555555;" href="{{ path('manouche') }}">groupe de jazz manouche</a> : <a href="{{ path('jdsp') }}">Jérémy Dutheil & Solal Poux</a>.
+							Même s'il est accordéoniste à Paris, Jérémy se produit sur scène dans toute la France, seul ou en groupe, notamment avec son <a style="color: #555555;" href="{{ path('manouche') }}"><strong>groupe de jazz manouche</strong></a> : <a href="{{ path('jdsp') }}">Jérémy Dutheil & Solal Poux</a>.
 						</p>
 
 						<p>
@@ -105,11 +130,13 @@
 	</section>
 	<!-- /.edito -->
 
+
+
 	<section class="content-section page-section anim">
 		<div class="container">
 			<div class="row flex-column-reverse  flex-md-row">
 				<div class="col-md-4">
-					<img src="{{ asset('img/anim.jpg') }}" alt="Accordéoniste sur scène, à Paris" title="Jérémy Dutheil, accordéoniste à Paris" class="img-fluid page-section__img">
+					<img src="{{ asset('img/solo-anims-paris.jpg') }}" alt="Accordéoniste sur scène, à Paris" title="Jérémy Dutheil, accordéoniste à Paris" class="img-fluid page-section__img">
 				</div>
 
 				<div class="col-md-8 page-section__content-wrapper">
@@ -135,33 +162,33 @@
 		<!-- /.page-section -->
 	</section>
 
-	<section class="content-section page-section bands">
+	<section class="content-section page-section sideman">
 		<div class="container">
 			<div class="row ">
 				<div class="col-md-8 page-section__content-wrapper">
 					<div>
-						<h2 class="section-title">Musicien accompagnateur</h2>
+						<h2 class="section-title">Accordéoniste jazz</h2>
 
 						<p>
-							Bercé par la chanson française, j'apprécie tout particulièrement l'exercice d'accompagnement en formule dépouillée <strong>accordéon / voix</strong> ; ici, ce sont les textes qui priment, et la musique se fait discrète pour les accompagner et embellir l'arrière plan. L'importante liberté d'expression permet de proposer des arrangements originaux, donnant lieu à une interprétation moderne de morceaux parfois vieux d'une centaine d'années.
+							Jérémy Dutheil se spécialise aujourd'hui plus particulièrement dans l'<strong>accordéon jazz</strong> et <strong>jazz manouche</strong>. Il est <i>leader</i> d'une formation jazz manouche, qui se produit en duo (accordéon / guitare), trio (accordéon / guitare / contrebasse) ou quartet (accordéon / 2 guitares / contrebasse) : <a href="{{ path('jdsp') }}">Jérémy Dutheil & Solal Poux</a>.
 						</p>
 
 						<p>
-							Je travaille actuellement avec plusieurs <em class="text-link ">chanteurs et chanteuses</em>, embrassant un large répertoire au sein même de la chanson ; certaines formations s'orienteront plutôt vers les standards du style (Brel, Piaf, Ferré), d'autres vers des auteurs moins connus du grand public (Leprest, Dimey). Mon accordéon s'invite aussi bien sur de la chanson réaliste (Damia, Fréhel), que de la chanson coquine (Odette Laure, Anne Sylveste) ou révoltée (Renaud, Paccoud).
- 						</p>
-
-						<p>
-							Accordéoniste à Paris, c'est avec ces petites formations que je me produis le plus régulièrement dans les lieux intimistes de la capitale ; Montmartre, Pigalle, l'accordéon.. Ambiance guinguette et années 60 assurée !
+							Accordéoniste jazz, Jérémy joue également en solo autour d'un répertoire de standards jazz ; ci-dessous par exemple, un arrangement de <i>Ain't Misbehavin</i> par Frank Marocco. 
 						</p>
 
-						<p>
-							<a href="{{ path('collaborations') }}" class="btn-secondary">Voir les artistes <span class="d-none d-md-inline">accompagnés</a>
-						</p>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mv3DgoYPCds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 
 				<div class="col-md-4 ">
-					<img src="{{ asset('img/elena.jpg') }}" alt="Chanteuse et accordéoniste" title="Elena Josse et Jérémy DUTHEIL, accordéon / voix" class="img-fluid page-section__img">
+					<img src="{{ asset('img/manouchebg.jpg') }}" alt="Duo jazz manouche avec accordéon" title="Jérémy Dutheil & Solal Poux - Jazz manouche avec accordéon" class="img-fluid page-section__img">
+
+					<p style="margin-top: 15px;">
+						<a href="{{ path('manouche') }}" class="btn-secondary">Plus d'informations sur le groupe jazz manouche</a>
+					</p>
 				</div>
 			</div>
 			<!-- /.row -->
@@ -170,11 +197,11 @@
 	</section>
 	<!-- /.sideman -->
 
-	<section class="content-section page-section sideman">
+	<section class="content-section page-section bands">
 		<div class="container">
 			<div class="row flex-column-reverse flex-md-row">
 				<div class="col-md-4">
-					<img class="img-fluid page-section__img" src="img/band.jpg" alt="Le groupe MimE sur scène" title="Le groupe MimE sur scène, avec Jérémy Dutheil à l'accordéon">
+					<img class="img-fluid page-section__img" src="img/swingcocktail2.png" alt="Trio jazz avec accordéon" title="Trio jazz, avec Jérémy Dutheil à l'accordéon">
 				</div>
 
 				<div class="col-md-8">
@@ -205,16 +232,38 @@
 		</div>
 	</section>
 
-	<section class="content-section page-section">
+	<section class="content-section page-section sideman">
 		<div class="container">
-			<h2 class="section-title">Quelques références</h2>
+			<div class="row ">
+				<div class="col-md-8 page-section__content-wrapper">
+					<div>
+						<h2 class="section-title">Musicien accompagnateur</h2>
 
-			{% include 'partners.html.twig' %}
+						<p>
+							Bercé par la chanson française, j'apprécie tout particulièrement l'exercice d'accompagnement en formule dépouillée <strong>accordéon / voix</strong> ; ici, ce sont les textes qui priment, et la musique se fait discrète pour les accompagner et embellir l'arrière plan. L'importante liberté d'expression permet de proposer des arrangements originaux, donnant lieu à une interprétation moderne de morceaux parfois vieux d'une centaine d'années.
+						</p>
 
-			<hr>
+						<p>
+							Je travaille actuellement avec plusieurs <em class="text-link ">chanteurs et chanteuses</em>, embrassant un large répertoire au sein même de la chanson ; certaines formations s'orienteront plutôt vers les standards du style (Brel, Piaf, Ferré), d'autres vers des auteurs moins connus du grand public (Leprest, Dimey). Mon accordéon s'invite aussi bien sur de la chanson réaliste (Damia, Fréhel), que de la chanson coquine (Odette Laure, Anne Sylveste) ou révoltée (Renaud, Paccoud).
+ 						</p>
 
-			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-			<div class="elfsight-app-ec309407-5635-4d34-a076-6f44bf20acc8 reviews"></div>
+						<p>
+							Accordéoniste à Paris, c'est avec ces petites formations que je me produis le plus régulièrement dans les lieux intimistes de la capitale ; Montmartre, Pigalle, l'accordéon.. Ambiance guinguette et années 60 assurée !
+						</p>
+
+						<p>
+							<a href="{{ path('collaborations') }}" class="btn-secondary">Voir les artistes <span class="d-none d-md-inline">accompagnés</span></a>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 ">
+					<img src="{{ asset('img/elena.jpg') }}" alt="Chanteuse et accordéoniste" title="Elena Josse et Jérémy DUTHEIL, accordéon / voix" class="img-fluid page-section__img">
+				</div>
+			</div>
+			<!-- /.row -->
 		</div>
+		<!-- /.page-section -->
 	</section>
+	<!-- /.sideman -->
 {% endblock %}
