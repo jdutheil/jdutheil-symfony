@@ -11,11 +11,11 @@
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/bio_pic.jpg" alt="Jérémy Dutheil - Accordéoniste à Paris" class="flash-item__background">
+			<img src="img/bio-flash-new.jpg" alt="Jérémy Dutheil - Accordéoniste à Paris" class="flash-item__background" style="top: -250px;">
 		</div>
 	</section>
 
-	<section class="flash-ghost flash-ghost--limited"></section>
+	<section class="flash-ghost "></section>
 
 	<section class="content-section bg--blank page-section">
 		<div class="container bg--blank">
@@ -48,8 +48,8 @@
 
 				<div class="col-sm-4 page-section__content-wrapper">
 					<div>
-						<img src="{{ asset('img/bio-pic1.jpg') }}" alt="" class="img-fluid page-section__img">
-						<img src="{{ asset('img/bio-pic2.jpg') }}" alt="" class="img-fluid page-section__img" style="margin-top: 35px;">
+						<img src="{{ asset('img/solo-anims-paris.jpg') }}" alt="" class="img-fluid page-section__img">
+						<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img" style="margin-top: 35px;">
 					</div>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 				</div>
 
 				<div class="col-sm-4">
-					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img">
+					<img src="{{ asset('img/bio-new.jpg') }}" alt="" class="img-fluid page-section__img">
 				</div>
 			</div>
 			<!-- /.row -->
@@ -81,45 +81,58 @@
 					<h2 class="section-title section-title--small">Discographie</h2>
 
 					<div class="row">
+						<div class="col-sm-8">
+							<h3 class="section-title section-title--smaller">Jérémy Dutheil & Solal Poux - Douce Ambiance (2020)</h3>
+
+							<p>
+								Premier album pour ce duo jazz manouche (accordéon / guitare) ; entièrement enregistré à la maison, avec les moyens du bord et en <i>live</i>. Disponible physiquement lors des concerts, et sur les plateformes numériques ; <a href="https://lnkfi.re/jdsp" target="_blank">cliquez ici</a> pour écouter.
+							</p>
+						</div>
+
 						<div class="col-sm-4">
-							<img src="{{ asset('img/lesfilsdeflute-surnotrefil.jpg') }}" alt="Les Fils de Flûte - Sur notre fil" class="img-fluid">
+							<img src="{{ asset('img/douceambiance.jpg') }}" alt="Jérémy Dutheil & Solal Poux - Douce Ambiance" class="img-fluid">
+						</div>
+					</div>
+
+					<div class="row" style="margin-top: 15px;">
+						<div class="col-sm-4">
+							<img src="{{ asset('img/cidmarquis-jencreve.jpg') }}" alt="Cid Marquis - J'en crève" class="img-fluid">
 						</div>
 
 						<div class="col-sm-8">
-							<h3 class="section-title section-title--smaller">Les Fils de Flûte - Sur notre fil (2012)</h3>
+							<h3 class="section-title section-title--smaller">Cid Marquis - J'en crève (2019)</h3>
 
 							<p>
-								Le premier album des Fils de Flûte, dont Jérémy est l'un des membres fondateurs, sort à l'été 2012. Les trois musiciens proposent un opus basé uniquement sur des compositions, qu'ils ont ensemble écrit et composé. <br>
-								Jérémy intervient donc ici au niveau des compositions et des arrangements, et au niveau de l'écriture sur quelques titres.
+								Un premier single pour une artiste qu'on voit plus souvent évoluer dans des projets "hommage" (Rue La Môme, Lizard Queen, ...). Jérémy signe ici les arrangements, et l'enregistrement de l'accordéon bien sûr !
 							</p>
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-8">
-							<h3 class="section-title section-title--smaller">Zoulouzbek Band - Cousins, Cousines (2017)</h3>
+							<h3 class="section-title section-title--smaller">Majid & Yano Tët - Est-ce ainsi que les hommes vivent (2018)</h3>
 
 							<p>
-								Un album particulier que celui des Zoulouzbek Band, car ils réunissent ici un bon nombre d'amis musiciens croisés sur les routes pendant leurs années de tournée. Jérémy y participe avec MimE, qui signe une composition sur l'album : "Le bistrot des copains".
+								Un projet qui a beaucoup évolué au fil des années, et un album qui s'est construit sur assez longtemps également. Jérémy participe à l'enregistrement de certain titres, partageant l'accordéon sur l'album avec Maxime Vauthier (Tournée Générale).
 							</p>
 						</div>
 
 						<div class="col-sm-4">
-							<img src="{{ asset('img/zoulouzbekband-cousinscousines.jpg') }}" alt="Zoulouzbek Band - Cousins, Cousines" class="img-fluid">
+							<img src="{{ asset('img/yanotet-estceainsi.jpg') }}" alt="Madjid et Yano Tët - Est-ce ainsi que les hommes vivent" class="img-fluid">
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-4">
-							<img src="{{ asset('img/l1consolable-laugmentation.jpg') }}" alt="L'1nconsolable - L'augmentation" class="img-fluid">
+							<img src="{{ asset('img/mariepetrolette-apois.jpg') }}" alt="Marie Pétrolette - À pois !" class="img-fluid">
 						</div>
 
 						<div class="col-sm-8">
-							<h3 class="section-title section-title--smaller">L'1nconsolable - L'augmentation (2018)</h3>
+							<h3 class="section-title section-title--smaller">Marie Pétrolette - À pois (2018)</h3>
 
 							<p>
-								L'augmentation, un album dont vous êtes le héros ! La marque de fabrique de l'1nconsolable, c'est de produire des albums originaux, avec des concepts très forts. Ici, le nombre de titres présents ne permet même pas la gravure sur CD et pour cause.. C'est en réalité un album interactif auquel vous avez droit, où une question est posée à la fin de chaque morceau. Suivant votre réponse, vous serez alors orienté vers l'une ou l'autre des autres chansons, créant votre propre parcours à chaque écoute... <br>
-								Jérémy a enregistré son accordéon sur plusieurs morceaux de l'album.
+								Encore une fois, la nécessité de sortir un EP pour donner l'idée, et figer une période sur le disque. Les textes de Marie Pétrolette nous parlent de la vie d'une jeune femme ordinaire dans le monde d'aujourd'hui. Tantôt coquins, tantôt cyniques, souvent avec humour... <br>
+								Jérémy réalise ici les arrangements, et l'enregistrement de l'accordéon.
 							</p>
 						</div>
 					</div>
@@ -141,43 +154,44 @@
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-4">
-							<img src="{{ asset('img/mariepetrolette-apois.jpg') }}" alt="Marie Pétrolette - À pois !" class="img-fluid">
+							<img src="{{ asset('img/l1consolable-laugmentation.jpg') }}" alt="L'1nconsolable - L'augmentation" class="img-fluid">
 						</div>
 
 						<div class="col-sm-8">
-							<h3 class="section-title section-title--smaller">Marie Pétrolette - À pois (2018)</h3>
+							<h3 class="section-title section-title--smaller">L'1nconsolable - L'augmentation (2018)</h3>
 
 							<p>
-								Encore une fois, la nécessité de sortir un EP pour donner l'idée, et figer une période sur le disque. Les textes de Marie Pétrolette nous parlent de la vie d'une jeune femme ordinaire dans le monde d'aujourd'hui. Tantôt coquins, tantôt cyniques, souvent avec humour... <br>
-								Jérémy réalise ici les arrangements, et l'enregistrement de l'accordéon.
+								L'augmentation, un album dont vous êtes le héros ! La marque de fabrique de l'1nconsolable, c'est de produire des albums originaux, avec des concepts très forts. Ici, le nombre de titres présents ne permet même pas la gravure sur CD et pour cause.. C'est en réalité un album interactif auquel vous avez droit, où une question est posée à la fin de chaque morceau. Suivant votre réponse, vous serez alors orienté vers l'une ou l'autre des autres chansons, créant votre propre parcours à chaque écoute... <br>
+								Jérémy a enregistré son accordéon sur plusieurs morceaux de l'album.
 							</p>
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-8">
-							<h3 class="section-title section-title--smaller">Majid & Yano Tët - Est-ce ainsi que les hommes vivent (2018)</h3>
+							<h3 class="section-title section-title--smaller">Zoulouzbek Band - Cousins, Cousines (2017)</h3>
 
 							<p>
-								Un projet qui a beaucoup évolué au fil des années, et un album qui s'est construit sur assez longtemps également. Jérémy participe à l'enregistrement de certain titres, partageant l'accordéon sur l'album avec Maxime Vauthier (Tournée Générale).
+								Un album particulier que celui des Zoulouzbek Band, car ils réunissent ici un bon nombre d'amis musiciens croisés sur les routes pendant leurs années de tournée. Jérémy y participe avec MimE, qui signe une composition sur l'album : "Le bistrot des copains".
 							</p>
 						</div>
 
 						<div class="col-sm-4">
-							<img src="{{ asset('img/yanotet-estceainsi.jpg') }}" alt="Madjid et Yano Tët - Est-ce ainsi que les hommes vivent" class="img-fluid">
+							<img src="{{ asset('img/zoulouzbekband-cousinscousines.jpg') }}" alt="Zoulouzbek Band - Cousins, Cousines" class="img-fluid">
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-4">
-							<img src="{{ asset('img/cidmarquis-jencreve.jpg') }}" alt="Cid Marquis - J'en crève" class="img-fluid">
+							<img src="{{ asset('img/lesfilsdeflute-surnotrefil.jpg') }}" alt="Les Fils de Flûte - Sur notre fil" class="img-fluid">
 						</div>
 
 						<div class="col-sm-8">
-							<h3 class="section-title section-title--smaller">Cid Marquis - J'en crève (2019)</h3>
+							<h3 class="section-title section-title--smaller">Les Fils de Flûte - Sur notre fil (2012)</h3>
 
 							<p>
-								Un premier single pour une artiste qu'on voit plus souvent évoluer dans des projets "hommage" (Rue La Môme, Lizard Queen, ...). Jérémy signe ici les arrangements, et l'enregistrement de l'accordéon bien sûr !
+								Le premier album des Fils de Flûte, dont Jérémy est l'un des membres fondateurs, sort à l'été 2012. Les trois musiciens proposent un opus basé uniquement sur des compositions, qu'ils ont ensemble écrit et composé. <br>
+								Jérémy intervient donc ici au niveau des compositions et des arrangements, et au niveau de l'écriture sur quelques titres.
 							</p>
 						</div>
 					</div>
