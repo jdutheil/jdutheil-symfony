@@ -127,13 +127,13 @@
                         </li>
 
                         <li class="nav-item px-2 py-1">
-                            <a class="nav-link {% if route == 'manouche' %}nav-link--active{% endif %}" href="{{ path('manouche') }}" title="Groupe de jazz manouche pour votre soirée"> Groupe jazz manouche</a>
+                    <a class="nav-link {% if route == 'manouche' %}nav-link--active{% endif %}" href="{{ path('manouche') }}" title="Groupe de jazz manouche pour votre soirée"> Groupe jazz manouche</a>
                         </li>
 
                         <li class="nav-item px-2 py-1">
                             <a class="nav-link {% if route == 'animations' %}nav-link--active{% endif %}"
                                 href="{{ path('animations') }}" title="Trouver un musicien ou groupe de musique pour votre soirée (mariage, cocktail, événement)">
-                                Prestations
+                                Animations musicales
                             </a>
                         </li>
 
@@ -150,19 +150,19 @@
                             <li><a href="{{ logout_url("secured_area") }}">Logout</a></li>
                         {% endif %}
 
-                        <li class="nav-item ">
+                        <li class="nav-item nav-item--social">
                             <a title="Retrouvez moi sur Facebook" rel="nofollow" style="font-size: 24px;" class="nav-link" href="https://www.facebook.com/jeremydutheilaccordeoniste/" target="_blank"><i class="fab fa-facebook"></i></a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item nav-item--social">
                             <a title="Retrouvez moi sur Youtube" rel="nofollow" style="font-size: 24px;" class="nav-link" href="https://www.youtube.com/channel/UCTHC327qYeB34ri8Fgzubjw" target="_blank"><i class="fab fa-youtube"></i></a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item nav-item--social">
                             <a title="Retrouvez moi sur Spotify" style="font-size: 24px;" class="nav-link" href="https://open.spotify.com/album/5h6OhuDtbu3D2M9kl1QRoV" target="_blank"><i class="fab fa-spotify"></i></a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item nav-item--social">
                             <a title="Retrouvez moi sur Soundcloud" rel="nofollow" style="font-size: 24px;" class="nav-link" href="https://soundcloud.com/j-r-my-dutheil/" target="_blank"><i class="fab fa-soundcloud"></i></a>
                         </li>
                     </ul>
@@ -219,20 +219,7 @@
 
         {% block javascripts %}{% endblock %}
 
-        <div class="exit-popup-container" style="display: none;">
-            <div class="exit-popup" >
-                <div class="exit-popup-close">X</div>
-                <h2 class="exit-popup-title">Parlez moi de votre projet</h2>
-
-                <p class="exit-popup-txt">
-                    Décrivez moi votre projet et laissez moi vos coordonnées, je vous recontacte sous 24h avec une formule sur mesure et un devis gratuit.
-                </p>
-
-                {{ render(controller('App\\Controller\\ContactController:form')) }}
-            </div>
-        </div>
-
-        <script>
+        <!--<script>
         // set the cookie for 1 hour
             function setCookie(cname, cvalue, exhours) {
                 var d = new Date();
@@ -300,7 +287,7 @@
 
             });
         </script>
-
+        -->
 
 
         <!--
