@@ -12,7 +12,6 @@ import $ from 'jquery';
 
 import 'popper.js';
 import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.css';
 
 require('@fortawesome/fontawesome-free/css/all.min.css');
 require('@fortawesome/fontawesome-free/js/all.js');
