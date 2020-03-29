@@ -565,4 +565,7 @@ a:hover { color: #ff841c; text-decoration: none; }
 	.nav-item--social { display: none; }
 }
 
+
+/* purgecss start ignore */
 #contact .form-group:first-child { display: none; }
+/* purgecss end ignore */

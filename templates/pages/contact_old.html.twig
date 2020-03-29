@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact | Jérémy Dutheil | Accordéoniste, Paris{% endblock %}
+
+{% block metadesc %}
+	<meta name="description" content="Une question ? Un projet à proposer ? Besoin d'un devis pour une animation musicale ? Contactez moi !">
+{% endblock %}
+
+{% block body %}
+	<section class="flash flash--limited">
+		<div class="flash-item">
+			<img src="img/flash-item-1.jpg" alt="" class="flash-item__background">
+		</div>
+	</section>
+
+	<section class="flash-ghost flash-ghost--limited"></section>
+
+	<section class="content-section bg--blank page-section">
+		<div class="container">
+			<h1 class="section-title">Contact</h1>
+
+			<p>
+				Une question ? Un projet à me proposer ? Besoin d'un devis pour une animation musicale ?
+			</p>
+
+			<p>
+				Contactez moi par mail : <a href="mailto:dutheil.jeremy@gmail.com" class="text-link">dutheil.jeremy@gmail.com</a> ou téléphone : 06.85.38.22.16
+			</p>
+		</div>
+	</section>
+
+	<style type="text/css">
+		.contact { display: none; }
+	</style>
+{% endblock %}

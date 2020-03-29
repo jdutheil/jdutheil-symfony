@@ -60,6 +60,18 @@ Encore
     // enables Sass/SCSS support
     .enableSassLoader()
 
+    .addPlugin(new PurgeCssPlugin({
+        paths: glob.sync([
+            path.join(__dirname, 'templates/**/*.html.twig')
+        ]),
+        content: ["**/*.twig"],
+        defaultExtractor: (content) => {
+            return content.match(/[\w-/:]+(?<!:)/g) || [];
+        },
+        whitelist: [
+            'input', 'form-control', 'form'
+        ]
+    }))
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()
