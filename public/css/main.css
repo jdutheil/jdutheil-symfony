@@ -560,3 +560,7 @@ a:hover { color: #ff841c; text-decoration: none; }
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1320px) {
+	.nav-item--social { display: none; }
+}
