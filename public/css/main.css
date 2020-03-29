@@ -554,3 +554,9 @@ a:hover { color: #ff841c; text-decoration: none; }
 .reviews-flash {
 	top: -50px;
 }
+
+.home-video {
+	border: 2px solid #ff841c;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
