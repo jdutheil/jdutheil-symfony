@@ -1,46 +1,49 @@
 {% extends 'base.html.twig' %}
 
-{% block old %}
-<section class="flash">
-	<div class="flash-item">
-		<img src="img/accordeoniste-paris.jpg" alt="Accordéoniste à Paris - En concert" title="Accordéoniste professionnel à Paris" class="flash-item__background">
-
-		<div class="flash-item__content mr-auto ml-5 col-sm-5">
-			<p class="flash-item__content-title">Musicien <br>pour vos événements</p>
-
-			<p class="flash-item__content-text">
-				Vous cherchez un accordéoniste pour un mariage, un anniversaire, <br><a href="{{ path('entreprise') }}">une soirée d'entreprise</a> ou une animation seniors à Paris, Ile de France ou dans toute la France ?
-			</p>
-
-			<a href="{{ path('animations') }}" class="btn btn-secondary flash-item__content-btn">Découvrir les formules <span class="d-none d-md-inline">d'animations musicales</span></a>
-		</div>
-		<!-- /.flash-item__content -->
-	</div>
-	<!-- /.flash-item -->
-</section>
-<!-- /.flash -->
-{% endblock %}
-
 {% block body %}
 	<section class="flash-new">
 		<div class="flash-new-item">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-4">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="col-md-4 order-md-2">
+						<div class="embed-responsive embed-responsive-16by9 home-video">
+							<iframe
+								class="embed-responsive-item"
+								src="https://www.youtube.com/embed/-h2oJAjzAtg"
+								srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/-h2oJAjzAtg?autoplay=1><img src=https://img.youtube.com/vi/-h2oJAjzAtg/sddefault.jpg alt='Vidéo accordéon jazz - Sunny Side of the Street'><span>▶</span></a>"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+								title="Sunny Side of The Street - Accordéon jazz"
+							></iframe>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-h2oJAjzAtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="col-md-4 order-md-1">
+						<div class="embed-responsive embed-responsive-16by9 home-video">
+							<iframe
+								class="embed-responsive-item"
+								src="https://www.youtube.com/embed/W_uOwoGcBuE"
+								srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/W_uOwoGcBuE?autoplay=1><img src=https://img.youtube.com/vi/W_uOwoGcBuE/sddefault.jpg alt='Vidéo duo jazz manouche - Accordéon / Guitare - La Foule'><span>▶</span></a>"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+								title="La Foule - Duo jazz manouche (accordéon / guitare)"
+							></iframe>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="embed-responsive embed-responsive-16by9">
-							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oSiWQ_thsn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="col-md-4 order-md-3">
+						<div class="embed-responsive embed-responsive-16by9 home-video">
+							<iframe
+								class="embed-responsive-item"
+								src="https://www.youtube.com/embed/oSiWQ_thsn8"
+								srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/oSiWQ_thsn8?autoplay=1><img src=https://img.youtube.com/vi/oSiWQ_thsn8/sddefault.jpg alt='Vidéo accordéon solo - Java manouche'><span>▶</span></a>"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+								title="Java manouche - Accordéon solo"
+							></iframe>
 						</div>
 					</div>
 				</div>
@@ -120,7 +123,11 @@
 				<!-- /.col-sm-8 -->
 
 				<div class="col-md-4">
-					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" title="Accordéoniste parisien en concert" class="img-fluid page-section__img">
+					<picture>
+						<source type="image/webp" srcset="{{ asset('img/videos-pic.webp') }}">
+						<source type="image/jpeg" srcset="{{ asset('img/videos-pic.jpg') }}">
+						<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" title="Accordéoniste parisien en concert" class="img-fluid page-section__img">
+					</picture>
 				</div>
 				<!-- /.col-sm-4 -->
 			</div>
@@ -136,7 +143,11 @@
 		<div class="container">
 			<div class="row flex-column-reverse  flex-md-row">
 				<div class="col-md-4">
-					<img src="{{ asset('img/solo-anims-paris.jpg') }}" alt="Accordéoniste sur scène, à Paris" title="Jérémy Dutheil, accordéoniste à Paris" class="img-fluid page-section__img">
+					<picture>
+						<source type="image/webp" srcset="{{ asset('img/solo-anims-paris.webp') }}">
+						<source type="image/jpeg" srcset="{{ asset('img/solo-anims-paris.jpg') }}">
+						<img src="{{ asset('img/solo-anims-paris.jpg') }}" alt="Accordéoniste sur scène, à Paris" title="Jérémy Dutheil, accordéoniste à Paris" class="img-fluid page-section__img">
+					</picture>
 				</div>
 
 				<div class="col-md-8 page-section__content-wrapper">
@@ -177,14 +188,19 @@
 							Accordéoniste jazz, Jérémy joue également en solo autour d'un répertoire de standards jazz ; ci-dessous par exemple, un arrangement de <i>Ain't Misbehavin</i> par Frank Marocco.
 						</p>
 
-						<div class="embed-responsive embed-responsive-16by9">
+						<div class="embed-responsive embed-responsive-16by9 home-video">
 							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mv3DgoYPCds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-md-4 ">
-					<img src="{{ asset('img/manouchebg.jpg') }}" alt="Duo jazz manouche avec accordéon" title="Jérémy Dutheil & Solal Poux - Jazz manouche avec accordéon" class="img-fluid page-section__img">
+					<picture>
+						<source type="image/webp" srcset="{{ asset('img/manouchebg.webp') }}">
+						<source type="image/jpeg" srcset="{{ asset('img/manouchebg.jpg') }}">
+
+						<img src="{{ asset('img/manouchebg.jpg') }}" alt="Duo jazz manouche avec accordéon" title="Jérémy Dutheil & Solal Poux - Jazz manouche avec accordéon" class="img-fluid page-section__img">
+					</picture>
 
 					<p style="margin-top: 15px;">
 						<a href="{{ path('manouche') }}" class="btn-secondary">Plus d'informations sur le groupe jazz manouche</a>
@@ -201,7 +217,12 @@
 		<div class="container">
 			<div class="row flex-column-reverse flex-md-row">
 				<div class="col-md-4">
-					<img class="img-fluid page-section__img" src="img/swingcocktail2.png" alt="Trio jazz avec accordéon" title="Trio jazz, avec Jérémy Dutheil à l'accordéon">
+					<picture>
+						<source type="image/webp" srcset="img/swingcocktail2.webp">
+						<source type="image/jpeg" srcset="img/swingcocktail2.png">
+
+						<img class="img-fluid page-section__img" src="img/swingcocktail2.png" alt="Trio jazz avec accordéon" title="Trio jazz, avec Jérémy Dutheil à l'accordéon">
+					</picture>
 				</div>
 
 				<div class="col-md-8">
@@ -258,7 +279,12 @@
 				</div>
 
 				<div class="col-md-4 ">
-					<img src="{{ asset('img/elena.jpg') }}" alt="Chanteuse et accordéoniste" title="Elena Josse et Jérémy DUTHEIL, accordéon / voix" class="img-fluid page-section__img">
+					<picture>
+						<source type="image/webp" srcset="{{ asset('img/elena.webp') }}">
+						<source type="image/jpeg" srcset="{{ asset('img/elena.jpg') }}">
+
+						<img src="{{ asset('img/elena.jpg') }}" alt="Chanteuse et accordéoniste" title="Elena Josse et Jérémy DUTHEIL, accordéon / voix" class="img-fluid page-section__img">
+					</picture>
 				</div>
 			</div>
 			<!-- /.row -->
