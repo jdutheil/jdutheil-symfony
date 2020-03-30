@@ -3,3 +3,5 @@ yarn encore dev --watch
 
 
 yarn encore production
+
+npm run build ?
