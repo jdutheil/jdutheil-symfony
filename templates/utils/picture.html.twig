@@ -1,0 +1,17 @@
+{% if lazyload is defined and lazyload == true %}
+    <picture>
+        {% for type, src in sources %}
+            <source type="image/{{ type }}" data-srcset="{{ src }}">
+        {% endfor %}
+
+        <img data-src="{{ default }}" alt="{{ alt|default('') }}" title="{{ title|default('') }}" class="{{ class|default('') }} lazyload">
+    </picture>
+{% else %}
+    <picture>
+        {% for type, src in sources %}
+            <source type="image/{{ type }}" srcset="{{ src }}">
+        {% endfor %}
+
+        <img src="{{ default }}" alt="{{ alt|default('') }}" title="{{ title|default('') }}" class="{{ class|default('') }}">
+    </picture>
+{% endif %}
