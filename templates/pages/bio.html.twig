@@ -11,7 +11,11 @@
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/bio-flash-new.jpg" alt="Jérémy Dutheil - Accordéoniste à Paris" class="flash-item__background" style="top: -250px;">
+			<picture>
+				<source type="image/webp" srcset="{{ asset('img/bio-flash-new.webp') }}">
+				<source type="image/jpeg" srcset="{{ asset('img/bio-flash-new.jpg') }}">
+				<img src="img/bio-flash-new.jpg" alt="Jérémy Dutheil - Accordéoniste à Paris" class="flash-item__background" style="top: -250px;">
+			</picture>
 		</div>
 	</section>
 
@@ -48,8 +52,19 @@
 
 				<div class="col-sm-4 page-section__content-wrapper">
 					<div>
-						<img src="{{ asset('img/solo-anims-paris.jpg') }}" alt="" class="img-fluid page-section__img">
-						<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img" style="margin-top: 35px;">
+						<picture>
+							<source type="image/webp" srcset="{{ asset('img/solo-anims-paris.webp') }}">
+							<source type="image/jpeg" srcset="{{ asset('img/solo-anims-paris.jpg') }}">
+
+							<img src="{{ asset('img/solo-anims-paris.jpg') }}" alt="" class="img-fluid page-section__img">
+						</picture>
+
+						<picture>
+							<source type="image/webp" data-srcset="{{ asset('img/videos-pic.webp') }}">
+							<source type="image/jpeg" data-srcset="{{ asset('img/videos-pic.jpg') }}">
+
+							<img data-src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img lazyload" style="margin-top: 35px;">
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -90,13 +105,23 @@
 						</div>
 
 						<div class="col-sm-4">
-							<img src="{{ asset('img/douceambiance.jpg') }}" alt="Jérémy Dutheil & Solal Poux - Douce Ambiance" class="img-fluid">
+							<picture>
+								<source type="image/webp" data-srcset="{{ asset('img/douceambiance.webp') }}">
+								<source type="image/jpeg" data-srcset="{{ asset('img/douceambiance.jpg') }}">
+
+								<img data-src="{{ asset('img/douceambiance.jpg') }}" alt="Jérémy Dutheil & Solal Poux - Douce Ambiance" class="img-fluid lazyload">
+							</picture>
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-4">
-							<img src="{{ asset('img/cidmarquis-jencreve.jpg') }}" alt="Cid Marquis - J'en crève" class="img-fluid">
+							<picture>
+								<source type="image/webp" data-srcset="{{ asset('img/cidmarquis-jencreve.webp') }}">
+								<source type="image/jpeg" data-srcset="{{ asset('img/cidmarquis-jencreve.jpg') }}">
+
+								<img data-src="{{ asset('img/cidmarquis-jencreve.jpg') }}" alt="Cid Marquis - J'en crève" class="img-fluid lazyload">
+							</picture>
 						</div>
 
 						<div class="col-sm-8">
@@ -118,13 +143,23 @@
 						</div>
 
 						<div class="col-sm-4">
-							<img src="{{ asset('img/yanotet-estceainsi.jpg') }}" alt="Madjid et Yano Tët - Est-ce ainsi que les hommes vivent" class="img-fluid">
+							<picture>
+								<source type="image/webp" data-srcset="{{ asset('img/yanotet-estceainsi.webp') }}">
+								<source type="image/jpeg" data-srcset="{{ asset('img/yanotet-estceainsi.jpg') }}">
+
+								<img data-src="{{ asset('img/yanotet-estceainsi.jpg') }}" alt="Madjid et Yano Tët - Est-ce ainsi que les hommes vivent" class="img-fluid lazyload">
+							</picture>
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-4">
-							<img src="{{ asset('img/mariepetrolette-apois.jpg') }}" alt="Marie Pétrolette - À pois !" class="img-fluid">
+							<picture>
+								<source type="image/webp" data-srcset="{{ asset('img/mariepetrolette-apois.webp') }}">
+								<source type="image/jpeg" data-srcset="{{ asset('img/mariepetrolette-apois.jpg') }}">
+
+								<img data-src="{{ asset('img/mariepetrolette-apois.jpg') }}" alt="Marie Pétrolette - À pois !" class="img-fluid lazyload">
+							</picture>
 						</div>
 
 						<div class="col-sm-8">
@@ -148,13 +183,23 @@
 						</div>
 
 						<div class="col-sm-4">
-							<img src="{{ asset('img/mime-mime.jpg') }}" alt="MimE - MimE à deux" class="img-fluid">
+							<picture>
+								<source type="image/webp" data-srcset="{{ asset('img/mime-mime.webp') }}">
+								<source type="image/jpeg" data-srcset="{{ asset('img/mime-mime.jpg') }}">
+
+								<img data-src="{{ asset('img/mime-mime.jpg') }}" alt="MimE - MimE à deux" class="img-fluid lazyload">
+							</picture>
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-4">
-							<img src="{{ asset('img/l1consolable-laugmentation.jpg') }}" alt="L'1nconsolable - L'augmentation" class="img-fluid">
+							<picture>
+								<source type="image/webp" data-srcset="{{ asset('img/l1consolable-laugmentation.webp') }}">
+								<source type="image/jpeg" data-srcset="{{ asset('img/l1consolable-laugmentation.jpg') }}">
+
+								<img data-src="{{ asset('img/l1consolable-laugmentation.jpg') }}" alt="L'1nconsolable - L'augmentation" class="img-fluid lazyload">
+							</picture>
 						</div>
 
 						<div class="col-sm-8">
@@ -177,13 +222,23 @@
 						</div>
 
 						<div class="col-sm-4">
-							<img src="{{ asset('img/zoulouzbekband-cousinscousines.jpg') }}" alt="Zoulouzbek Band - Cousins, Cousines" class="img-fluid">
+							<picture>
+								<source type="image/webp" data-srcset="{{ asset('img/zoulouzbekband-cousinscousines.webp') }}">
+								<source type="image/jpeg" data-srcset="{{ asset('img/zoulouzbekband-cousinscousines.jpg') }}">
+
+								<img data-src="{{ asset('img/zoulouzbekband-cousinscousines.jpg') }}" alt="Zoulouzbek Band - Cousins, Cousines" class="img-fluid lazyload">
+							</picture>
 						</div>
 					</div>
 
 					<div class="row" style="margin-top: 15px;">
 						<div class="col-sm-4">
-							<img src="{{ asset('img/lesfilsdeflute-surnotrefil.jpg') }}" alt="Les Fils de Flûte - Sur notre fil" class="img-fluid">
+							<picture>
+								<source type="image/webp" data-srcset="{{ asset('img/lesfilsdeflute-surnotrefil.webp') }}">
+								<source type="image/jpeg" data-srcset="{{ asset('img/lesfilsdeflute-surnotrefil.jpg') }}">
+
+								<img data-src="{{ asset('img/lesfilsdeflute-surnotrefil.jpg') }}" alt="Les Fils de Flûte - Sur notre fil" class="img-fluid lazyload">
+							</picture>
 						</div>
 
 						<div class="col-sm-8">
