@@ -11,7 +11,14 @@
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/collab_pic.jpg" alt="" class="flash-item__background flash-item__background--collab">
+			{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/collab_pic.webp',
+																	 'jpeg': 'img/collab_pic.jpg'
+																   },
+														'default': 'img/collab_pic.jpg',
+														'lazyload': false,
+														'alt': 'Photo sur scène - Les Fils de Flûte',
+														'title': '',
+														'class': 'flash-item__background flash-item__background--collab' } %}
 		</div>
 	</section>
 
@@ -38,7 +45,14 @@
 					<h2 class="section-title section-title--small">Jérémy Dutheil & Solal Poux</h2>
 
 					<div class="collab-pic-container">
-						<img class="img-fluid duos-pic" src="img/jdsp-com.jpg" alt="">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/jdsp-com.webp',
+																				 'jpeg': 'img/jdsp-com.jpg'
+																			   },
+																	'default': 'img/jdsp-com.jpg',
+																	'lazyload': true,
+																	'alt': 'Jérémy Dutheil & Solal Poux',
+																	'title': 'Jérémy Dutheil & Solal Poux - Jazz manouche',
+																	'class': 'img-fluid duos-pic' } %}
 					</div>
 
 					<p class="collab-txt">
@@ -54,7 +68,14 @@
 					<h2 class="section-title section-title--small">Rue la Môme</h2>
 
 					<div class="collab-pic-container">
-						<img class="img-fluid duos-pic" src="img/ruelamome.jpg" alt="">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/ruelamome.webp',
+																				 'jpeg': 'img/ruelamome.jpg'
+																			   },
+																	'default': 'img/ruelamome.jpg',
+																	'lazyload': true,
+																	'alt': 'Rue la Môme',
+																	'title': 'Rue la Môme - Hommage à Edith Piaf',
+																	'class': 'img-fluid duos-pic' } %}
 					</div>
 
 					<p class="collab-txt">
@@ -71,7 +92,14 @@
 					<h2 class="section-title section-title--small">Marie Pétrolette</h2>
 
 					<div class="collab-pic-container">
-						<img class="img-fluid duos-pic" src="img/duos_marie.jpg" alt="">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/duos_marie.webp',
+																				 'jpeg': 'img/duos_marie.jpg'
+																			   },
+																	'default': 'img/duos_marie.jpg',
+																	'lazyload': true,
+																	'alt': 'Marie Pétrolette',
+																	'title': 'Marie Pétrolette',
+																	'class': 'img-fluid duos-pic' } %}
 					</div>
 
 					<p class="collab-txt">
@@ -87,7 +115,14 @@
 					<h2 class="section-title section-title--small">MimE</h2>
 
 					<div class="collab-pic-container">
-						<img class="img-fluid duos-pic" src="img/duos_mime.jpg" alt="">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/duos_mime.webp',
+																				 'jpeg': 'img/duos_mime.jpg'
+																			   },
+																	'default': 'img/duos_mime.jpg',
+																	'lazyload': true,
+																	'alt': 'MimE',
+																	'title': 'MimE',
+																	'class': 'img-fluid duos-pic' } %}
 					</div>
 
 					<p class="collab-txt">
@@ -103,7 +138,14 @@
 					<h2 class="section-title section-title--small">Madjid et Yano Tët</h2>
 
 					<div class="collab-pic-container">
-						<img class="img-fluid duos-pic" src="img/madjid.jpg" alt="">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/madjid.webp',
+																				 'jpeg': 'img/madjid.jpg'
+																			   },
+																	'default': 'img/madjid.jpg',
+																	'lazyload': true,
+																	'alt': 'Madjid & Yano Tët',
+																	'title': 'Madjid & Yano Tët',
+																	'class': 'img-fluid duos-pic' } %}
 					</div>
 
 					<p class="collab-txt">
@@ -119,7 +161,14 @@
 					<h2 class="section-title section-title--small">La Marquise</h2>
 
 					<div class="collab-pic-container">
-						<img class="img-fluid duos-pic" src="img/groupes_marquise.jpg" alt="">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/groupes_marquise.webp',
+																				 'jpeg': 'img/groupes_marquise.jpg'
+																			   },
+																	'default': 'img/groupes_marquise.jpg',
+																	'lazyload': true,
+																	'alt': 'La Marquise',
+																	'title': 'La Marquise',
+																	'class': 'img-fluid duos-pic' } %}
 					</div>
 
 					<p class="collab-txt">
@@ -135,7 +184,14 @@
 					<h2 class="section-title section-title--small">Elena Josse</h2>
 
 					<div class="collab-pic-container">
-						<img class="img-fluid duos-pic" src="img/duos_elena.jpg" alt="">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/duos_elena.webp',
+																				 'jpeg': 'img/duos_elena.jpg'
+																			   },
+																	'default': 'img/duos_elena.jpg',
+																	'lazyload': true,
+																	'alt': 'Elena Josse',
+																	'title': 'Elena Josse',
+																	'class': 'img-fluid duos-pic' } %}
 					</div>
 
 					<p class="collab-txt">
@@ -151,7 +207,14 @@
 					<h2 class="section-title section-title--small">Les Fils de Flûte</h2>
 
 					<div class="collab-pic-container">
-						<img class="img-fluid duos-pic" src="img/groupes_fdf.jpg" alt="">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/groupes_fdf.webp',
+																				 'jpeg': 'img/groupes_fdf.jpg'
+																			   },
+																	'default': 'img/groupes_fdf.jpg',
+																	'lazyload': true,
+																	'alt': 'Les Fils de Flûte',
+																	'title': 'Les Fils de Flûte',
+																	'class': 'img-fluid duos-pic' } %}
 					</div>
 
 					<p class="collab-txt">
@@ -400,7 +463,14 @@ Le premier album "Sur notre fil", toujours autoproduit, sort fin 2012, 14 titres
                 En 2015 la famille s’agrandie : la section rythmique s'enrichit d'une batterie et d’un nouveau contrebassiste. Les concerts se feront désormais à 4 ou 5 sur scène. Une nouvelle formule, un nouveau spectacle et toujours plus d'envie !
             </p>
 
-            <img class="img-fluid" src="img/fdf2.jpg" alt="Les Fils de Flûte sur scène !">
+			{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/fdf2.webp',
+																	 'jpeg': 'img/fdf2.jpg'
+																   },
+														'default': 'img/fdf2.jpg',
+														'lazyload': true,
+														'alt': 'Les Fils de Flûte sur scène !',
+														'title': 'Les Fils de Flûte sur scène !',
+														'class': 'img-fluid' } %}
 		</div>
 		<!-- /.container -->
 	</section>
