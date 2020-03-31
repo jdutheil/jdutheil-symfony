@@ -555,16 +555,22 @@ a:hover { color: #ff841c; text-decoration: none; }
 	top: -50px;
 }
 
-.home-video {
-	border: 2px solid #ff841c;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
 
 @media screen and (max-width: 1320px) {
 	.nav-item--social { display: none; }
 }
 
+
+.youtube-lazy {
+	border: 2px solid #000000;
+	&:hover { border: 2px solid #ff841c; }
+}
+
+.home-video {
+	border: 2px solid #ff841c;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
 /* purgecss start ignore */
 #contact .form-group:first-child { display: none; }
