@@ -1,17 +1,145 @@
 <div class="partners">
-    <img src="{{ asset('img/vinci.png') }}" alt="Vinci" style="max-height: 100px; margin-right: 25px;">
-    <img src="{{ asset('img/audiens.png') }}" alt="Audiens" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/lebarn.svg') }}" alt="Hôtel Le Barn" style="max-width: 100px; max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/terremer.png') }}" alt="Restaurant Terre & Mer" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/greatweddings.jpeg') }}" alt="Great Weddings in France" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/bistrochamps.png') }}" alt="Le Bistro des Champs" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/lamarlotte.png') }}" alt="La Marlotte" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/venteprivee.png') }}" alt="vente-privee.com" style="max-height: 100px; margin-right: 25px;">
-    <img src="{{ asset('img/crillonlogo.png') }}" alt="Hôtel Le Crillon" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/pureessentiel.jpeg') }}" alt="PureEssentiel" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/mariott.png') }}" alt="Hôtel Marriott" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/jcdecaux.png') }}" alt="JcDecaux" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/asten.png') }}" alt="Asten" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/mediakiosk.gif') }}" alt="MediaKiosk" style="max-height: 60px; margin-right: 25px;">
-    <img src="{{ asset('img/caviarkaspia.png') }}" alt="Caviar Kaspia" style="max-height: 60px; margin-right: 25px;">
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/vinci.webp',
+																				 'png': 'img/vinci.png'
+																			   },
+																	'default': 'img/vinci.png',
+																	'lazyload': true,
+																	'alt': 'Vinci',
+																	'title': '',
+																	'class': '',
+                                                                    'style': 'max-height: 100px; margin-right: 25px;' } %}
+
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/audiens.webp',
+                                                                        'png': 'img/audiens.png'
+                                                                    },
+                                                                    'default': 'img/audiens.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'Audien',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %}
+
+    <img data-src="{{ asset('img/lebarn.svg') }}" class="lazyload" alt="Hôtel Le Barn" style="max-width: 100px; max-height: 60px; margin-right: 25px;">
+    
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/terremer.webp',
+                                                                        'png': 'img/terremer.png'
+                                                                    },
+                                                                    'default': 'img/terremer.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'Restaurant Terre & Mer',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %}
+    
+    
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/greatweddings.webp',
+                                                                            'jpeg': 'img/greatweddings.jpeg'
+                                                                        },
+                                                                        'default': 'img/greatweddings.jpeg',
+                                                                        'lazyload': true,
+                                                                        'alt': 'Great Weddings in France',
+                                                                        'title': '',
+                                                                        'class': '',
+                                                                        'style': 'max-height: 60px; margin-right: 25px;' } %}
+
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/bistrochamps.webp',
+                                                                        'png': 'img/bistrochamps.png'
+                                                                    },
+                                                                    'default': 'img/bistrochamps.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'Le Bistro des Champs',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %}
+
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/lamarlotte.webp',
+                                                                        'png': 'img/lamarlotte.png'
+                                                                    },
+                                                                    'default': 'img/lamarlotte.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'La Marlotte',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %}                                    
+
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/venteprivee.webp',
+                                                                        'png': 'img/venteprivee.png'
+                                                                    },
+                                                                    'default': 'img/venteprivee.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'Vente Privée',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 100px; margin-right: 25px;' } %}     
+
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/crillonlogo.webp',
+                                                                        'png': 'img/crillonlogo.png'
+                                                                    },
+                                                                    'default': 'img/crillonlogo.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'Hôtel Le Crillon',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %}         
+    
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/pureessentiel.webp',
+                                                                        'jpeg': 'img/pureessentiel.jpeg'
+                                                                    },
+                                                                    'default': 'img/pureessentiel.jpeg',
+                                                                    'lazyload': true,
+                                                                    'alt': 'PureEssentiel',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %}      
+
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/mariott.webp',
+                                                                        'png': 'img/mariott.png'
+                                                                    },
+                                                                    'default': 'img/mariott.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'Hôtel Marriot',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %}   
+
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/jcdecaux.webp',
+                                                                        'png': 'img/jcdecaux.png'
+                                                                    },
+                                                                    'default': 'img/jcdecaux.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'JcDecaux',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %} 
+    
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/asten.webp',
+                                                                        'png': 'img/asten.png'
+                                                                    },
+                                                                    'default': 'img/asten.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'Asten',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %} 
+
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/mediakiosk.webp',
+                                                                        'gif': 'img/mediakiosk.gif'
+                                                                    },
+                                                                    'default': 'img/mediakiosk.gif',
+                                                                    'lazyload': true,
+                                                                    'alt': 'MediaKiosk',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %} 
+    
+    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/caviarkaspia.webp',
+                                                                        'png': 'img/caviarkaspia.png'
+                                                                    },
+                                                                    'default': 'img/caviarkaspia.png',
+                                                                    'lazyload': true,
+                                                                    'alt': 'Caviar Kaspia',
+                                                                    'title': '',
+                                                                    'class': '',
+                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %} 
+                                                                    
 </div>
