@@ -11,7 +11,14 @@
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/videos-new.jpg" alt="" class="flash-item__background flash-item__background--groupes">
+			{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/videos-new.webp',
+																				 'jpeg': 'img/videos-new.jpg'
+																			   },
+																	'default': 'img/videos-new.jpg',
+																	'lazyload': false,
+																	'alt': 'Jérémy Dutheil - Main gauche accordéon',
+																	'title': 'Main gauche accordéon',
+																	'class': 'flash-item__background flash-item__background--groupes' } %}
 		</div>
 	</section>
 
@@ -27,9 +34,7 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-h2oJAjzAtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
 				</div>
 			</div>
 
@@ -41,28 +46,19 @@
 
 			<div class="row">
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-h2oJAjzAtg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mv3DgoYPCds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'mv3DgoYPCds', 'title': 'Accordéon jazz - Aint Misbehavin' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oSiWQ_thsn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'oSiWQ_thsn8', 'title': 'Accordéon solo - Java Manouche (Jo Privat)' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/od3lmo26AaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'od3lmo26AaE', 'title': 'Accordéon solo - Le Balajo (JO Privat)' } %}
 				</div>
 			</div>
 
@@ -76,42 +72,27 @@
 
 			<div class="row">
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BGGrRG-q4VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'BGGrRG-q4VU', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CWUY-repj8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CWUY-repj8g', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u8re-Ba8RQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'u8re-Ba8RQ0', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iklby0R-WyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-
-
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'Iklby0R-WyQ', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9b6zyj1e2cE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '9b6zyj1e2cE', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 			</div>
 
@@ -127,15 +108,11 @@
 
 			<div class="row">
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NIvIUJcluU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CXq4DWhwqSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 			</div>
 
@@ -152,29 +129,21 @@
 
             <div class="row">
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oSiWQ_thsn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'oSiWQ_thsn8', 'title': 'Accordéon guinguette' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-                    	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/od3lmo26AaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'od3lmo26AaE', 'title': 'Accordéon guinguette' } %}
 				</div>
             </div>
 
             <div class="row" style="margin-top: 20px;">
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CjtwtX3Sd8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CjtwtX3Sd8Q', 'title': 'Accordéon guinguette' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8eY4FsHf7g0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '8eY4FsHf7g0', 'title': 'Accordéon guinguette' } %}
 				</div>
             </div>
 
@@ -190,29 +159,21 @@
 
 			<div class="row">
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'k9SY8saaY3I', 'title': 'Duo accordéon / voix' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o91BGe2Xaac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'o91BGe2Xaac', 'title': 'Duo accordéon / voix' } %}
 				</div>
 			</div>
 
 			<div class="row" style="margin-top: 15px;">
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gtqG5br0M60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'gtqG5br0M60', 'title': 'Duo accordéon / voix' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_cyzXvBjHkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '_cyzXvBjHkE', 'title': 'Duo accordéon / voix' } %}
 				</div>
 			</div>
 
