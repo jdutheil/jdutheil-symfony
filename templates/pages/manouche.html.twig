@@ -44,7 +44,15 @@ drift.load('beeybihz4kn4');
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/manouchebg.jpg" alt="Un groupe de jazz manouche pour vos événements - Avec accordéon" class="flash-item__background" style="top: -50%;">
+			{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/manouchebg.webp',
+																				 'jpeg': 'img/manouchebg.jpg'
+																			   },
+																	'default': 'img/manouchebg.jpg',
+																	'lazyload': false,
+																	'alt': 'Un groupe de jazz manouche pour vos événements - Avec accordéon',
+																	'title': 'Un groupe de jazz manouche pour vos événements - Avec accordéon',
+																	'class': 'flash-item__background',
+																	'style': 'top: -50%;' } %}
 		</div>
 	</section>
 
@@ -71,49 +79,13 @@ drift.load('beeybihz4kn4');
 
 			<div class="row">
                 <div class="col-md-12">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/CXq4DWhwqSU"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/CXq4DWhwqSU?autoplay=1><img src=https://img.youtube.com/vi/CXq4DWhwqSU/sddefault.jpg alt='Vidéo trio jazz manouche - Accordéon / Guitare / Contrebasse'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Trio jazz manouche - Accordéon / Guitare / Contrebasse"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
 
                     <p class="text-center" style="margin-top: 15px;">
                         Quelques extraits en trio jazz manouche : Bossa Dorado, Autumn Leaves, All of Me, All the things you are, Fly me to the Moon
                     </p>
                 </div>
             </div>
-
-			<!--<div class="row">
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BGGrRG-q4VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CWUY-repj8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u8re-Ba8RQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 15px;">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NIvIUJcluU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>-->
 
 			<p>
 				Vous trouverez ci-dessous des informations sur nos prestations en tant qu'orchestre jazz manouche. Pour tout renseignement complémentaire, ou pour établir un devis, n'hésitez pas à <a href="{{ path('contact') }}">nous contacter</a>.
@@ -145,7 +117,15 @@ drift.load('beeybihz4kn4');
 				</div>
 
 				<div class="col-md-6" style="text-align: center;">
-					<img class="img-fluid" src="img/crillon.jpg" alt="Trio jazz manouche à l'Hôtel Le Crillon">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/crillon.webp',
+																				 'jpeg': 'img/crillon.jpg'
+																			   },
+																	'default': 'img/crillon.jpg',
+																	'lazyload': false,
+																	'alt': 'Trio jazz manouche à l\'Hôtel Le Crillon',
+																	'title': 'Trio jazz manouche à l\'Hôtel Le Crillon',
+																	'class': 'img-fluid' } %}
+
 				</div>
 			</div>
 
@@ -153,7 +133,14 @@ drift.load('beeybihz4kn4');
 
 			<div class="row">
 				<div class="col-md-6">
-					<img class="img-fluid" src="img/swingcocktail2.jpg" alt="Trio jazz avec chanteur pour vos événements">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/swingcocktail2.webp',
+																				 'jpeg': 'img/swingcocktail2.jpg'
+																			   },
+																	'default': 'img/swingcocktail2.jpg',
+																	'lazyload': false,
+																	'alt': 'Trio jazz avec chanteur pour vos événements',
+																	'title': 'Trio jazz avec chanteur pour vos événements',
+																	'class': 'img-fluid' } %}
 				</div>
 
 				<div class="col-md-6">
@@ -182,59 +169,19 @@ drift.load('beeybihz4kn4');
 
 			<div class="row">
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/W_uOwoGcBuE"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/W_uOwoGcBuE?autoplay=1><img src=https://img.youtube.com/vi/W_uOwoGcBuE/sddefault.jpg alt='Duo jazz manouche - La Foule - accordéon / guitare'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="La Foule - Duo jazz manouche (accordéon / guitare)"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'La Foule - Duo jazz manouche (accordéon / guitare)' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/CXq4DWhwqSU"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/CXq4DWhwqSU?autoplay=1><img src=https://img.youtube.com/vi/CXq4DWhwqSU/sddefault.jpg alt='Vidéo trio jazz manouche - Accordéon / Guitare / Contrebasse'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Trio jazz manouche - Accordéon / Guitare / Contrebasse"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/NIvIUJcluU0"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/NIvIUJcluU0?autoplay=1><img src=https://img.youtube.com/vi/NIvIUJcluU0/sddefault.jpg alt='Vidéo trio jazz manouche avec accordéon'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Trio jazz manouche avec accordéon"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Trio jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/pmZ80dJklu0"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/pmZ80dJklu0?autoplay=1><img src=https://img.youtube.com/vi/pmZ80dJklu0/sddefault.jpg alt='Vidéo trio jazz manouche avec accordéon'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Trio jazz manouche avec accordéon"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'pmZ80dJklu0', 'title': 'Trio jazz manouche avec accordéon' } %}
 				</div>
 			</div>
 
@@ -262,64 +209,32 @@ drift.load('beeybihz4kn4');
 				</div>
 
 				<div class="col-md-6">
-					<img src="img/manouchebg.jpg" alt="Jérémy Dutheil & Solal Poux" class="img-fluid">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/manouchebg.webp',
+																				 'jpeg': 'img/manouchebg.jpg'
+																			   },
+																	'default': 'img/manouchebg.jpg',
+																	'lazyload': false,
+																	'alt': 'Jérémy Dutheil & Solal Poux',
+																	'title': 'Jérémy Dutheil & Solal Poux',
+																	'class': 'img-fluid' } %}
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/CWUY-repj8g"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/CWUY-repj8g?autoplay=1><img src=https://img.youtube.com/vi/CWUY-repj8g/sddefault.jpg alt='Vidéo duo jazz manouche avec accordéon'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Duo jazz manouche avec accordéon"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CWUY-repj8g', 'title': 'Duo jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/u8re-Ba8RQ0"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/u8re-Ba8RQ0?autoplay=1><img src=https://img.youtube.com/vi/u8re-Ba8RQ0/sddefault.jpg alt='Vidéo jazz manouche avec accordéon'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'u8re-Ba8RQ0', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/Iklby0R-WyQ"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Iklby0R-WyQ?autoplay=1><img src=https://img.youtube.com/vi/Iklby0R-WyQ/sddefault.jpg alt='Vidéo jazz manouche avec accordéon'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Jazz manouche avec accordéon"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'Iklby0R-WyQ', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/9b6zyj1e2cE"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/9b6zyj1e2cE?autoplay=1><img src=https://img.youtube.com/vi/9b6zyj1e2cE/sddefault.jpg alt='Vidéo jazz manouche avec accordéon'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Jazz manouche avec accordéon"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '9b6zyj1e2cE', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 			</div>
 
@@ -341,18 +256,8 @@ drift.load('beeybihz4kn4');
 
             <div class="row">
                 <div class="col-md-12">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/CXq4DWhwqSU"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/CXq4DWhwqSU?autoplay=1><img src=https://img.youtube.com/vi/CXq4DWhwqSU/sddefault.jpg alt='Vidéo trio jazz manouche - Accordéon / Guitare / Contrebasse'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Trio jazz manouche - Accordéon / Guitare / Contrebasse"
-						></iframe>
-					</div>
-
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Jazz manouche avec accordéon' } %}
+					
                     <p class="text-center" style="margin-top: 15px;">
                         Quelques extraits en trio jazz manouche : Bossa Dorado, Autumn Leaves, All of Me, All the things you are, Fly me to the Moon
                     </p>
@@ -371,31 +276,11 @@ drift.load('beeybihz4kn4');
 
 			<div class="row">
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/NIvIUJcluU0"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/NIvIUJcluU0?autoplay=1><img src=https://img.youtube.com/vi/NIvIUJcluU0/sddefault.jpg alt='Vidéo trio jazz manouche avec accordéon'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Trio jazz manouche avec accordéon"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe
-							class="embed-responsive-item"
-							src="https://www.youtube.com/embed/pmZ80dJklu0"
-							srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/pmZ80dJklu0?autoplay=1><img src=https://img.youtube.com/vi/pmZ80dJklu0/sddefault.jpg alt='Vidéo trio jazz manouche avec accordéon'><span>▶</span></a>"
-							frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-							title="Trio jazz manouche avec accordéon"
-						></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'pmZ80dJklu0', 'title': 'Trio jazz manouche avec accordéon' } %}
 				</div>
 			</div>
 

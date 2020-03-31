@@ -4,7 +4,8 @@
             <source type="image/{{ type }}" data-srcset="{{ src }}">
         {% endfor %}
 
-        <img data-src="{{ default }}" alt="{{ alt|default('') }}" title="{{ title|default('') }}" class="{{ class|default('') }} lazyload">
+        <img data-src="{{ default }}" alt="{{ alt|default('') }}" title="{{ title|default('') }}" class="{{ class|default('') }} lazyload"
+            {% if style is defined %}style="{{ style }}"{% endif %}>
     </picture>
 {% else %}
     <picture>
@@ -12,6 +13,7 @@
             <source type="image/{{ type }}" srcset="{{ src }}">
         {% endfor %}
 
-        <img src="{{ default }}" alt="{{ alt|default('') }}" title="{{ title|default('') }}" class="{{ class|default('') }}">
+        <img src="{{ default }}" alt="{{ alt|default('') }}" title="{{ title|default('') }}" class="{{ class|default('') }}" 
+            {% if style is defined %}style="{{ style }}"{% endif %}>
     </picture>
 {% endif %}
