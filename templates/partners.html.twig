@@ -122,15 +122,7 @@
                                                                     'class': '',
                                                                     'style': 'max-height: 60px; margin-right: 25px;' } %} 
 
-    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/mediakiosk.webp',
-                                                                        'gif': 'img/mediakiosk.gif'
-                                                                    },
-                                                                    'default': 'img/mediakiosk.gif',
-                                                                    'lazyload': true,
-                                                                    'alt': 'MediaKiosk',
-                                                                    'title': '',
-                                                                    'class': '',
-                                                                    'style': 'max-height: 60px; margin-right: 25px;' } %} 
+    <img data-src="{{ asset('img/mediakiosk.gif') }}" class="lazyload" alt="Mediakiosk" style="max-height: 60px; margin-right: 25px;">
     
     {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/caviarkaspia.webp',
                                                                         'png': 'img/caviarkaspia.png'
