@@ -11,7 +11,15 @@
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/flash-item-1.jpg" alt="" class="flash-item__background flash-item__background--groupes">
+			{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/flash-item-1.webp',
+																				 'jpeg': 'img/flash-item-1.jpg'
+																			   },
+																	'default': 'img/flash-item-1.jpg',
+																	'lazyload': false,
+																	'alt': 'Accordéoniste pour votre mariage',
+																	'title': 'Accordéoniste pour votre mariage',
+																	'class': 'flash-item__background flash-item__background--groupes',
+																	'style': '' } %}
 		</div>
 	</section>
 
@@ -20,6 +28,8 @@
 	<section class="content-section bg--blank page-section">
 		<div class="container">
 			<h1 class="section-title">Accordéoniste pour votre mariage</h1>
+
+			{{ include('utils/contact-cta.html.twig') }}
 
 			<p>
 				Vous êtes à la recherche d'un <strong>accordéoniste pour votre mariage</strong> ?
@@ -56,22 +66,25 @@
 				</div>
 
 				<div class="col-md-4">
-					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/videos-pic.webp',
+																				 'jpeg': 'img/videos-pic.jpg'
+																			   },
+																	'default': 'img/videos-pic.jpg',
+																	'lazyload': false,
+																	'alt': 'Jérémy DUTHEIL, accordéoniste, en concert',
+																	'title': 'Jérémy DUTHEIL, accordéoniste, en concert',
+																	'class': 'img-fluid page-section__img' } %}
 				</div>
 				<!-- /.col-sm-4 -->
 			</div>
 
 			<div class="row" style="margin-top: 15px; margin-bottom: 15px;">
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8eY4FsHf7g0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mv3DgoYPCds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'mv3DgoYPCds', 'title': 'Accordéon jazz - Aint Misbehavin' } %}
 				</div>
 			</div>
 
@@ -87,27 +100,31 @@
 
 			<div class="row" style="margin-top: 15px; margin-bottom: 15px;">
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VVWMhc7LNcM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'oSiWQ_thsn8', 'title': 'Accordéon solo - Java Manouche (Jo Privat)' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2ikPP4jTAfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CjtwtX3Sd8Q', 'title': 'Aux Champs Elysées - Accordéoniste pour votre soirée' } %}
 				</div>
 			</div>
 
 			<h2 class="section-title section-title--small">Vous préférez un groupe de musique pour votre mariage ?</h2>
 
 			<p>
-				Si vous cherchez plutôt un <a href="{{ path('groupe_musique_mariage') }}">groupe de musique pour votre mariage</a>, vous êtes également au bon endroit ! L'accordéon s'intègre parfaitement avec d'autres instruments (guitare, contrebasse, batterie, violon, saxophone..) dans un style plutôt jazz / <a href="{{ path('manouche') }}">jazz manouche</a>, mais est aussi l'instrument roi lorsqu'il s'agit d'accompagner une chanteuse ! Je propose de nombreuses formules qui vont du duo au quintet, suivants vos envies et votre budget. Vous trouverez ci-dessous quelques exemples qui me paraissent particulièrement adapté à <strong>votre mariage</strong>.
+				Si vous cherchez plutôt un <a href="{{ path('musiciens_soirees') }}">groupe de musique pour votre mariage</a>, vous êtes également au bon endroit ! L'accordéon s'intègre parfaitement avec d'autres instruments (guitare, contrebasse, batterie, violon, saxophone..) dans un style plutôt jazz / <a href="{{ path('manouche') }}">jazz manouche</a>, mais est aussi l'instrument roi lorsqu'il s'agit d'accompagner une chanteuse ! Je propose de nombreuses formules qui vont du duo au quintet, suivants vos envies et votre budget. Vous trouverez ci-dessous quelques exemples qui me paraissent particulièrement adapté à <strong>votre mariage</strong>.
 			</p>
 
 			<h3 class="section-title section-title--smaller">Jazz manouche pour votre mariage</h3>
 
-			<img src="img/trio-jazz-manouche.jpg" alt="Trio jazz manouche pour mariage" class="img-fluid" style="display: block; width: 80%; margin: auto;">
+			{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/trio-jazz-manouche.webp',
+																				 'jpeg': 'img/trio-jazz-manouche.jpg'
+																			   },
+																	'default': 'img/trio-jazz-manouche.jpg',
+																	'lazyload': false,
+																	'alt': 'Trio jazz manouche avec accordéon',
+																	'title': 'Trio jazz manouche avec accordéon',
+																	'class': 'img-fluid',
+																	'style': 'display: block; width: 80%; margin: auto;' } %}
 
 			<p style="margin-top: 20px;">
 				Pour une musique d'ambiance réussie, le jazz manouche est sans contexte le répertoire idéal ! Style virtuose par excellence, les morceaux altèrnent entre balades langoureuses et <i>swing</i> très rapide ; toujours en toute discrétion et dans l'élégance. <br>
@@ -115,21 +132,17 @@
 			</p>
 
 			<div class="row">
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+				<div class="col-md-6" style="margin-bottom: 10px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'La Foule - Duo jazz manouche (accordéon / guitare)' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CXq4DWhwqSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
 				</div>
 			</div>
 
 			<p>
-				<a class="btn btn-primary" href="{{ path('groupe_jazz_manouche_mariage_paris') }}" style="margin-top: 15px;">Plus d'informations</a>
+				<a class="btn btn-primary" href="{{ path('manouche') }}" style="margin-top: 15px;">Plus d'informations</a>
 			</p>
 
 			<h3 class="section-title section-title--smaller" style="margin-top: 20px;">Chanson française pour votre mariage</h3>
@@ -138,19 +151,17 @@
 				Vous souhaitez un événement plus participatif, où vos invités peuvent chanter les airs qu'ils connaissent ? Je travaille avec plusieurs chanteuses, avec lesquelles nous vous proposons un répertoire balayant la chanson française (Piaf, Aznavour, Brel, Trenet, ...). Nos formules commencent en duo <strong>accordéon / voix</strong>, "juste le nécessaire" ; mais nous pouvons également venir accompagnés d'autres instrumentistes (guitare, basse, batterie, violon, ...), pour quelque chose de plus festif. N'hésitez pas à nous contacter pour toute demande d'information.
 			</p>
 
-			<div class="row">
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+			<div class="row justify-content-center" style="margin-bottom: 20px;">
+				<div class="col-md-6" style="margin-bottom: 10px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'k9SY8saaY3I', 'title': 'Animation musicale avec chanteuse' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o91BGe2Xaac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'zCgfywiTWKs', 'title': 'Animation musicale avec chanteur' } %}
 				</div>
 			</div>
+
+			{{ include('utils/contact-cta.html.twig') }}
 		</div>
 		<!-- /.container -->
 	</section>

@@ -45,6 +45,8 @@ Redirect 301 /elena-josse https://www.jeremy-dutheil.fr/collaborations-artistiqu
 Redirect 301 /les-fils-de-flute https://www.jeremy-dutheil.fr/collaborations-artistiques#fdf
 Redirect 301 /animations-seniors-seine-et-marne /animations
 Redirect 301 /soirees-paris /accordeoniste-soiree
+Redirect 301 /groupe-musique-mariage /musiciens-soiree
+Redirect 301 /groupe-jazz-manouche-mariage /jazz-manouche
 
 
 # Referrer
