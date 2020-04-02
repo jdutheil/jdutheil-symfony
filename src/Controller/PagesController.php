@@ -72,11 +72,11 @@ class PagesController extends Controller
 
 	/**
 	 * @Route("/soirees-paris", name="soirees_paris")
-	 */
+	 *
 	public function soireesParis()
 	{
 		return $this->render('pages/soirees_paris.html.twig', array());
-	}
+	}*/
 
 	/**
 	 * @Route("/accordeoniste-jazz-manouche", name="accordeon_jazz_manouche")

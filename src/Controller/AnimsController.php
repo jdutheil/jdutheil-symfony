@@ -17,14 +17,7 @@ class AnimsController extends Controller
 		return $this->render('anims/index.html.twig', array());
 	}
 
-	/**
-	 * @Route("/animations-seniors-seine-et-marne", name="animations_seniors")
-	 */
-	public function seniorsAction()
-	{
-
-		return $this->render('anims/seniors.html.twig', array());
-	}
+	
 
 	/**
 	 *	@Route("/accordeoniste-mariages", name="animations_mariages")
