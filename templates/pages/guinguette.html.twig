@@ -9,15 +9,25 @@
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/flash-item-1.jpg" alt="Accordéoniste pour soirée guinguette" class="flash-item__background">
+			{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/solo-anims-paris.webp',
+																				 'jpeg': 'img/solo-anims-paris.jpg'
+																			   },
+																	'default': 'img/solo-anims-paris.jpg',
+																	'lazyload': false,
+																	'alt': 'Accordéoniste pour votre soirée et vos événements',
+																	'title': 'Accordéoniste pour votre soirée et vos événements',
+																	'class': 'flash-item__background',
+																	'style': 'top: -330px;' } %}
 		</div>
 	</section>
 
-	<section class="flash-ghost flash-ghost--limited"></section>
+	<section class="flash-ghost"></section>
 
 	<section class="content-section bg--blank page-section">
 		<div class="container">
 			<h1 class="section-title">Une soirée guinguette au son de l'accordéon</h1>
+
+			{{ include('utils/contact-cta.html.twig') }}
 
             Vous vous lancez dans l'organisation d'une soirée, et souhaitez donner une touche <i>rétro</i> à votre événement ? L'accordéon est l'instrument par excellence pour un thème guinguette : nappes à carreaux, décoration champêtre et chansons des années 50 !
 
@@ -53,7 +63,15 @@
 				</div>
 
 				<div class="col-md-4">
-					<img src="{{ asset('img/accordeoniste_soiree.JPG') }}" alt="Jérémy DUTHEIL, accordéoniste, pour une soirée guinguette" class="img-fluid page-section__img">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/accordeoniste_soiree.webp',
+																				 'jpeg': 'img/accordeoniste_soiree.JPG'
+																			   },
+																	'default': 'img/accordeoniste_soiree.JPG',
+																	'lazyload': false,
+																	'alt': 'Accordéoniste pour votre soirée et vos événements',
+																	'title': 'Accordéoniste pour votre soirée et vos événements',
+																	'class': 'img-fluid page-section__img',
+																	'style': '' } %}
 				</div>
 				<!-- /.col-sm-4 -->
 			</div>
@@ -65,30 +83,53 @@
             <h2 style="margin-top: 15px;" class="section-title section-title--small">Quelques extraits d'accordéon guinguette</h2>
 
             <div class="row">
-                <div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2ikPP4jTAfE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-				<div class="col-md-6" style="margin-top: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BGGrRG-q4VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+				<div class="col-md-6">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CjtwtX3Sd8Q', 'title': 'Aux Champs Elysées - Accordéoniste pour votre soirée' } %}
 				</div>
 
-				<div class="col-md-6" style="margin-top: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CWUY-repj8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+				<div class="col-md-6" style="margin-bottom: 15px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'oSiWQ_thsn8', 'title': 'Accordéon guinguette - Java Manouche (Jo Privat)' } %}
+				</div>
+
+                <div class="col-md-6" style="margin-bottom: 10px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'k9SY8saaY3I', 'title': 'Animation musicale avec chanteuse' } %}
+				</div>
+
+				<div class="col-md-6">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
 				</div>
             </div>
+
+		{{ include('utils/contact-cta.html.twig') }}
+
         </div>
     </section>
+
+	<script defer>
+	"use strict";
+
+	!function() {
+	var t = window.driftt = window.drift = window.driftt || [];
+	if (!t.init) {
+		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+		t.factory = function(e) {
+		return function() {
+			var n = Array.prototype.slice.call(arguments);
+			return n.unshift(e), t.push(n), t;
+		};
+		}, t.methods.forEach(function(e) {
+		t[e] = t.factory(e);
+		}), t.load = function(t) {
+		var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		var i = document.getElementsByTagName("script")[0];
+		i.parentNode.insertBefore(o, i);
+		};
+	}
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('beeybihz4kn4');
+	</script>
+	<!-- End of Async Drift Code -->
 {% endblock %}

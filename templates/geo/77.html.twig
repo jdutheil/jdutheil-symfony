@@ -23,6 +23,8 @@
 		<div class="container bg--blank">
 			<h1 class="section-title">Accordéoniste professionnel</h1>
 
+			{{ include('utils/contact-cta.html.twig') }}
+
 			<div class="row">
 				<div class="col-sm-12">
                     <p>
@@ -42,6 +44,14 @@
 			<h2 class="section-title section-title--small" style="margin-top: 25px;">Accordéon solo pour une ambiance discrète</h2>
 
 			<div class="row">
+				<div class="col-md-6" style="margin-bottom: 15px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
+				</div>
+
+				<div class="col-md-6">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'oSiWQ_thsn8', 'title': 'Accordéon guinguette - Java Manouche (Jo Privat)' } %}
+				</div>
+
 				<div class="col-md-8">
 					<p>
 						En solo, l'accordéon peut se faire discret, et délivrer une musique de fond agréable pendant votre cocktail ou repas ; ambiance cosy et feutrée assurée ! Vous entendrez alors quelque <strong>standards jazz</strong>, mais aussi des airs de <strong>chanson française</strong> et de <strong>swing musette</strong>.. Le style <em>"guinguette rétro"</em>, fortement apprécié aujourd'hui, donnera sans aucun doute une touche très classe à votre événement !
@@ -134,6 +144,8 @@
 					Et bien d'autres...
 				</li>
 			</ul>
+
+			{{ include('utils/contact-cta.html.twig') }}
         </div>
     </section>
 {% endblock %}

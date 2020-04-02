@@ -8,43 +8,19 @@
 	<meta name="description" content="Vous cherchez une animation musicale pour votre soirée d'entreprise ? Découvrez nos groupes jazz et chanson, formules sur mesure.">
 {% endblock %}
 
-{% block heading %}
-	{{ parent() }}
-
-	<!-- Start of Async Drift Code -->
-<script>
-"use strict";
-
-!function() {
-  var t = window.driftt = window.drift = window.driftt || [];
-  if (!t.init) {
-    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-    t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-    };
-  }
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('beeybihz4kn4');
-</script>
-<!-- End of Async Drift Code -->
-{% endblock %}
 
 {% block body %}
 	<section class="flash flash--limited">
 		<div class="flash-item">
-			<img src="img/manouchebg.jpg" alt="Trio jazz manouche - Accordéon, Guitare, Contrebasse" class="flash-item__background flash-item__background--groupes" style="top: -50%;">
+			{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/manouchebg.webp',
+																				 'jpeg': 'img/manouchebg.jpg'
+																			   },
+																	'default': 'img/manouchebg.jpg',
+																	'lazyload': false,
+																	'alt': 'Un groupe de jazz manouche pour vos événements - Avec accordéon',
+																	'title': 'Un groupe de jazz manouche pour vos événements - Avec accordéon',
+																	'class': 'flash-item__background',
+																	'style': 'top: -50%;' } %}
 		</div>
 	</section>
 
@@ -53,6 +29,8 @@ drift.load('beeybihz4kn4');
 	<section class="content-section bg--blank page-section">
 		<div class="container">
 			<h1 class="section-title">Animation musicale pour votre soirée d'entreprise</h1>
+
+			{{ include('utils/contact-cta.html.twig') }}
 
             <div class="row">
 				<div class="col-md-6">
@@ -69,20 +47,37 @@ drift.load('beeybihz4kn4');
                     </p>
 				</div>
 
-				<div class="col-md-6">
-					<img class="img-fluid" src="img/swingcocktail2.png" alt="">
+				<div class="col-md-6 d-none d-md-block">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/swingcocktail2.webp',
+																				 'jpeg': 'img/swingcocktail2.jpg'
+																			   },
+																	'default': 'img/swingcocktail2.jpg',
+																	'lazyload': true,
+																	'alt': 'Trio jazz avec chanteur pour vos événements',
+																	'title': 'Trio jazz avec chanteur pour vos événements',
+																	'class': 'img-fluid' } %}
 
-					<p style="margin-top: 15px;">
-						<a href="{{ path('contact') }}" class="btn btn-primary">Contactez nous !</a>
-					</p>
 				</div>
 			</div>
+
+			{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
+
+			<p class="text-center" style="margin-top: 15px;">
+				Quelques extraits en trio jazz manouche : Bossa Dorado, Autumn Leaves, All of Me, All the things you are, Fly me to the Moon
+			</p>
 
             <h2 class="section-title section-title--small" style="margin-top: 15px;">Quel style d'animation musicale pour votre soirée d'entreprise ?</h2>
 
             <div class="row">
-                <div class="col-md-6">
-                    <img class="img-fluid" src="img/crillon.jpg" alt="Trio jazz manouche pour animation musicale">
+                <div class="col-md-6" style="text-align: center;">
+                    {% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/crillon.webp',
+																				 'jpeg': 'img/crillon.jpg'
+																			   },
+																	'default': 'img/crillon.jpg',
+																	'lazyload': true,
+																	'alt': 'Trio jazz manouche à l\'Hôtel Le Crillon',
+																	'title': 'Trio jazz manouche à l\'Hôtel Le Crillon',
+																	'class': 'img-fluid' } %}
                 </div>
 
                 <div class="col-md-6">
@@ -108,55 +103,25 @@ drift.load('beeybihz4kn4');
 
             <div class="row">
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CXq4DWhwqSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'La Foule - Duo jazz manouche (accordéon / guitare)' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NIvIUJcluU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Trio jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6"  style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pmZ80dJklu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-
-                <div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mv3DgoYPCds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-
-                <div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'k9SY8saaY3I', 'title': 'Animation musicale avec chanteuse' } %}
 				</div>
 			</div>
 
             <h2 id="reviews" class="section-title section-title--small" style="margin-top: 15px;">Ils nous ont fait confiance</h2>
 
-			<div class="partners">
-				<img src="{{ asset('img/vinci.png') }}" alt="Vinci" style="max-height: 100px; margin-right: 25px;">
-				<img src="{{ asset('img/audiens.png') }}" alt="Audiens" style="max-height: 60px; margin-right: 25px;">
-				<img src="{{ asset('img/lebarn.svg') }}" alt="Hôtel Le Barn" style="max-width: 100px; max-height: 60px; margin-right: 25px;">
-				<img src="{{ asset('img/terremer.png') }}" alt="Restaurant Terre & Mer" style="max-height: 60px; margin-right: 25px;">
-				<img src="{{ asset('img/greatweddings.jpeg') }}" alt="Great Weddings in France" style="max-height: 60px; margin-right: 25px;">
-				<img src="{{ asset('img/bistrochamps.png') }}" alt="Le Bistro des Champs" style="max-height: 60px; margin-right: 25px;">
-				<img src="{{ asset('img/lamarlotte.png') }}" alt="La Marlotte" style="max-height: 60px; margin-right: 25px;">
-				<img src="{{ asset('img/venteprivee.png') }}" alt="vente-privee.com" style="max-height: 100px; margin-right: 25px;">
-				<img src="{{ asset('img/crillonlogo.png') }}" alt="Hôtel Le Crillon" style="max-height: 60px; margin-right: 25px;">
-			</div>
+			{{ include('partners.html.twig') }}
 
 			<hr>
 
@@ -167,7 +132,14 @@ drift.load('beeybihz4kn4');
 
 			<div class="row">
 				<div class="col-md-6">
-					<img class="img-fluid" src="img/jdspnormal.jpg" alt="Jérémy Dutheil & Solal Poux - Duo Jazz Manouche">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/jdspnormal.webp',
+																				 'jpeg': 'img/jdspnormal.jpg'
+																			   },
+																	'default': 'img/jdspnormal.jpg',
+																	'lazyload': false,
+																	'alt': 'Jazz manouche pour votre soirée entreprise',
+																	'title': 'Jazz manouche pour votre soirée entreprise',
+																	'class': 'img-fluid page-section__img' } %}
 
 					<p style="margin-top: 15px;">
 						<a class="btn btn-primary" href="{{ path('manouche') }}">Plus d'informations <span class="d-none d-md-inline">sur le groupe jazz manouche</span></a>
@@ -185,29 +157,21 @@ drift.load('beeybihz4kn4');
 				</div>
 			</div>
 
-            <div class="row">
+			<div class="row">
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'La Foule - Duo jazz manouche (accordéon / guitare)' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CXq4DWhwqSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NIvIUJcluU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Trio jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pmZ80dJklu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'pmZ80dJklu0', 'title': 'Trio jazz manouche avec accordéon' } %}
 				</div>
 			</div>
 
@@ -225,21 +189,13 @@ drift.load('beeybihz4kn4');
                 Style musicale "passe partout", la chanson française saura s'adapter poour tout type de soirée d'entreprise. Tantôt discret lors du début de soirée, elle peut également se faire <strong>dansante et festive</strong> après le repas ! Vos invités apprécieront sans aucun doute reconnaître de nombreux airs, voir même d'en chanter certains...
             </p>
 
-            <div class="row">
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+            <div class="row justify-content-center" style="margin-bottom: 20px;">
+				<div class="col-md-6" style="margin-bottom: 10px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'k9SY8saaY3I', 'title': 'Animation musicale avec chanteuse' } %}
 				</div>
 
-                <div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gtqG5br0M60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-
-					<p class="text-center">
-						<i>Avec Cid Marquis, nous proposons un répertoire d'1h30 en hommage à Edith Piaf ; <a href="{{ path('collaborations') }}#ruelamome">plus d'informations ici</a></i>
-					</p>
+				<div class="col-md-6">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'zCgfywiTWKs', 'title': 'Animation musicale avec chanteur' } %}
 				</div>
 			</div>
 
@@ -252,7 +208,38 @@ drift.load('beeybihz4kn4');
 			<p>
 				Je travaille également avec de nombreux musiciens professionnels, qui peuvent vous proposer d'autres styles musicaux : groupe de <strong>soul / funk</strong>, ambiance <strong>pop / folk</strong>, jazz plus traditionnel... Ces différents groupes de musique sauront s'adapter à <strong>tout type de soirée</strong>, n'hésitez pas à m'envoyer un message pour vous guider dans vos recherches !
 			</p>
+
+			{{ include('utils/contact-cta.html.twig') }}
         </div>
 		<!-- /.container -->
 	</section>
+
+	<!-- Start of Async Drift Code -->
+	<script defer>
+	"use strict";
+
+	!function() {
+	var t = window.driftt = window.drift = window.driftt || [];
+	if (!t.init) {
+		if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+		t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+		t.factory = function(e) {
+		return function() {
+			var n = Array.prototype.slice.call(arguments);
+			return n.unshift(e), t.push(n), t;
+		};
+		}, t.methods.forEach(function(e) {
+		t[e] = t.factory(e);
+		}), t.load = function(t) {
+		var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+		o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+		var i = document.getElementsByTagName("script")[0];
+		i.parentNode.insertBefore(o, i);
+		};
+	}
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('beeybihz4kn4');
+	</script>
+	<!-- End of Async Drift Code -->
 {% endblock %}

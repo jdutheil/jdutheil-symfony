@@ -71,14 +71,6 @@ class PagesController extends Controller
 	  }
 
 	/**
-	 * @Route("/soirees-paris", name="soirees_paris")
-	 *
-	public function soireesParis()
-	{
-		return $this->render('pages/soirees_paris.html.twig', array());
-	}*/
-
-	/**
 	 * @Route("/accordeoniste-jazz-manouche", name="accordeon_jazz_manouche")
 	 */
 	public function accordeonJazzManouche()
@@ -94,14 +86,6 @@ class PagesController extends Controller
 		return $this->render('pages/musiciens_soirees.html.twig', array());
 	}
 
-	/*/**
-	 * @Route("/accordeoniste", name="accordeoniste")
-	 *
-	public function accordeoniste()
-	{
-		return $this->render('pages/accordeoniste.html.twig', array());
-	}
-	*/
 
 	/**
 	 * @Route("/tarif-groupe-musique-soiree", name="tarifs")
@@ -117,14 +101,6 @@ class PagesController extends Controller
 	public function accordeonisteSoiree()
 	{
 		return $this->render('pages/accordeoniste_soiree.html.twig');
-	}
-
-	/**
-	 * @Route("/groupe-jazz-manouche-mariage", name="groupe_jazz_manouche_mariage_paris")
-	 */
-	public function groupeJazzManoucheMariageParis()
-	{
-		return $this->render('pages/groupe_jazz_manouche_mariage_paris.html.twig');
 	}
 
 	/**

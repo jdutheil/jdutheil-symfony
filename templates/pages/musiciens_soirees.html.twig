@@ -1,44 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-	Musiciens pour votre soirée privée - Jazz - Chanson
+	Musiciens pour votre soirée privée - Jazz et Chanson - Paris
 {% endblock %}
 
 {% block metadesc %}
 	<meta name="description" content="Vous cherchez des musiciens pour animer votre soirée, cocktail, mariage ? Découvrez nos groupes de musique jazz et chanson !">
-{% endblock %}
-
-{% block heading %}
-	{{ parent() }}
-
-	<!-- Start of Async Drift Code -->
-<script>
-"use strict";
-
-!function() {
-  var t = window.driftt = window.drift = window.driftt || [];
-  if (!t.init) {
-    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-    t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-    };
-  }
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('beeybihz4kn4');
-</script>
-<!-- End of Async Drift Code -->
 {% endblock %}
 
 {% block body %}
@@ -52,15 +19,13 @@ drift.load('beeybihz4kn4');
 
 	<section class="content-section bg--blank page-section">
 		<div class="container">
-			<h1 class="section-title">Un groupe de musique pour votre soirée</h1>
+			<h1 class="section-title">Un groupe de musique pour votre soirée<br><small>Entreprises ou particuliers</small></h1>
+
+			{{ include('utils/contact-cta.html.twig') }}
 
 			<div class="row">
 				<div class="col-md-12">
 					<p>Ça y est, la date de votre soirée est définie, les invitations sont prêtes à être envoyées, et pour rendre ce moment vraiment exceptionnel vous cherchez maintenant des <strong>musiciens professionnels</strong> qui pourront s'occuper de l'animation musicale de votre événement. Qu'il s'agisse du vin d'honneur de votre mariage, d'un repas d'anniversaire, d'un cocktail pour une soirée d'entreprise ou d'une soirée privée... Toutes les occasions sont bonnes pour profiter d'un <strong>groupe de musique pour votre soirée</strong> en live, plutôt qu'une simple playlist ! De l'orchestre de jazz au duo intimiste, des musiciens professionnels seront un réel atout pour votre soirée. </p>
-
-					<p>
-						<a href="{{ path('contact') }}" class="btn btn-primary">Parlez moi de votre projet : dutheil.jeremy@gmail.com / 06.85.38.22.16</a>
-					</p>
 				</div>
 			</div>
 
@@ -82,11 +47,14 @@ drift.load('beeybihz4kn4');
 				</div>
 
 				<div class="col-md-6">
-					<img class="img-fluid" src="img/champs.jpg" alt="">
-
-					<p style="margin-top: 15px;">
-						<a href="{{ path('contact') }}" class="btn btn-primary">Contactez nous !</a>
-					</p>
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/champs.webp',
+																				 'jpeg': 'img/champs.jpg'
+																			   },
+																	'default': 'img/champs.jpg',
+																	'lazyload': false,
+																	'alt': 'Esprit guinguette',
+																	'title': 'Esprit guinguette',
+																	'class': 'img-fluid' } %}
 				</div>
 			</div>
 
@@ -94,7 +62,14 @@ drift.load('beeybihz4kn4');
 
 			<div class="row">
 				<div class="col-md-6">
-					<img class="img-fluid" src="img/jdspnormal.jpg" alt="Jérémy Dutheil & Solal Poux - Duo Jazz Manouche">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/jdspnormal.webp',
+																				 'jpeg': 'img/jdspnormal.jpg'
+																			   },
+																	'default': 'img/jdspnormal.jpg',
+																	'lazyload': false,
+																	'alt': 'Jérémy Dutheil & Solal Poux',
+																	'title': 'Jérémy Dutheil & Solal Poux',
+																	'class': 'img-fluid' } %}
 
 					<p style="margin-top: 15px;">
 						<a class="btn btn-primary" href="{{ path('manouche') }}">Plus d'informations <span class="d-none d-md-inline">sur le groupe jazz manouche</span></a>
@@ -114,27 +89,19 @@ drift.load('beeybihz4kn4');
 
             <div class="row">
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BGGrRG-q4VU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'BGGrRG-q4VU', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6" style="margin-bottom: 15px;">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CWUY-repj8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CWUY-repj8g', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iklby0R-WyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'Iklby0R-WyQ', 'title': 'Jazz manouche avec accordéon' } %}
 				</div>
 			</div>
 
@@ -149,20 +116,13 @@ drift.load('beeybihz4kn4');
 				Le style chanson française / guinguette s'adapte parfaitement à des soirées conviviales, dans un style <i>rétro</i> ou classe ; les chansons jouées sont pour la plupart très connues, et vos invités pourront reprendre les refrains en coeur ! Musique d'ambiance, ou réelle animation de soirée sous forme de concert.. C'est vous qui décidez du style que vous préférez pour votre événement !
             </p>
 
-            <div class="row">
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gtqG5br0M60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-
-					<p class="text-center">
-						<i>Avec Cid Marquis, nous proposons un répertoire d'1h30 en hommage à Edith Piaf ; <a href="{{ path('collaborations') }}#ruelamome">plus d'informations ici</a></i>
-					</p>
+            <div class="row justify-content-center" style="margin-bottom: 20px;">
+				<div class="col-md-6" style="margin-bottom: 10px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'k9SY8saaY3I', 'title': 'Animation musicale avec chanteuse' } %}
 				</div>
+
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'zCgfywiTWKs', 'title': 'Animation musicale avec chanteur' } %}
 				</div>
 			</div>
 
@@ -186,7 +146,38 @@ drift.load('beeybihz4kn4');
 			<div class="elfsight-app-ec309407-5635-4d34-a076-6f44bf20acc8 reviews"></div>
 
 			<hr style="background-color: #2d2d2d; margin: 25px 0;">
+
+			{{ include('utils/contact-cta.html.twig') }}
         </div>
 		<!-- /.container -->
+
+		<!-- Start of Async Drift Code -->
+		<script def>
+		"use strict";
+
+		!function() {
+		var t = window.driftt = window.drift = window.driftt || [];
+		if (!t.init) {
+			if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+			t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+			t.factory = function(e) {
+			return function() {
+				var n = Array.prototype.slice.call(arguments);
+				return n.unshift(e), t.push(n), t;
+			};
+			}, t.methods.forEach(function(e) {
+			t[e] = t.factory(e);
+			}), t.load = function(t) {
+			var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+			o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+			var i = document.getElementsByTagName("script")[0];
+			i.parentNode.insertBefore(o, i);
+			};
+		}
+		}();
+		drift.SNIPPET_VERSION = '0.3.1';
+		drift.load('beeybihz4kn4');
+		</script>
+		<!-- End of Async Drift Code -->
 	</section>
 {% endblock %}

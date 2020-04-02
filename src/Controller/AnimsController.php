@@ -29,10 +29,10 @@ class AnimsController extends Controller
 
 	 /**
 	  * @Route("/groupe-musique-mariage", name="groupe_musique_mariage")
-	  */
+	  *
      public function groupeMusiqueMariageAction()
 	 {
 		 return $this->render('anims/groupe-musique-mariage.html.twig', array());
-	 }
+	 }*/
 
 }
