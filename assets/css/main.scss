@@ -1,3 +1,13 @@
+$blank: #E4E7EB;
+$background-primary: #1b262c;
+
+$orange: #ff8f00;
+$light-grey: #616e7c;
+
+$btn-background: #36B37E;
+$btn-color: $blank;
+$btn-hover-color: $orange;
+
 body {
 	font-family: 'Hind', sans-serif;
 	color: #555555;
@@ -17,29 +27,34 @@ body {
 }
 	.text-link:hover {
 		text-decoration: none;
-		color: #ff841c;
+		color: $orange;
 	}
 
-.bg--blank { background-color: #ffffff; }
+//.bg--blank { background-color: #ffffff; }
 .bg--transparent { background-color: rgba(255, 255, 255, 0.7); }
 
 .row--mtop { margin-top: 35px; }
 .col--mbot { margin-bottom: 35px; }
 
-a { color: #ff841c; }
-a:hover { color: #ff841c; text-decoration: none; }
+a { color: $orange; }
+a:hover { color: $orange; text-decoration: none; }
 
-.txt--blank { color: #ffffff; }
+.txt--blank { color: $blank; }
 
 /**
  * Navbar
  */
 
-.navbar { background-color: #ffffff; }
+//.navbar { background-color: #ffffff; }
+.navbar { background-color: #1b262c; border-bottom: 2px solid $light-grey; }
+
+.navbar-light .navbar-toggler { color: $blank; }
+
 
 .navbar-brand {
 	font-family: 'Oswald', sans-serif;
-	color: #282828;
+	//color: #282828;
+	color: $blank;
 
 	font-size: 24px;
 	font-weight: 600;
@@ -50,13 +65,20 @@ a:hover { color: #ff841c; text-decoration: none; }
 }
 
 .navbar-brand-span {
-	color: #ff841c;
+	color: $orange;
 	font-size: 34px;
 	font-weight: 800;
 }
 
+.navbar-light .navbar-brand { color: rgba(255, 255, 255, 0.9); }
+.navbar-light .navbar-nav .nav-link { color: $blank; }
+.navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus { color: rgba(255, 255, 255, 0.9); }
+.dropdown-menu { background-color: #1b262c; }
+
 .nav-link {
-	color: #282828;
+	//color: #282828;
+	color: $blank;
+
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 
@@ -67,8 +89,8 @@ a:hover { color: #ff841c; text-decoration: none; }
 }
 
 	.nav-link:hover, .nav-link--active {
-		color: #ffffff !important;
-		background-color: #ff841c;
+		color: $blank !important;
+		background-color: $orange;
 	}
 
 .nav-item.dropdown {
@@ -76,21 +98,23 @@ a:hover { color: #ff841c; text-decoration: none; }
 }
 
 	.nav-item.dropdown.show {
-		color: #FFFFFF !important;
-		background-color: #ff841c;
+		color: $blank !important;
+		background-color: $orange;
 	}
 
-	.nav-item.dropdown.show > .nav-link { color: #FFFFFF !important; }
+	.nav-item.dropdown.show > .nav-link { color: $blank !important; }
 
 .dropdown-menu.show > .dropdown-item {
 	font-family: 'Oswald', sans-serif;
-	color: #282828;
+	//color: #282828;
+	color: $blank;
+	
 	font-size: 18px;
 }
 
 	.dropdown-menu.show > .dropdown-item:hover {
-		color: #FFFFFF !important;
-		background-color: #ff841c;
+		color: $blank !important;
+		background-color: $orange;
 	}
 
 /**
@@ -197,8 +221,12 @@ a:hover { color: #ff841c; text-decoration: none; }
 }
 
 .btn-primary, .btn-secondary {
-	background: #282828;
-    color: #fff;
+	/*background: #282828;
+	color: #fff;*/
+	
+	background: $btn-background;
+	color: $btn-color;
+
     display: inline-block;
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
@@ -219,10 +247,10 @@ a:hover { color: #ff841c; text-decoration: none; }
 }
 
 	.btn-primary:hover, .btn-secondary:hover {
-		background: #282828;
+		background: $btn-background;
 		border: none;
 		outline: none;
-		color: #ff841c;
+		color: $btn-hover-color;
 	}
 
 	.btn-secondary:hover { background-color: #1a1a1a; }
@@ -234,8 +262,18 @@ a:hover { color: #ff841c; text-decoration: none; }
 .content-section {
 	position: relative;
 	z-index: 100;
+	
+	color: $blank;
+	background: $background-primary;
+
+	> .container {
+		border-left: 1px solid $light-grey;
+		border-right: 1px solid $light-grey;
+	}
 }
 
+.bg--primary { background: $background-primary; color: $blank; }
+//.bg--blank { background: $white;  }
 .edito { background-color: #ffffff; }
 
 .page-section {
@@ -262,15 +300,17 @@ a:hover { color: #ff841c; text-decoration: none; }
     position: relative;
     text-transform: uppercase;
 
-    color: #2d2d2d;
-    font-size: 32px;
+    //color: #2d2d2d;
+	color: #cbd2d9;
+	
+	font-size: 32px;
 
     font-family: 'Oswald', sans-serif;
     letter-spacing: -1px;
 }
 
 	.section-title:after {
-		border-left: 13px solid #ff841c;
+		border-left: 13px solid $orange;
 	    content: '';
 	    height: 100%;
 	    left: 0;
@@ -317,7 +357,7 @@ a:hover { color: #ff841c; text-decoration: none; }
  */
 
 .contact {
-	background-color: #000000;
+	background-color: #1b262c;
 	border-top: 3px solid #ffffff;
 	padding: 25px 0;
 
@@ -468,18 +508,19 @@ a:hover { color: #ff841c; text-decoration: none; }
 
 .flash-new {
 	position: relative;
-	background-color: #262626;
+	background-color: $background-primary;
 	padding: 25px 0;
+	border-bottom: 1px solid $orange;
 }
 
 .flash-item-col {
-	border-bottom: 2px solid #ff841c;
+	border-bottom: 2px solid $orange;
 	padding-bottom: 10px;
 }
 
 @media screen and (min-width: 800px) {
 	.flash-item-row .flash-item-col {
-		border-right: 5px solid #ff841c;
+		border-right: 5px solid $orange;
 	}
 
 	.flash-item-row .flash-item-col:last-child { border-right: none; }
@@ -510,7 +551,7 @@ a:hover { color: #ff841c; text-decoration: none; }
 	width: 60%;
 	height: auto;
 
-	border: 2px solid #ff841c;
+	border: 2px solid $orange;
 	border-radius: 10px;
 	background: #262626;
 
@@ -563,11 +604,11 @@ a:hover { color: #ff841c; text-decoration: none; }
 
 .youtube-lazy {
 	border: 2px solid #000000;
-	&:hover { border: 2px solid #ff841c; }
+	&:hover { border: 2px solid $orange; }
 }
 
 .home-video {
-	border: 2px solid #ff841c;
+	border: 2px solid $orange;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -580,8 +621,8 @@ a:hover { color: #ff841c; text-decoration: none; }
 	margin: 25px 0;
 	padding: 15px 0;
 
-	border-top: 2px solid #ff841c;
-	border-bottom: 2px solid #ff841c;
+	border-top: 2px solid $orange;
+	border-bottom: 2px solid $orange;
 
 	&__title { 
 		width: 100%;
@@ -599,11 +640,14 @@ a:hover { color: #ff841c; text-decoration: none; }
 			margin-bottom: 0;
 		}
 
-		:hover { border: 1px solid #ff841c; }
+		:hover { border: 1px solid $orange; }
 	}
 }
 
 .partners {
+	padding: 20px;
+	background-color: #ffffff;
+
 	img {
 		@media (max-width: 768px) {
 			margin-bottom: 10px;
@@ -615,3 +659,10 @@ a:hover { color: #ff841c; text-decoration: none; }
 		}
 	}
 }
+
+.home-container-section {
+	margin-bottom: 20px;
+	border-bottom: 1px solid $orange;
+}
+
+.container .home-container-section:last-child { border: none; }

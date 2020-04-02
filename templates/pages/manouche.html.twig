@@ -29,16 +29,14 @@
 
 	<section class="flash-ghost flash-ghost--limited"></section>
 
-	<section class="content-section bg--blank page-section">
-		<div class="container bg--blank">
+	<section class="content-section page-section">
+		<div class="container bg--primary">
 			<h1 class="section-title">
 				Groupe jazz manouche pour vos événements <br>
 				<small>Orchestre sur mesure, musique de qualité</small>
 			</h1>
 
-			<p>
-				<a href="{{ path('contact') }}" class="btn btn-primary">Contactez nous pour un devis gratuit <br> dutheil.jeremy@gmail.com / 06.85.38.22.16</a>
-			</p>
+			{{ include('utils/contact-cta.html.twig') }}
 
 			<p>
                 Vous recherchez un <strong>groupe de jazz manouche</strong> pour votre soirée privée, <a href="{{ path('groupe_jazz_manouche_mariage_paris') }}">mariage</a>, anniversaire, cocktail d'entreprise ou tout autre événement ? Vous avez fait le tour des sites qui proposent une <strong>recherche de musiciens</strong> et ne savez pas qui choisir ? Vous êtes au bon endroit ! <strong>Musiciens professionnels</strong> et expérimentés, nous vous proposons différentes formules (duo, trio, quartet, ...), toutes sur mesure, pour une animation musicale de qualité lors de votre événement.
@@ -370,7 +368,7 @@
 
 			<h2 class="section-title section-title--small">Plus d'informations ? Un devis gratuit ?</h2>
 
-			<a href="{{ path('contact') }}" class="btn btn-primary">Contactez-nous !</a>
+			{{ include('utils/contact-cta.html.twig') }}
         </div>
 
 
