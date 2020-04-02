@@ -82,7 +82,7 @@ Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/blog/build/')
     // public path used by the web server to access the output path
-    .setPublicPath('public/blog/build')
+    .setPublicPath('/blog/build')
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
 
