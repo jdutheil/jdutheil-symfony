@@ -60,7 +60,11 @@
 			<h2 class="section-title section-title--small" style="margin-top: 25px;">Accordéon solo pour une ambiance discrète</h2>
 
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-6 order-md-3">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
+				</div>
+
+				<div class="col-md-8 order-md-1">
 					<p>
 						En solo, l'accordéon peut se faire discret, et délivrer une musique de fond agréable pendant votre cocktail ou repas ; ambiance cosy et feutrée assurée ! Vous entendrez alors quelque <strong>standards jazz</strong>, mais aussi des airs de <strong>chanson française</strong> et de <strong>swing musette</strong>.. Le style <em>"guinguette rétro"</em>, fortement apprécié aujourd'hui, donnera sans aucun doute une touche très classe à votre événement !
 					</p>
@@ -123,23 +127,20 @@
 					</p>
 				</div>
 
-				<div class="col-md-4">
-					<img src="{{ asset('img/videos-pic.jpg') }}" alt="Jérémy DUTHEIL, accordéoniste, en concert" class="img-fluid page-section__img">
+				<div class="col-md-4 order-md-2 d-none d-md-block">
+					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/videos-pic.webp',
+																				 'jpeg': 'img/videos-pic.jpg'
+																			   },
+																	'default': 'img/manouvideos-picchebg.jpg',
+																	'lazyload': false,
+																	'alt': 'Jérémy DUTHEIL, accordéoniste, en concert',
+																	'title': 'Jérémy DUTHEIL, accordéoniste, en concert',
+																	'class': 'img-fluid page-section__img' } %}
 				</div>
 				<!-- /.col-sm-4 -->
-			</div>
 
-			<div class="row">
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/od3lmo26AaE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mv3DgoYPCds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+				<div class="col-md-6 order-md-3">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'oSiWQ_thsn8', 'title': 'Accordéon guinguette - Java Manouche (Jo Privat)' } %}
 				</div>
 			</div>
 
@@ -150,11 +151,11 @@
 			<h2 class="section-title section-title--small" style="margin-top: 20px;">Le groupe de jazz manouche</h2>
 
 			<p>
-				Le jazz manouche est le style musical par excellence pour l'événementiel : musique virtuose mais toutefois discrète, elle s'intègrera parfaitement dans l'ambiance de votre cocktail d'entreprise ou votre vernissage d'exposition, par exemple. Musiciens professionnels, nous prenons en charge l'aspect technique et la sonorisation (si nécessaire), de manière autonome ; nous proposons des formules du <strong>duo</strong> au <strong>quintet</strong>, dont voici ci-dessous quelques extraits.
+				Le jazz manouche est le style musical par excellence pour l'événementiel : musique virtuose mais toutefois discrète, elle s'intègrera parfaitement dans l'ambiance de votre cocktail d'entreprise ou votre vernissage d'exposition, par exemple. Musiciens professionnels, nous prenons en charge l'aspect technique et la sonorisation (si nécessaire), de manière autonome ; nous proposons des formules du <strong>duo</strong> au <strong>quartet</strong>, dont voici ci-dessous quelques extraits.
 			</p>
 
 			<p>
-				L'accordéon est bien évidemment présent dans toutes les formules, apportant une touche d'originalité à nos groupe ; ce n'est pas tous les jours que l'on voit un <a href="{{ path('accordeon_jazz_manouche') }}">accordéoniste jazz manouche</a> !
+				L'accordéon est bien évidemment présent dans toutes les formules, apportant une touche d'originalité à nos groupes ; ce n'est pas tous les jours que l'on voit un <a href="{{ path('accordeon_jazz_manouche') }}">accordéoniste jazz manouche</a> !
 			</p>
 
 			<p>
@@ -162,16 +163,12 @@
 			</p>
 
 			<div class="row">
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/W_uOwoGcBuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+				<div class="col-md-6" style="margin-bottom: 10px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'La Foule - Duo jazz manouche (accordéon / guitare)' } %}
 				</div>
 
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CXq4DWhwqSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
 				</div>
 			</div>
 
@@ -179,89 +176,26 @@
 				<a class="btn btn-primary" href="{{ path('manouche') }}">Plus d'informations</a>
 			</p>
 
-			<h2 class="section-title section-title--small" style="margin-top: 20px;">Formules avec chanteuse</h2>
+			<h2 class="section-title section-title--small" style="margin-top: 20px;">Formules chanson française</h2>
 
 			<p>
-				Pour un événement plus participatif, ou simplement parce que vous aimez le chant, je vous conseille les formules avec chanteuse ; essentiellement basées sur la chanson française (Piaf, Montand, Barbara, Trenet, ...), nous pouvons aussi proposer des reprises anglosaxones et des répertoires <i>jazz</i>. Nos formations commencent au duo accordéon / voix en toute intimité, mais peuvent suivant vos envies également inclure d'autres musiciens (guitare, basse, batterie, piano, violon, ...). N'hésitez pas à nous contacter pour nous exposer votre projet.
-			</p>
-
-			<h3 class="section-title section-title--smaller">Marjolaine Piémont</h3>
-
-			<img style="display: block; max-width: 50%; margin: auto; margin-bottom: 15px;" src="img/marjolaine.jpg" alt="Marjolaine Piémont - Duos accordéon / voix">
-
-			<p>
-				J'ai la chance de travailler avec Marjolaine Piémont, personnalité bien ancrée dans la scène française ; notamment connue pour ses participations à <strong>Mozart l'Opéra Rock</strong> ou <strong>Sol en Cirque</strong>, Marjolaine poursuit également une carrière sous son propre nom, qui l'a mené entre autres aux premières partie de Zazie en 2016, et à plusieurs tournées au Japon.
+				Pour un événement plus participatif, ou simplement parce que vous aimez le chant, je vous conseille les formules avec chant ; essentiellement basées sur la chanson française (Piaf, Montand, Barbara, Trenet, ...), nous pouvons aussi proposer des reprises anglosaxones et des répertoires <i>jazz</i>. Nos formations commencent au duo accordéon / voix en toute intimité, mais peuvent suivant vos envies également inclure d'autres musiciens (guitare, basse, batterie, piano, violon, ...). N'hésitez pas à nous contacter pour nous exposer votre projet.
 			</p>
 
 			<p>
-				Très habituée à l'événementiel où elle a fait ses débuts (Pierre Cardin, Maxim's, ...), Marjolaine propose un vaste répertoire de <strong>chanson française</strong> et de <strong>jazz</strong>, dédié à vos soirées et événements. Nous sommes disponibles en duo accordéon / voix, ou avec d'autres instrumentistes sur demande ; n'hésitez pas à nous contacter pour en savoir plus.
-			</p>
-
-			<div class="row" style="margin-bottom: 20px;">
-				<div class="col-md-4">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bmoR95qUdoQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lTg9VePoQXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bfz5R9j6I-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-
-			<h3 class="section-title section-title--smaller">Leslie Marquis</h3>
-
-			<p>
-				Avec Leslie Marquis, nous vous proposons un répertoire <strong>chanson française</strong> en duo accordéon / voix, de Brel à Barbara, en passant par Pink Martini et Charles Trenet...
+				Quelques morceaux que vous pourrez entendre : Un mauvais garçon, La complaine de la butte, Salut les Amoureux, Emmenez moi, Vesoul, ...
 			</p>
 
 			<div class="row justify-content-center" style="margin-bottom: 20px;">
+				<div class="col-md-6" style="margin-bottom: 10px;">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'k9SY8saaY3I', 'title': 'Animation musicale avec chanteuse' } %}
+				</div>
+
 				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k9SY8saaY3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'zCgfywiTWKs', 'title': 'Animation musicale avec chanteur' } %}
 				</div>
 			</div>
 
-			<h3 class="section-title section-title--smaller">Cid Marquis</h3>
-
-			<p>
-				Formule particulière avec Cid Marquis, car nous vous proposons un concert <strong>hommage à Edith Piaf</strong> ; pendant environ 1h15, laissez vous emporter par les plus beaux morceaux de La Môme. Vous entendrez bien entendu les grands classiques (La Foule, Padam, Milord, L'accordéoniste...), mais également certaines pépites moins entendues du grand public (Polichinelle, Mon Apéro, ...). En duo accordéon / voix, dans la plus grande simplicité !
-			</p>
-
-			<div class="row justify-content-center" style="margin-bottom: 20px;">
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gtqG5br0M60" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-
-			<h3 class="section-title section-title--smaller">Marie Pétrolette</h3>
-
-			<p>
-				Marie Pétrolette évolue à la scène avec ses propres chansons : des textes qui racontent la vie d'une jeune femme moderne, sur une musique plutôt festive. En duo accordéon / voix, nous proposons une formule "concert" autour des chansons de Marie essentiellement, mais également des formules "animations" où nous reprenons un répertoire plus large de chanson française (Bourvil, Odette Laure, Frehel, ...).
-			</p>
-
-			<div class="row justify-content-center" style="margin-bottom: 20px;">
-				<div class="col-md-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/o91BGe2Xaac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-
-			<p>
-				<a href="{{ path('collaborations') }}#marie" class="btn btn-primary">Plus d'informations</a>
-			</p>
 
 			<hr style="background-color: #2d2d2d; margin: 25px 0;">
 
@@ -294,8 +228,6 @@
 					<p>
 						Intervention au sein de votre établissement : maison de retraite, EHPAD, ...
 					</p>
-
-					<a href="{{ path('animations_seniors') }}" class="btn btn-primary">En savoir plus</a>
 				</div>
 
 				<div class="col-sm-6 col--mbot">
@@ -372,7 +304,7 @@
 
 			<p>
 				<strong>Quels modes de règlement sont disponibles ?</strong> <br>
-				Nous acceptons les règlements par chèque ou virement bancaire ; payer en liquide n'est pas possible, désolé !
+				Vous réglez comme vous préférez : chèque, virement bancaire ou liquide.
 			</p>
 
 			<p>
@@ -380,14 +312,9 @@
 				Nous sommes basés en région parisienne, mais nous déplaçons dans toute la France ; en fonction du lieu de votre événement, nous devrons facturer les frais de déplacements occassionnés. Il est parfois également nécessaire de prévoir un hébergement ; vous serez bien entendu prévenu dès l'établissement d'un devis.
 			</p>
 
-
-
 			<hr style="background-color: #2d2d2d; margin: 25px 0;">
 
-			<p>
-				<a href="{{ path('contact') }}" class="btn btn-primary">Parlez moi de votre projet : dutheil.jeremy@gmail.com / 06.85.38.22.16</a>
-			</p>
-
+			{{ include('utils/contact-cta.html.twig') }}
 		</div>
 		<!-- /.container -->
 	</section>
