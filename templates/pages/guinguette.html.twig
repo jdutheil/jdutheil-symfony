@@ -3,7 +3,7 @@
 {% block title %}Soirée guinguette avec un accordéoniste : rétro & chic !{% endblock %}
 
 {% block metadesc %}
-	<meta name="description" content="Vous êtes à la recherche d'un accordéoniste pour animer votre soirée guinguette ? En solo ou duo avec chanteuse, découvrez nos prestations.">
+	<meta name="description" content="Vous êtes à la recherche d'un accordéoniste pour animer votre soirée guinguette ? Découvrez nos formules pour une ambiance réussie !">
 {% endblock %}
 
 {% block body %}
@@ -41,6 +41,18 @@
                 L'interdiction de la baignade dans les rivières et l'arrivée des musiques anglo-saxonnes en France provoque le déclin des guinguettes dans les années 1960. Cependant, on assiste à un renouveau à partir des années 1980 ; les guinguettes ré-ouvrent, se modernisent mais pérpétuent tout de même une certaine "tradition" !
             </p>
 
+			<p style="text-align: center;">
+				{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/soiree-guinguette.webp',
+																					'jpeg': 'img/soiree-guinguette.jpg'
+																				},
+																		'default': 'img/soiree-guinguette.jpg',
+																		'lazyload': true,
+																		'alt': 'Soirée guinguette',
+																		'title': 'Soiréee guinguette',
+																		'class': 'img-fluid page-section__img',
+																		'style': '' } %}
+			</p>
+
             <h2 style="margin-top: 15px;" class="section-title section-title--small">Une soirée guinguette aujourd'hui</h2>
 
             <div class="row">
@@ -49,8 +61,12 @@
                         L'esprit <i>guinguette</i> revient en force de nos jours, apportant une touche rétro mais très élégante à votre événement. On retrouve ce thème aussi bien dans des soirées privées entre amis, lors du vin d'honneur d'un mariage ou dans des cocktails d'entreprise.
                     </p>
 
+					<p>
+						Avec une <strong>soirée guinguette</strong>, vous évoquez une image joyeuse, de convivialité et de bonne humeur. L'ambiance se fait naturellement chaleureuse et détendue, propice à la discussion et l'amusement de vos invités. Une soirée guinguette se tiendra volontiers en extérieur, dans un décor plutôt champêtre, même si elle s'adaptera aussi parfaitement à l'intérieur d'une salle suivant les conditions météo. 
+					</p>
+
                     <p>
-                        L'accordéoniste y est présent, de par la musique d'ambiance qu'il distille, mais également par un aspect visuel qui rappelle l'époque. Seul ou accompagné d'une chanteuse, je vous propose un répertoire autour des grandes chansons françaises des années 50-60 : Piaf, Brel, Montant, Aznavour, ... À ces chansons s'ajoutent des standards de jazz et jazz manouche, des morceaux qui swinguent et apportent une certaine originalité à ce moment.
+                        <a href="{{ path('accordeoniste_soiree') }}">L'accordéoniste</a> y est présent, de par la musique d'ambiance qu'il distille, mais également par un aspect visuel qui rappelle l'époque. Seul ou accompagné d'une chanteuse, je vous propose un répertoire autour des grandes chansons françaises des années 50-60 : Piaf, Brel, Montant, Aznavour, ... À ces chansons s'ajoutent des standards de jazz et jazz manouche, des morceaux qui swinguent et apportent une certaine originalité à ce moment.
                     </p>
 
 					<p>
@@ -78,6 +94,10 @@
 
 			<p>
 				Pour d'autres formations, je vous invite à consulter la page dédiée à notre <a href="{{ path('musiciens_soirees') }}">groupe de musique pour soirée</a>.
+			</p>
+
+			<p>
+				Le petit plus : n'hésitez pas à embaucher également un caricaturiste, qui dessinera vos invités en direct lors de votre soirée guinguette. Vos invités se croiront à Montmartre !  
 			</p>
 
             <h2 style="margin-top: 15px;" class="section-title section-title--small">Quelques extraits d'accordéon guinguette</h2>
@@ -115,10 +135,56 @@
 				Que serait une soirée guinguette sans son décor inimitable ? Nappes à carreaux bien sûr, mais également guirlandes et lampions... N'hésitez pas à ajouter une touche champêtre également, comme par exemple des ballots de paille ; très tendance !
 			</p>
 
+			<p>
+				La soirée guinguette, c'est également une bonne opportunité pour créer un décor de rue parisienne : pavés, lampadaires, vieux bancs... Même si les guinguettes n'ont bien sûr pas existé qu'à Paris, elles y sont très attachées dans leur image populaire. Pourquoi ne pas également inclure des tableaux représentant la capitale et ses alentours ? 
+			</p>
+
 			<h2 style="margin-top: 15px;" class="section-title section-title--small">La musique des soirées guinguettes</h2>
 
 			<p>
 				Qui dit soirée guinguette dit accordéon.. Dit aussi morceaux emblématiques ! On pense notamment à des valses comme "Le Dénicheur", "La Java Bleue", "C'est un mauvais garçon" ou encore "Comme de bien entendu". Pour ma part, j'agrémente également le répertoire musical d'un peu de swing, typique des années guinguette également !
+			</p>
+
+			<p>
+				Au son de l'accordéon, vos convives pourront aussi bien chanter, danser mais aussi discuter tranquillement en appréciant la musique d'ambiance. Une soirée guiguette moderne peut aussi se prévoir en deux parties : un début de soirée animé par l'accordéoniste, et une seconde partie de soirée avec un DJ ou un groupe de musique, pour une atmosphère plus "péchue" !
+			</p>
+
+			<h2 style="margin-top: 15px;" class="section-title section-title--small">Soirée guinguette : pour quel événement ?</h2>
+
+			<p>
+				Vous êtes intéressés par l'organisation d'une soirée guinguette, mais vous demandez si le thème sera bien adapté à votre événement ? Je vous propose ci-dessous quelques exemples de rassemblements qui se prêtent particulièrement bien à l'esprit guinguette !
+			</p>
+
+			<h3 class="section-title section-title--smaller">Cocktail d'entreprise</h3>
+
+			<p>
+				Un cocktail d'entreprise peut avoir plusieurs objectifs : remercier vos collaborateurs pour une année réussie, inviter vos partenaires, valoriser votre image de marque... Dans tous les cas, la soirée guinguette a le vent en poupe ! Légèrement nostalgique, son côté vintage apportera une touche originale à votre événement d'entreprise et véhiculera une image très chaleureuse. La bonne humeur et la décontraction seront alors de rigueur, tout ça au son de l'accordéon bien sûr !
+			</p>
+
+			<p>
+				Pourquoi ne pas revisiter la guinguette, comme l'a fait un de mes clients récemment ? Vous pouvez tout à fait proposer des univers à priori contraire : ambiance électronique et futuriste d'un côté, années 50 de l'autre... Les deux peuvent bien entendu se mélanger et rencontrer au cours de votre soirée guinguette.
+			</p>
+
+			<h3 class="section-title section-title--smaller">Anniversaire</h3>
+
+			<p>
+				Vous organisez une fête d'anniversaire à la maison, avec quelques amis et la famille ? Une ambiance guinguette sera alors particulièrement adapté ! Ici, on mise sur la simplicité et l'aspect naturel ; partagez un verre au son de l'accordéon, qui rappellera sans aucun doute de bons souvenirs à vos aînés tout en enchantant les plus jeunes également.
+			</p>
+
+			<p>
+				Idée bonus : pourquoi ne pas mettre à disposition de vos invités des carnets de chanson ? Nous pouvons discuter en amont du répertoire qui sera joué, afin que chacun puisse participer à sa manière et selon ses envies !
+			</p>
+
+			<h3 class="section-title section-title--smaller">Mariage et vin d'honneur</h3>
+
+			<p>
+				Pour un mariage ou un vin d'honneur, un esprit guinguette est une solution très facile à mettre en place. Pas besoin de beaucoup de décor couteux, car les éléments sont simples et faciles à trouver. Pour la musique, pas d'inquiétude non plus : un accordéoniste en solo convient parfaitement, et peut aussi être accompagné d'une chanteuse. Dans tous les cas, l'espace nécessaire est fortement réduit, et facilite l'organisation de ce moment unique ! 
+			</p>
+
+			<h3 class="section-title section-title--smaller">Soirée privée</h3>
+
+			<p>
+				Pas besoin d'une occasion particulière pour organiser une soirée guinguette ! Apportez une touche d'originalité à votre fête entre amis, notamment avec une musique d'ambiance à l'accordéon.
 			</p>
         </div>
     </section>
