@@ -1,8 +1,16 @@
-<div class="embed-responsive embed-responsive-16by9 youtube-lazy">
+<div class="youtube-wrapper">
+	<div class="youtube-lazy-video" data-embed="{{ youtubeId }}">
+		<div class="video-play-button">
+            <span></span>
+        </div>
+	</div>
+</div>
+
+<!--<div class="embed-responsive embed-responsive-16by9 youtube-lazy">
     <iframe
         class="embed-responsive-item"
         src="https://www.youtube.com/embed/{{ youtubeId }}"
-        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/{{ youtubeId }}?autoplay=1>				<picture><source type='image/webp' srcset='https://img.youtube.com/vi_webp/{{ youtubeId }}/sddefault.webp'><source type='image/jpeg' srcset='https://img.youtube.com/vi/{{ youtubeId }}/sddefault.jpg'><img src='https://img.youtube.com/vi/{{ youtubeId }}/sddefault.jpg' alt='Vidéo {{ title }}'></picture>
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/{{ youtubeId }}?autoplay=1 class='video-play-button'>				<picture><source type='image/webp' srcset='https://img.youtube.com/vi_webp/{{ youtubeId }}/sddefault.webp'><source type='image/jpeg' srcset='https://img.youtube.com/vi/{{ youtubeId }}/sddefault.jpg'><img src='https://img.youtube.com/vi/{{ youtubeId }}/sddefault.jpg' alt='Vidéo {{ title }}'></picture>
 <span>▶</span></a>"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -10,3 +18,4 @@
         title="{{ title|default('') }}"
     ></iframe>
 </div>
+-->
