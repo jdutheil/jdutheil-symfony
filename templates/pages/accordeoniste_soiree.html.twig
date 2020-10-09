@@ -29,391 +29,258 @@
 	<section class="flash-ghost " ></section>
 
 	<section class="content-section bg--blank page-section">
-		<div class="container">
-			<h1 class="section-title">Accordéoniste pour animer votre soirée</h1>
+		<h1 class="section-title section-title--centered">Accordéoniste pour animer votre soirée</h1>
 
-			{{ include('utils/contact-cta.html.twig') }}
+		<div class="home-container-section">
+			<div class="container">
+			
+				{{ include('utils/contact-cta.html.twig') }}
 
-			<div class="row">
-				<div class="col-md-6">
-					<p>
-						Vous recherchez un <strong>accordéoniste pour animer votre soirée</strong> ou événement ? <a href="{{ path('entreprise') }}" style="color: #E4E7EB;">Cocktail et soirée d'entreprise</a>, <a href="{{ path('animations_mariages') }}" style="color: #E4E7EB;">mariage</a>, fête entre amis sur le <a style="color: #E4E7EB;" href="{{ path('guinguette') }}">thème "<i>Guinguette</i>"</a>, anniversaire... Les occasions sont nombreuses pour inviter un musicien, et l'accordéon s'adaptera facilement à tout type d'événement. Même si la tentation de réserver un <a target="_blank" href="{{ path('musiciens_soirees') }}">groupe de musique pour votre soirée</a> est souvent grande, les conditions ne sont parfois pas réunies pour pouvoir le faire (taille du lieu, considérations techniques, budget...).
-					</p>
+				<div class="row">
+					<div class="col-md-6">
+						<p>
+							Vous recherchez un <strong>accordéoniste pour animer votre soirée</strong> ou événement ? <a href="{{ path('entreprise') }}" class="text-link">Cocktail et soirée d'entreprise</a>, <a href="{{ path('animations_mariages') }}" class="text-link">mariage</a>, fête entre amis sur le <a class="text-link" href="{{ path('guinguette') }}">thème "<i>Guinguette</i>"</a>, anniversaire... Les occasions sont nombreuses pour inviter un musicien, et l'accordéon s'adaptera facilement à tout type d'événement. Même si la tentation de réserver un <a target="_blank" href="{{ path('musiciens_soirees') }}">groupe de musique pour votre soirée</a> est souvent grande, les conditions ne sont parfois pas réunies pour pouvoir le faire (taille du lieu, considérations techniques, budget...).
+						</p>
 
-					<p>
-						Pourquoi alors ne pas choisir d'accueillir un <strong>accordéoniste en solo</strong> ? L'accordéon est en effet un instrument riche et complet, tout à fait adapté pour l'animation musicale de votre soirée. Grâce à mes années de pratique et mon <strong>expérience dans l'événementiel</strong>, j'ai pu développer un répertoire dense et varié, qui me permet de vous proposer aujourd'hui une belle palette de <strong>styles musicaux</strong>. Standards de jazz, classiques de la chanson française, swing des années 50 ; il y en a pour tous les goûts, et toutes les ambiances.
-					</p>
+						<p>
+							Pourquoi alors ne pas choisir d'accueillir un <strong>accordéoniste en solo</strong> ? L'accordéon est en effet un instrument riche et complet, tout à fait adapté pour l'animation musicale de votre soirée. Grâce à mes années de pratique et mon <strong>expérience dans l'événementiel</strong>, j'ai pu développer un répertoire dense et varié, qui me permet de vous proposer aujourd'hui une belle palette de <strong>styles musicaux</strong>. Standards de jazz, classiques de la chanson française, swing des années 50 ; il y en a pour tous les goûts, et toutes les ambiances.
+						</p>
+					</div>
+
+					<div class="col-md-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CjtwtX3Sd8Q', 'title': 'Aux Champs Elysées - Accordéoniste pour votre soirée' } %}
+					</div>
 				</div>
 
-				<div class="col-md-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CjtwtX3Sd8Q', 'title': 'Aux Champs Elysées - Accordéoniste pour votre soirée' } %}
+				<div class="row">
+					<div class="col-md-12">
+						<p style="margin-top: 15px;">
+							Avec une formule en solo, l'organisation de votre événement est grandement simplifiée ; les conditions techniques sont réduites au minimum, et il n'y a pas besoin de sonorisation la plupart du temps. Si cela s'avère nécessaire, je suis autonome et possède mon propre matériel de diffusion. L'espace nécessaire se résume à une chaise, qui peut se déplacer au cours de la soirée afin d'animer différents espaces.. (<i>Attention, je joue uniquement assis et ne propose donc pas de déambulation à proprement parler.</i>)
+						</p>
+
+						<p>
+							Si vous cherchez une formation musicale plus fournie, je vous propose de regarder notre <a href="{{ path('manouche') }}">groupe de jazz manouche</a>, avec lequel nous proposons des formules du duo (accordéon / guitare) au quartet (accordéon / 2 guitares / contrebasse). Vous pouvez aussi consulter la page des <a href="{{ path('animations') }}">animations musicales</a>, où vous trouverez également des formules avec chanteur ou chanteuse.
+						</p>
+					</div>
 				</div>
+
+				<!--
+				<img style="max-width: 50%; display: block; margin: auto; margin-bottom: 20px;" class="img-fluid" src="img/videos-pic.jpg" alt="Jérémy Dutheil, accordéoniste pour animer soirée" title="Recherche accordéoniste pour animer soirée">
+				-->
 			</div>
+		</div>
 
-			<div class="row">
-				<div class="col-md-12">
-					<p style="margin-top: 15px;">
-						Avec une formule en solo, l'organisation de votre événement est grandement simplifiée ; les conditions techniques sont réduites au minimum, et il n'y a pas besoin de sonorisation la plupart du temps. Si cela s'avère nécessaire, je suis autonome et possède mon propre matériel de diffusion. L'espace nécessaire se résume à une chaise, qui peut se déplacer au cours de la soirée afin d'animer différents espaces.. (<i>Attention, je joue uniquement assis et ne propose donc pas de déambulation à proprement parler.</i>)
-					</p>
+		<div class="home-container-section">
+			<div class="container">
+				<h2 class="section-title section-title--centered">Des styles musicaux variés</h2>
+				<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
 
-					<p>
-						Si vous cherchez une formation musicale plus fournie, je vous propose de regarder notre <a href="{{ path('manouche') }}">groupe de jazz manouche</a>, avec lequel nous proposons des formules du duo (accordéon / guitare) au quartet (accordéon / 2 guitares / contrebasse). Vous pouvez aussi consulter la page des <a href="{{ path('animations') }}">animations musicales</a>, où vous trouverez également des formules avec chanteur ou chanteuse.
-					</p>
-				</div>
-			</div>
+				<div class="row">
+					<div class="col-md-6">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/accordeoniste_soiree.webp',
+																					'jpeg': 'img/accordeoniste_soiree.JPG'
+																				},
+																		'default': 'img/accordeoniste_soiree.JPG',
+																		'lazyload': true,
+																		'alt': 'Accordéoniste pour votre soirée et vos événements',
+																		'title': 'Accordéoniste pour votre soirée et vos événements',
+																		'class': 'img-fluid',
+																		'style': 'margin-bottom: 15px;' } %}
+					</div>
 
-			<!--
-			<img style="max-width: 50%; display: block; margin: auto; margin-bottom: 20px;" class="img-fluid" src="img/videos-pic.jpg" alt="Jérémy Dutheil, accordéoniste pour animer soirée" title="Recherche accordéoniste pour animer soirée">
-			-->
-
-			<h2 class="section-title section-title--small">Des styles musicaux variés</h2>
-
-			<div class="row">
-				<div class="col-md-6">
-					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/accordeoniste_soiree.webp',
-																				 'jpeg': 'img/accordeoniste_soiree.JPG'
-																			   },
-																	'default': 'img/accordeoniste_soiree.JPG',
-																	'lazyload': true,
-																	'alt': 'Accordéoniste pour votre soirée et vos événements',
-																	'title': 'Accordéoniste pour votre soirée et vos événements',
-																	'class': 'img-fluid',
-																	'style': 'margin-bottom: 15px;' } %}
+					<div class="col-md-6">
+						<p>
+							L'accordéon, tout comme le piano, est un instrument parfaitement adapté à l'expression musicale en solo ; riche et complexe, il permet à l'accordéoniste non seulement de jouer les mélodies, mais également de s'accompagner soi-même. Souvent rangé dans la case "<i>musette</i>", on peut pourtant l'entendre dans de nombreux styles musicaux dans lesquels il s'intègre parfaitement. Choisir un <strong>accordéoniste pour votre soirée</strong> vous permettra d'offrir un répertoire complet et varié à vos invités.
+						</p>
+					</div>
 				</div>
 
-				<div class="col-md-6">
-					<p>
-						L'accordéon, tout comme le piano, est un instrument parfaitement adapté à l'expression musicale en solo ; riche et complexe, il permet à l'accordéoniste non seulement de jouer les mélodies, mais également de s'accompagner soi-même. Souvent rangé dans la case "<i>musette</i>", on peut pourtant l'entendre dans de nombreux styles musicaux dans lesquels il s'intègre parfaitement. Choisir un <strong>accordéoniste pour votre soirée</strong> vous permettra d'offrir un répertoire complet et varié à vos invités.
-					</p>
-				</div>
-			</div>
+				<h3 class="section-title section-title--smaller">Accordéon jazz : classe et élégance</h3>
 
-			<h3 class="section-title section-title--smaller">Accordéon jazz : classe et élégance</h3>
+				<div class="row justify-content-center" style="margin-bottom: 20px;">
+					<div class="col-md-6 order-md-2" style="margin-bottom: 15px;">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
+					</div>
 
-			<div class="row justify-content-center" style="margin-bottom: 20px;">
-				<div class="col-md-6 order-md-2" style="margin-bottom: 15px;">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '-h2oJAjzAtg', 'title': 'Accordéon jazz - Sunny Side of the Street' } %}
-				</div>
+					<div class="col-sm-12 order-md-1">
+						<p>
+							Vous cherchez un accordéoniste qui sortira des sentiers battus, proposant une musique chic et raffinée. Pour une musique d'ambiance lors de votre soirée, le jazz à l'accordéon est un choix idéal ! Moins coûteux à déplacer qu'un piano, plus original et pourtant tout aussi intéressant. Au son des standards de <i>jazz</i>, de Duke Ellington à Charlie Parker, laissez vous séduire par un son feutré et tout en retenue.
+						</p>
 
-				<div class="col-sm-12 order-md-1">
-					<p>
-						Vous cherchez un accordéoniste qui sortira des sentiers battus, proposant une musique chic et raffinée. Pour une musique d'ambiance lors de votre soirée, le jazz à l'accordéon est un choix idéal ! Moins coûteux à déplacer qu'un piano, plus original et pourtant tout aussi intéressant. Au son des standards de <i>jazz</i>, de Duke Ellington à Charlie Parker, laissez vous séduire par un son feutré et tout en retenue.
-					</p>
+						<p>
+							Discret, l'accordéon jazz apportera à votre soirée une touche de classe et d'élégance, tout en surprenant vos invités ! Cette formule est particulièrement adaptée pour le cocktail de votre entreprise, un dîner spécial dans votre restaurant ou le vin d'honneur de votre mariage... Loin des clichés de l'instrument, un <strong>accordéoniste jazz</strong> plaira à toutes les générations !
+						</p>
+					</div>
 
-					<p>
-						Discret, l'accordéon jazz apportera à votre soirée une touche de classe et d'élégance, tout en surprenant vos invités ! Cette formule est particulièrement adaptée pour le cocktail de votre entreprise, un dîner spécial dans votre restaurant ou le vin d'honneur de votre mariage... Loin des clichés de l'instrument, un <strong>accordéoniste jazz</strong> plaira à toutes les générations !
-					</p>
-				</div>
+					<div class="col-md-6 order-md-3">
+						<p>
+							<strong>Accordéon Jazz - Quelques titres pour l'exemple</strong>
+						</p>
 
-				<div class="col-md-6 order-md-3">
-					<p>
-						<strong>Accordéon Jazz - Quelques titres pour l'exemple</strong>
-					</p>
-
-					<p style="text-align: center;">
-						Stella by Starlight <br>
-						All of Me <br>
-						How high the Moon<br>
-						Billie's Bounce<br>
-						Autumn Leaves <br>
-						Body and Soul <br>
-						There will never be another you<br>
-						On the sunny side of the street<br>
-						Saint James Infirmary<br>
-						All the things you are
-					</p>
-
-					<!--<ul>
-						<li>
-							Stella by Starlight
-						</li>
-
-						<li>
-							All of Me
-						</li>
-
-						<li>
-							How high the Moon
-						</li>
-
-						<li>
-							Billie's Bounce
-						</li>
-
-						<li>
-							Autumn Leaves
-						</li>
-
-						<li>
-							Body and Soul
-						</li>
-
-						<li>
-							There will never be another you
-						</li>
-
-						<li>
-							On the sunny side of the street
-						</li>
-
-						<li>
-							Saint James Infirmary
-						</li>
-
-						<li>
+						<p style="text-align: center;">
+							Stella by Starlight <br>
+							All of Me <br>
+							How high the Moon<br>
+							Billie's Bounce<br>
+							Autumn Leaves <br>
+							Body and Soul <br>
+							There will never be another you<br>
+							On the sunny side of the street<br>
+							Saint James Infirmary<br>
 							All the things you are
-						</li>
-					</ul>-->
-				</div>
-			</div>
-
-
-			<h3 class="section-title section-title--smaller">Guinguette et Chanson française : souvenirs participatifs</h3>
-
-			<div class="row justify-content-center" style="margin-bottom: 20px;">
-				<div class="col-md-6 order-md-3" style="margin-bottom: 15px;">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'oSiWQ_thsn8', 'title': 'Accordéon guinguette - Java Manouche (Jo Privat)' } %}
+						</p>
+					</div>
 				</div>
 
-				<div class="col-sm-12 order-md-1">
-					<p>
-						Instrument roi des années 30, l'accordéon peut à lui seul recréer une ambiance "guinguette" et "rétro" pendant votre soirée. Entre valses <i>swing</i> et grands standards de la chanson française (Brel, Aznavour, Piaf, ...), vous verrez une joyeuse nostalgie s'emparer de vos invités. Aujourd'hui, ce genre de soirées "rétro" (pourquoi pas aussi s'habiller comme à l'époque ?) est très tendance, et la guinguette revient en force. Vous pouvez décider d'en faire le thème principal de votre soirée, ou pourquoi pas simplement réserver un petit espace hors du temps quelque part sur le lieu de l'événement.
-					</p>
 
-					<p>
-						Un <strong>accordéoniste à votre soirée</strong> pourra alors tour à tour vous faire danser (valses swing, standards musette, ...), chanter (La Foule, Champs Elysées, Vesoul, ...) ou encore découvrir de nouveaux morceaux dans le style que vous n'aviez peut-être jamais entendu ! <br>
-						Cette formule sera particulièrement adaptée pour un anniversaire, une fête entre amis ou un repas convivial.
-					</p>
+				<h3 class="section-title section-title--smaller">Guinguette et Chanson française : souvenirs participatifs</h3>
+
+				<div class="row justify-content-center" style="margin-bottom: 20px;">
+					<div class="col-md-6 order-md-3" style="margin-bottom: 15px;">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'oSiWQ_thsn8', 'title': 'Accordéon guinguette - Java Manouche (Jo Privat)' } %}
+					</div>
+
+					<div class="col-sm-12 order-md-1">
+						<p>
+							Instrument roi des années 30, l'accordéon peut à lui seul recréer une ambiance "guinguette" et "rétro" pendant votre soirée. Entre valses <i>swing</i> et grands standards de la chanson française (Brel, Aznavour, Piaf, ...), vous verrez une joyeuse nostalgie s'emparer de vos invités. Aujourd'hui, ce genre de soirées "rétro" (pourquoi pas aussi s'habiller comme à l'époque ?) est très tendance, et la guinguette revient en force. Vous pouvez décider d'en faire le thème principal de votre soirée, ou pourquoi pas simplement réserver un petit espace hors du temps quelque part sur le lieu de l'événement.
+						</p>
+
+						<p>
+							Un <strong>accordéoniste à votre soirée</strong> pourra alors tour à tour vous faire danser (valses swing, standards musette, ...), chanter (La Foule, Champs Elysées, Vesoul, ...) ou encore découvrir de nouveaux morceaux dans le style que vous n'aviez peut-être jamais entendu ! <br>
+							Cette formule sera particulièrement adaptée pour un anniversaire, une fête entre amis ou un repas convivial.
+						</p>
+					</div>
+
+					<div class="col-md-6 order-md-2">
+						<p>
+							<strong>Accordéon guinguette : quelques titres pour l'exemple</strong>
+						</p>
+
+						<p style="text-align: center;">
+							Le balajo <br>
+							Indifférence <br>
+							Champs Elysées<br>
+							La Foule<br>
+							La bohème<br>
+							Ménilmontant<br>
+							Que reste t'il de nos amours<br>
+							La vie en rose<br>
+							Emmenez-moi<br>
+							Minor Swing<br>
+							Un mauvais garçon<br>
+							Un clair de lune à Maubeuge<br>
+						</p>
+
+						
+					</div>
 				</div>
 
-				<div class="col-md-6 order-md-2">
-					<p>
-						<strong>Accordéon guinguette : quelques titres pour l'exemple</strong>
-					</p>
+				<h3 class="section-title section-title--smaller">Musique du monde : à la découverte d'un répertoire</h3>
 
-					<p style="text-align: center;">
-						Le balajo <br>
-						Indifférence <br>
-						Champs Elysées<br>
-						La Foule<br>
-						La bohème<br>
-						Ménilmontant<br>
-						Que reste t'il de nos amours<br>
-						La vie en rose<br>
-						Emmenez-moi<br>
-						Minor Swing<br>
-						Un mauvais garçon<br>
-						Un clair de lune à Maubeuge<br>
-					</p>
+				<p>
+					Surtout connu pour son succès français, l'accordéon est pourtant présent dans la plupart des cultures dans le monde. Du <i>forro</i> brésilien au <i>tango</i> argentin, en passant par la musique balkanique et le klezmer, de nombreux morceaux peuvent vous étonner et donner un caractère "exotique" à l'animation. Plutôt qu'une formule à part entière, ce répertoire s'intègrera plutôt sous forme de quelques morceaux dans les répertoires plus classiques, surprenant à nouveau vos invités !
+				</p>
 
-					<!--<ul>
-						<li>
-							Le balajo
-						</li>
+				<div class="row justify-content-center" style="margin-bottom: 20px;">
+					<div class="col-sm-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '7rHCQfzAl68', 'title': 'Balakatun (Marc Berthoumieux)' } %}
+					</div>
 
-						<li>
-							Indifférence
-						</li>
-
-						<li>
-							Champs Elysées
-						</li>
-
-						<li>
-							La Foule
-						</li>
-
-						<li>
-							La bohème
-						</li>
-
-						<li>
-							Ménilmontant
-						</li>
-
-						<li>
-							Que reste t'il de nos amours
-						</li>
-
-						<li>
-							La vie en rose
-						</li>
-
-						<li>
-							Emmenez-moi
-						</li>
-
-						<li>
-							Minor Swing
-						</li>
-
-						<li>
-							Un mauvais garçon
-						</li>
-
-						<li>
-							Un clair de lune à Maubeuge
-						</li>
-					</ul>-->
-				</div>
-			</div>
-
-			<h3 class="section-title section-title--smaller">Musique du monde : à la découverte d'un répertoire</h3>
-
-			<p>
-				Surtout connu pour son succès français, l'accordéon est pourtant présent dans la plupart des cultures dans le monde. Du <i>forro</i> brésilien au <i>tango</i> argentin, en passant par la musique balkanique et le klezmer, de nombreux morceaux peuvent vous étonner et donner un caractère "exotique" à l'animation. Plutôt qu'une formule à part entière, ce répertoire s'intègrera plutôt sous forme de quelques morceaux dans les répertoires plus classiques, surprenant à nouveau vos invités !
-			</p>
-
-			<div class="row justify-content-center" style="margin-bottom: 20px;">
-				<div class="col-sm-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '7rHCQfzAl68', 'title': 'Balakatun (Marc Berthoumieux)' } %}
+					<div class="col-sm-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '8eY4FsHf7g0', 'title': 'Carnevale (R. Ruggieri)' } %}
+					</div>
 				</div>
 
-				<div class="col-sm-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '8eY4FsHf7g0', 'title': 'Carnevale (R. Ruggieri)' } %}
-				</div>
-			</div>
+				<h3 class="section-title section-title--smaller">Un exemple de répertoire à l'accordéon pour votre soirée</h3>
 
-			<h3 class="section-title section-title--smaller">Un exemple de répertoire à l'accordéon pour votre soirée</h3>
+				<p>
+					Vous êtes à la recherche d'un accordéoniste, voici ci-dessous quelques titres auxquels vous pouvez vous attendre lors de votre soirée. Bien évidemment, nous discuterons ensemble du répertoire en amont de la prestation, afin d'adapter au mieux les morceaux à vos envies et à celles de vos invités. 
+				</p>
 
-			<p>
-				Vous êtes à la recherche d'un accordéoniste, voici ci-dessous quelques titres auxquels vous pouvez vous attendre lors de votre soirée. Bien évidemment, nous discuterons ensemble du répertoire en amont de la prestation, afin d'adapter au mieux les morceaux à vos envies et à celles de vos invités. 
-			</p>
+				<div class="row">
+					<div class="col-sm-6">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/champs.webp',
+																					'jpeg': 'img/champs.jpg'
+																				},
+																		'default': 'img/champs.jpg',
+																		'lazyload': true,
+																		'alt': 'Accordéoniste pour votre soirée et vos événements',
+																		'title': 'Accordéoniste pour votre soirée et vos événements',
+																		'class': 'img-fluid page-section__img d-none d-sm-block',
+																		'style': '' } %}
+					</div>
 
-			<div class="row">
-				<div class="col-sm-6">
-					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/champs.webp',
-																				 'jpeg': 'img/champs.jpg'
-																			   },
-																	'default': 'img/champs.jpg',
-																	'lazyload': true,
-																	'alt': 'Accordéoniste pour votre soirée et vos événements',
-																	'title': 'Accordéoniste pour votre soirée et vos événements',
-																	'class': 'img-fluid page-section__img d-none d-sm-block',
-																	'style': '' } %}
-				</div>
-
-				<div class="col-sm-6">
-					<p style="text-align: center;">
-						Les feuilles mortes<br>
-						La Foule<br>
-						All of Me<br>
-						Minor Swing<br>
-						Sous le ciel de Paris<br>
-						Aux Champs Elysées<br>
-						Mon amant de Saint Jean<br>
-						Sunny side of the Street<br>
-						Emmenez moi<br>
-						Ménilmontant<br>
-						Les copains d'abord<br>
-						Un mauvais garçon<br>
-						La Javanaise<br>
-						Les Yeux Noirs<br>
-						<i>Et bien d'autres...</i>
-					</p>
-					<!--<ul>	
-						<li>
-							Les feuilles mortes
-						</li>
-
-						<li>
-							La Foule
-						</li>
-
-						<li>
-							All of Me
-						</li>
-
-						<li>
-							Minor Swing
-						</li>
-
-						<li>
-							Sous le ciel de Paris
-						</li>
-
-						<li>
-							Aux Champs Elysées
-						</li>
-
-						<li>
-							Mon amant de Saint Jean
-						</li>
-
-						<li>
-							Sunny side of the Street
-						</li>
-
-						<li>
-							Emmenez moi
-						</li>
-
-						<li>
-							Ménilmontant
-						</li>
-
-						<li>
-							Les copains d'abord
-						</li>
-
-						<li>
-							Un mauvais garçon
-						</li>
-
-						<li>
-							La Javanaise
-						</li>
-
-						<li>
-							Les Yeux Noirs
-						</li>
-
-						<li>
+					<div class="col-sm-6">
+						<p style="text-align: center;">
+							Les feuilles mortes<br>
+							La Foule<br>
+							All of Me<br>
+							Minor Swing<br>
+							Sous le ciel de Paris<br>
+							Aux Champs Elysées<br>
+							Mon amant de Saint Jean<br>
+							Sunny side of the Street<br>
+							Emmenez moi<br>
+							Ménilmontant<br>
+							Les copains d'abord<br>
+							Un mauvais garçon<br>
+							La Javanaise<br>
+							Les Yeux Noirs<br>
 							<i>Et bien d'autres...</i>
-						</li>
-					</ul>-->
+						</p>
+					</div>
 				</div>
 			</div>
+		</div>
 
-			<h2 class="section-title section-title--small" style="margin-top: 25px;">Ils m'ont fait confiance</h2>
+		<div class="home-container-section">
+			<h2 class="section-title section-title--centered">Ils m'ont fait confiance</h2>
+			<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
 
-			{% include 'partners.html.twig' %}
+			<div class="container">
+				{% include 'partners.html.twig' %}
 
-			<hr>
+				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+				<div class="elfsight-app-ec309407-5635-4d34-a076-6f44bf20acc8 reviews"></div>
+			</div>
+		</div>
 
-			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-			<div class="elfsight-app-ec309407-5635-4d34-a076-6f44bf20acc8 reviews"></div>
 
-			<hr style="background-color: #2d2d2d; margin: 25px 0;">
+		<div>
+			<h2 class="section-title section-title--centered">Prestation sur mesure pour votre soirée</h2>
+			<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
 
-			<h2 class="section-title section-title--small" style="margin-top: 25px;">Prestation sur mesure pour votre soirée</h2>
+			<div class="container">
+				<p>
+					Loin d'être des formules immuables, les différentes propositions affichées sur cette page sont des exemples d'animations musicales et d'orientations possibles pour votre soirée avec l'accordéon. En tant que musicien professionnel, je m'adapte à vos envies tout en vous conseillant au mieux possible ; notre but est le même, faire de votre soirée un moment d'exception !
+				</p>
 
-			<p>
-				Loin d'être des formules immuables, les différentes propositions affichées sur cette page sont des exemples d'animations musicales et d'orientations possibles pour votre soirée avec l'accordéon. En tant que musicien professionnel, je m'adapte à vos envies tout en vous conseillant au mieux possible ; notre but est le même, faire de votre soirée un moment d'exception !
-			</p>
+				<p>
+					Pour démarrer une première discussion et obtenir plus de renseignements, n'hésitez pas à me contacter ; vous pouvez également consulter la page des animations musicales pour découvrir d'autres possibilités (notamment avec un groupe de jazz manouche ou avec une chanteuse).
+				</p>
 
-			<p>
-				Pour démarrer une première discussion et obtenir plus de renseignements, n'hésitez pas à me contacter ; vous pouvez également consulter la page des animations musicales pour découvrir d'autres possibilités (notamment avec un groupe de jazz manouche ou avec une chanteuse).
-			</p>
+				<h2 class="section-title section-title--small" style="margin-top: 25px;">Quelques exemples de propositions</h2>
 
-			<h2 class="section-title section-title--small" style="margin-top: 25px;">Quelques exemples de propositions</h2>
+				<p>
+					<strong>* Je cherche un accordéoniste pour un dîner d'entreprise à Paris, ambiance repas d'affaire.</strong> <br>
+					Dans ce cadre, je vous proposerais de partir sur la formule <i>accordéon jazz</i> ; entre 2 et 4h de prestation, plutôt calme et discret. La musique est présente pour l'ambiance, mais laisse tout de même place aux discussions des invités. Dans ce cadre, notre duo accordéon / guitare pourrait également tout à fait convenir, tout en restant abordable.
+				</p>
 
-			<p>
-				<strong>* Je cherche un accordéoniste pour un dîner d'entreprise à Paris, ambiance repas d'affaire.</strong> <br>
-				Dans ce cadre, je vous proposerais de partir sur la formule <i>accordéon jazz</i> ; entre 2 et 4h de prestation, plutôt calme et discret. La musique est présente pour l'ambiance, mais laisse tout de même place aux discussions des invités. Dans ce cadre, notre duo accordéon / guitare pourrait également tout à fait convenir, tout en restant abordable.
-			</p>
+				<p>
+					<strong>* Nous organisons une fête entre amis, et sommes à la recherche d'un accordéoniste pour le début de soirée.</strong> <br>
+					Ici, l'accordéon se fait plus présent et invite au chant ou à la danse ; ambiance guinguette avec de la chanson française (instrumentale), mais aussi quelques standards de swing et jazz manouche. Je peux également venir accompagné d'une chanteuse pour ce type d'événements.
+				</p>
 
-			<p>
-				<strong>* Nous organisons une fête entre amis, et sommes à la recherche d'un accordéoniste pour le début de soirée.</strong> <br>
-				Ici, l'accordéon se fait plus présent et invite au chant ou à la danse ; ambiance guinguette avec de la chanson française (instrumentale), mais aussi quelques standards de swing et jazz manouche. Je peux également venir accompagné d'une chanteuse pour ce type d'événements.
-			</p>
+				<p>
+					<strong>* Mon entreprise organise un cocktail sur un thème "guinguette", et je cherche un accordéoniste pour l'animation musicale.</strong> <br>
+					Lors d'un cocktail d'entreprise, je préconise un mélange des genres : quelques airs de chanson française connus (instrumental à l'accordéon), mais également du jazz et swing qui donneront une touche très classe. Ambiance années 50 garantie !
+				</p>
+			</div>
+		</div>
 
-			<p>
-				<strong>* Mon entreprise organise un cocktail sur un thème "guinguette", et je cherche un accordéoniste pour l'animation musicale.</strong> <br>
-				Lors d'un cocktail d'entreprise, je préconise un mélange des genres : quelques airs de chanson française connus (instrumental à l'accordéon), mais également du jazz et swing qui donneront une touche très classe. Ambiance années 50 garantie !
-			</p>
-
+		<div class="container">
 			{{ include('utils/contact-cta.html.twig') }}
 		</div>
+		
 	</section>
 {% endblock %}

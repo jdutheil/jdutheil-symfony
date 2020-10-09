@@ -62,6 +62,34 @@
 				</div>
 			</div>
 
+			<h2 class="section-title section-title--small">Le groupe jazz manouche</h2>
+
+			<p>
+				Avec notre groupe de jazz manouche, nous proposons également des formules en trio (accordéon / guitare / contrebasse ou accordéon / 2 guitares) et quartet (accordéon / 2 guitares / contrebasse). Voici ci-dessous quelques extraits.
+			</p>
+
+			<div class="row">
+				<div class="col-md-6">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'D0Do3plUclI', 'title': 'Jazz manouche avec accordéon' } %}
+				</div>
+
+				<div class="col-md-6">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'SB9a2AzZxww', 'title': 'Jazz manouche avec accordéon' } %}
+				</div>
+
+				<div class="col-md-6">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Jazz manouche avec accordéon' } %}
+				</div>
+
+				<div class="col-md-6">
+					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Jazz manouche avec accordéon' } %}
+				</div>
+			</div>
+
+			<p style="margin-top: 15px; text-align: center;">
+				<a href="{{ path('manouche') }}" class="btn btn-primary">Plus d'informations <span class="d-none d-md-inline">sur le groupe jazz manouche</span></a>
+			</p>
+
 			<h2 class="section-title section-title--small" style="margin-top: 20px;">Jérémy Dutheil & Solal Poux : duo jazz manouche accordéon / guitare</h2>
 
 			<p>
@@ -96,28 +124,8 @@
 				</div>
 			</div>
 
-			<p>
+			<p class="text-center">
 				<a href="{{ path('manouche') }}" class="btn btn-primary">Plus d'informations <span class="d-none d-md-inline">sur le duo accordéon / guitare</span></a>
-			</p>
-
-			<h2 class="section-title section-title--small">Le groupe jazz manouche</h2>
-
-			<p>
-				Avec notre groupe de jazz manouche, nous proposons également des formules en trio (accordéon / guitare / contrebasse ou accordéon / 2 guitares) et quartet (accordéon / 2 guitares / contrebasse). Voici ci-dessous quelques extraits.
-			</p>
-
-			<div class="row">
-				<div class="col-md-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Jazz manouche avec accordéon' } %}
-				</div>
-
-				<div class="col-md-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Jazz manouche avec accordéon' } %}
-				</div>
-			</div>
-
-			<p style="margin-top: 15px;">
-				<a href="{{ path('manouche') }}" class="btn btn-primary">Plus d'informations <span class="d-none d-md-inline">sur le groupe jazz manouche</span></a>
 			</p>
 
 			<h2 class="section-title section-title--small">Accordéon solo - Esprit guinguette</h2>
@@ -147,7 +155,7 @@
 				</div>
             </div>
 
-			<p style="margin-top: 20px;">
+			<p style="margin-top: 20px; text-align: center;">
 				<a class="btn btn-primary" href="{{ path('accordeoniste_soiree') }}">Plus d'informations <span class="d-none d-md-inline">sur la formule en solo</span></a>
 			</p>
 

@@ -30,343 +30,401 @@
 	<section class="flash-ghost flash-ghost--limited"></section>
 
 	<section class="content-section page-section">
-		<div class="container bg--primary">
-			<h1 class="section-title">
+
+		<div class="home-container-section">
+			<h1 class="section-title section-title--centered">
 				Groupe jazz manouche pour vos événements <br>
-				<small>Orchestre sur mesure, musique de qualité</small>
 			</h1>
 
-			{{ include('utils/contact-cta.html.twig') }}
+			<div class="container">
+				<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
 
-			<p>
-                Vous recherchez un <strong>groupe de jazz manouche</strong> pour votre soirée privée, mariage, anniversaire, cocktail d'entreprise ou tout autre événement ? À Paris ou en Ile de France ? Vous avez fait le tour des sites qui proposent une <strong>recherche de musiciens</strong> et ne savez pas qui choisir ? Vous êtes au bon endroit ! <strong>Musiciens professionnels</strong> et expérimentés, nous vous proposons différentes formules (duo, trio, quartet, ...), toutes sur mesure, pour une animation musicale de qualité lors de votre événement.
-			</p>
+				<h2 class="section-title section-title--centered">
+					<small>Orchestre sur mesure, musique de qualité</small>
+				</h2>
 
-			<p>
-				Nous nous produisons aussi bien lors de concerts en public (voir notre page <a href="{{ path('jdsp') }}">Jérémy Dutheil & Solal Poux</a>), que lors d'<strong>événements d'entreprise et soirées privées</strong>. Vous trouverez sur cette page de nombreuses vidéos de notre groupe jazz manouche, ainsi que <a href="#reviews">des avis</a> qui décrivent la qualité de nos animations musicales.
-			</p>
+				{{ include('utils/contact-cta.html.twig') }}
 
-			<div class="row">
-                <div class="col-md-12">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
+				<p>
+					Vous recherchez un <strong>groupe de jazz manouche</strong> pour votre soirée privée, mariage, anniversaire, cocktail d'entreprise ou tout autre événement ? À Paris ou en Ile de France ? Vous avez fait le tour des sites qui proposent une <strong>recherche de musiciens</strong> et ne savez pas qui choisir ? Vous êtes au bon endroit ! <strong>Musiciens professionnels</strong> et expérimentés, nous vous proposons différentes formules (duo, trio, quartet, ...), toutes sur mesure, pour une animation musicale réussie lors de votre événement.
+				</p>
 
-                    <p class="text-center" style="margin-top: 15px;">
-                        Quelques extraits en trio jazz manouche : Bossa Dorado, Autumn Leaves, All of Me, All the things you are, Fly me to the Moon
-                    </p>
-                </div>
-            </div>
+				<p>
+					Nous nous produisons aussi bien lors de concerts en public (voir notre page <a href="{{ path('jdsp') }}">Jérémy Dutheil & Solal Poux</a>), que lors d'<strong>événements d'entreprise et soirées privées</strong>. Vous trouverez sur cette page de nombreuses vidéos de notre groupe jazz manouche, ainsi que <a href="#reviews">des avis</a> qui décrivent la qualité de nos prestations musicales.
+				</p>
 
-			<p>
-				Vous trouverez ci-dessous des informations sur nos prestations en tant qu'orchestre jazz manouche. Pour tout renseignement complémentaire, ou pour établir un devis, n'hésitez pas à <a href="{{ path('contact') }}">nous contacter</a>.
-			</p>
+				<div class="row">
+					<div class="col-md-12">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
 
-			<!--<p>
-				Enfin, les premiers paragraphes que vous pouvez lire sur cette page sont des informations d'ordre général sur votre événement et le style musical jazz manouche ; pour nous entendre / voir directement, et avoir une idée de ce que nous proposons, vous pouvez cliquer sur le bouton ci-dessous :
-			</p>
-
-			<p>
-				<a href="#formules" class="btn btn-primary">Voir nos formules jazz manouche</a>.
-			</p>-->
-
-			<h2 class="section-title section-title--small">Votre événement</h2>
-
-			<div class="row">
-				<div class="col-md-6">
-					<p>
-						L'organisation d'un événement n'est jamais chose facile, d'autant que le temps manque souvent. Régler les derniers préparatifs d'un mariage, s'assurer d'une soirée d'entreprise réussie, définir le thème d'une soirée privée... Autant d'éléments stressants qu'il vous faut gérer, et qui s'avèrent parfois compliqués.
-					</p>
-
-					<p>
-						Trouver un <a href="{{ path('musiciens_soirees') }}">groupe de musique</a> peut se révéler une tâche chronophage ; à l'heure d'internet, les propositions sont nombreuses et il est difficile de faire un choix. En tant que professionnels expérimentés, notre but est de vous <strong>faciliter</strong> toutes ces démarches ; nous pouvons prendre en charge l'animation musicale de votre soirée de A à Z. Nous vous proposons ici différentes formules types (toutes avec un <a href="{{ path('accordeon_jazz_manouche') }}">accordéoniste jazz manouche</a> bien sûr !), que vous pouvez modifier à votre guise pour créer votre <strong>orchestre jazz manouche</strong> sur mesure. Bien entendu, nous vous conseillerons en fonction du lieu que vous avez choisi, du nombre de personnes attendues à votre événement et de votre budget.
-					</p>
-
-					<p>
-						Autonomes en matériel de sonorisation, notre <strong>groupe de jazz manouche</strong> prend également en charge la totalité de l'aspect technique ; vous n'avez plus qu'à apprécier votre soirée en profitant d'une musique d'ambiance chic et élégante.
-					</p>
-				</div>
-
-				<div class="col-md-6" style="text-align: center;">
-					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/crillon.webp',
-																				 'jpeg': 'img/crillon.jpg'
-																			   },
-																	'default': 'img/crillon.jpg',
-																	'lazyload': true,
-																	'alt': 'Trio jazz manouche à l\'Hôtel Le Crillon',
-																	'title': 'Trio jazz manouche à l\'Hôtel Le Crillon',
-																	'class': 'img-fluid' } %}
-
-				</div>
-			</div>
-
-			<h2 class="section-title section-title--small">Le jazz manouche</h2>
-
-			<div class="row">
-				<div class="col-md-6">
-					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/swingcocktail2.webp',
-																				 'jpeg': 'img/swingcocktail2.jpg'
-																			   },
-																	'default': 'img/swingcocktail2.jpg',
-																	'lazyload': true,
-																	'alt': 'Trio jazz avec chanteur pour vos événements',
-																	'title': 'Trio jazz avec chanteur pour vos événements',
-																	'class': 'img-fluid' } %}
-				</div>
-
-				<div class="col-md-6">
-					<p>
-						Retrouvez l'ambiance des années 30 lors de votre soirée avec notre <strong>orchestre jazz manouche</strong>, au son des standards du style popularisé par Django Reinhardt et Stéphane Grappelli. La guitare se fait tantôt rythmique, tantôt soliste, la contrebasse enchaîne les <i>walking bass</i>, l'accordéon s'envole par moments.. Le jazz manouche, musique virtuose s'il en est, apportera à votre réception une touche <i>vintage</i>, mais surtout très chic.
-					</p>
-
-					<p>
-						Vous avez forcément déjà entendu des morceaux comme <i>Minor Swing</i> ou <i>Les Yeux Noirs</i> ; intemporels, ils sont repris encore aujourd'hui dans presque tous les concerts de <strong>jazz manouche</strong>. Mais connaissez-vous des airs moins entendus, comme <i>Anniversary Song</i> ou <i>Lulu Swing</i> ? Notre répertoire balaie le style jazz manouche, des grands standards aux morceaux plus traditionnels et moins connus ; nous faisons également quelques incursions dans le jazz plus "classique", avec par exemple des reprises de Charlie Parker (<i>Billie's Bounce</i>, <i>Donna Lee</i>) ou Duke Ellington (<i>It don't mean a thing</i>, <i>Caravan</i>).
-					</p>
-				</div>
-			</div>
-
-			<h2 id="reviews" class="section-title section-title--small">Ils nous ont fait confiance</h2>
-
-			{% include 'partners.html.twig' %}
-
-			<hr>
-
-			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-			<div class="elfsight-app-ec309407-5635-4d34-a076-6f44bf20acc8 reviews"></div>
-
-			<hr style="background-color: #2d2d2d; margin: 25px 0;">
-
-			<h2 class="section-title section-title--small">Notre groupe jazz manouche en vidéo</h2>
-
-			<div class="row">
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'La Foule - Duo jazz manouche (accordéon / guitare)' } %}
-				</div>
-
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
-				</div>
-
-				<div class="col-md-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Trio jazz manouche avec accordéon' } %}
-				</div>
-
-				<div class="col-md-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'pmZ80dJklu0', 'title': 'Trio jazz manouche avec accordéon' } %}
-				</div>
-			</div>
-
-			<hr style="background-color: #2d2d2d; margin: 25px 0;">
-
-			<span id="formules"></span>
-
-			<h2 class="section-title section-title--small">Nos groupes de jazz manouche pour vos événements</h2>
-
-            <h3 class="section-title section-title--smaller">Duo jazz manouche (accordéon / guitare) - Jérémy Dutheil & Solal Poux</h3>
-
-			<div class="row">
-				<div class="col-md-6">
-					<p>
-						Le duo jazz manouche est la formule intimiste par excellence ! L'accordéon et la guitare étant tous deux des instruments rythmiques et solistes, vous avez ici l'essence du jazz manouche sans aucun superflu. Les rôles s'alternent au sein des morceaux, et les solos s'enchaînent avec une grande dynamique.
-					</p>
-
-					<p>
-						Acoustique ou sonorisé, les conditions techniques sont réduites au minimum ; plus facile à accueillir qu'un <strong>orchestre jazz manouche</strong>, notre duo trouvera très facilement sa place dans les plus petits lieux. L'ambiance musicale de votre soirée n'en restera pas moins très classe et élégante, alternant les balades langoureuses et les morceaux virtuoses.
-					</p>
-
-					<p>
-						Habitués à jouer ensemble, nous proposons avec Solal Poux un répertoire très vaste, qui emprunte notamment à la chanson française et au jazz plus "traditionnel". Nous nous produisons aussi bien lors d'événements privés (cocktails, mariages, ..) que publics (festivals, salles, ..).
-					</p>
-				</div>
-
-				<div class="col-md-6">
-					{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/manouchebg.webp',
-																				 'jpeg': 'img/manouchebg.jpg'
-																			   },
-																	'default': 'img/manouchebg.jpg',
-																	'lazyload': false,
-																	'alt': 'Jérémy Dutheil & Solal Poux',
-																	'title': 'Jérémy Dutheil & Solal Poux',
-																	'class': 'img-fluid' } %}
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CWUY-repj8g', 'title': 'Duo jazz manouche avec accordéon' } %}
-				</div>
-
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'u8re-Ba8RQ0', 'title': 'Jazz manouche avec accordéon' } %}
-				</div>
-
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'Iklby0R-WyQ', 'title': 'Jazz manouche avec accordéon' } %}
-				</div>
-
-				<div class="col-md-6" style="margin-bottom: 15px;">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '9b6zyj1e2cE', 'title': 'Jazz manouche avec accordéon' } %}
-				</div>
-			</div>
-
-            <h3 class="section-title section-title--smaller">Trio jazz manouche (accordéon / guitare / contrebasse)</h3>
-
-			<p>
-				Parmi nos <strong>groupes de jazz manouche</strong>, c'est la formule la plus courante et la plus "passe partout" ; la contrebasse vient ajouter une assise rythmique plus solide au duo, laissant plus grande liberté aux deux autres instrumentistes. Le trio reste facile et pratique à mettre en place pour votre événement, les conditions techniques étant limitées tout comme l'espace nécessaire.
-				<br>
-				On notera également l'apport visuel de la contrebasse (non négligeable), instrument emblématique du jazz manouche !
-			</p>
-
-			<p>
-				Le répertoire balaie les grands standards du jazz manouche, de Django Reinhardt à Biréli Lagrène, et nous proposons en moyenne 3h de musique pour votre événement. L'improvisation, indispensable au style jazz manouche, rend la musique vivante ; les musiciens adaptent leur jeu en fonction du déroulement de votre soirée, tandis que les invités sont eux-mêmes influencés par l'ambiance musicale. C'est un cercle vertueux, qui induit une interaction (même implicite) très forte entre le public et le groupe de musique.
-			</p>
-
-			<p>
-				Musique d'ambiance en fond sonore ou concert sur scène devant un public aguerri, notre <strong>trio jazz manouche</strong> saura s'adapter à toutes vos envies. Nous adaptons également notre répertoire en fonction de vos demandes, orientant la <i>setlist</i> vers plus de morceaux dans le style chanson française ou jazz traditionnel, par exemple.
-			</p>
-
-            <div class="row">
-                <div class="col-md-12">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Jazz manouche avec accordéon' } %}
-					
-                    <p class="text-center" style="margin-top: 15px;">
-                        Quelques extraits en trio jazz manouche : Bossa Dorado, Autumn Leaves, All of Me, All the things you are, Fly me to the Moon
-                    </p>
-                </div>
-            </div>
-
-			<h3 class="section-title section-title--smaller">Trio jazz manouche (accordéon / 2 guitares)</h3>
-
-			<p>
-				La guitare est l'instrument emblématique de la musique de Django Reinhardt, tout comme <strong>la pompe</strong>, rythmique essentielle du style jazz manouche. Avec deux guitaristes, les rôles sont répartis : l'un s'occupe de la rythmique, et l'autre des solos. Ainsi, la pompe est toujours présente et l'énergie décuplée !
-			</p>
-
-			<p>
-				Dans ce trio jazz manouche, on note bien sûr l'absence de contrebasse, qui est remplacée par la guitare rythmique ; les deux apportent des couleurs différentes, qui n'ont pas à s'envier l'une et l'autre. L'idéal étant bien sûr, si votre budget le permet, de s'orienter vers une formule en quartet où la guitare rythmique et la contrebasse sont présentes.
-			</p>
-
-			<div class="row">
-				<div class="col-md-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Jazz manouche avec accordéon' } %}
-				</div>
-
-				<div class="col-md-6">
-					{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'pmZ80dJklu0', 'title': 'Trio jazz manouche avec accordéon' } %}
-				</div>
-			</div>
-
-			<!--<h3 class="section-title section-title--smaller" style="margin-top: 25px;">Trio jazz avec chanteur</h3>
-
-			<p>
-				Dans un esprit plus "jazz", une formule avec chanteur permet de revivre les années 30 de manière encore plus conviviale !
-				Vidéo réalisée lors d'une prestation avec <a href="https://www.swingcocktail.com/" target="_blank">Swing Cocktail</a>.
-			</p>
-
-			<div class="row">
-				<div class="col-md-12">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RfHo4ztPXhY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p class="text-center">
+							Quelques extraits en trio jazz manouche : Bossa Dorado, Autumn Leaves, All of Me, All the things you are, Fly me to the Moon
+						</p>
 					</div>
 				</div>
-			</div>-->
+			</div>
+		</div>
 
-            <h3 class="section-title section-title--smaller" style="margin-top: 15px;">Quartet et plus</h3>
+		<div class="home-container-section">
+			<div class="container">
+				<h2 class="section-title section-title--centered">Pourquoi nous choisir ?</h2>
 
-			<p>
-				Vous cherchez un <strong>groupe de jazz manouche</strong> plus conséquent pour <strong>votre événement</strong> ? Nous proposons également des prestations en <strong>quartet</strong> et avec orchestre plus complet encore.
-			</p>
+				<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
 
-			<p>
-				Le premier instrument que nous conseillons est une <strong>seconde guitare</strong> qui assurera la rythmique ; <i>la pompe</i> est en effet un élément incontournable du jazz manouche. Grâce aux deux guitaristes, vous l'entendrez en permanence, même pendant les solos de guitare !
-				<br>
-				Pour assurer l'assise rythmique et harmonique, nous ajoutons également une <strong>contrebasse</strong> ; avec 2 guitares et une contrebasse, nous obtenons la formation classique du jazz manouche.
-				<br>
-				L'accordéon agit ici en tant qu'instrument mélodique principalement, et alterne les thèmes / chorus avec la guitare soliste.
-			</p>
+				<div class="row">
+					<div class="col-md-6">
+						<h3 class="section-title section-title--smaller" style="margin-bottom: 5px;">Des musiciens reconnus</h3>
 
-			<p>
-				À partir de 5 personnes, on peut commencer à ajouter d'autres instruments mélodiques : violon (très présent dans le jazz manouche), saxophone, ... Suivant vos envies et vos goûts, toujours ! Pourquoi ne pas prendre une chanteuse de jazz également ?
-			</p>
+						<p>
+							Nos musiciens sont bien entendu tous professionnels, avec des dizaines d'années de pratique instrumentale. Ils se produisent régulièrement sur scène en public, notamment avec de grands noms du jazz manouche. Vous aurez l'assurance d'une prestation musicale extraordinaire, proposée par des musiciens <strong>reconnus dans leur milieu</strong>.
+						</p>
+					</div>
 
-            <p>
-                Bien sûr ce ne sont que des exemples, n'hésitez pas à nous contacter pour établir une formule sur mesure pour votre événement.
-            </p>
+					<div class="col-md-6">
+						<h3 class="section-title section-title--smaller" style="margin-bottom: 5px;">Expérience de l'événementiel</h3>
 
-            <h2 class="section-title section-title--small">Quelques titres du répertoire</h2>
+						<p>
+							Nous intervenons lors d'événements d'entreprise et de soirées privées depuis plusieurs années. Nous possédons désormais une bonne expérience de ce type de prestations, et pouvons vous conseiller au mieux pour une animation musicale réussie.
+						</p>
+					</div>
 
-            <ul>
-                <li>
-                    Minor Swing
-                </li>
+					<div class="col-md-6">
+						<h3 class="section-title section-title--smaller" style="margin-bottom: 5px;">Professionnalisme et rigueur</h3>
 
-                <li>
-                    Bossa Dorado
-                </li>
+						<p>
+							Ponctualité, sérieux, autonomie, politesse... Autant de mots qui décrivent notre ligne de conduite lors de votre soirée. Le groupe de musique est un acteur à part entière de votre événement, et à ce titre se doit d'être exemplaire.  
+						</p>
+					</div>
 
-                <li>
-                    Ménilmontant
-                </li>
+					<div class="col-md-6">
+						<h3 class="section-title section-title--smaller" style="margin-bottom: 5px;">Des formules sur mesure</h3>
 
-				<li>
-					Danube (Anniversary Song)
-				</li>
+						<p>
+							Parce que chaque événement est différent, nous pensons qu'il est indispensable d'adapter nos formules à vos envies. Ainsi, nous vous proposons ici des exemples de groupe de jazz manouche, que vous pouvez adapter à votre convenance. Nous pouvons également mixer les répertoires, entre jazz manouche et chanson française par exemple, pour une ambiance typique et réfléchie pour <strong>votre</strong> soirée !
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-				<li>
-					Indifférence
-				</li>
+		<div class="home-container-section">
+			<div class="container">
+				<h2 class="section-title section-title--centered">Notre groupe jazz manouche en vidéo</h2>
 
-				<li>
-					Lulu Swing
-				</li>
+				<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
 
-                <li>
-                    Sunny Side of the Street
-                </li>
+				<div class="row">
+					<div class="col-md-6" style="margin-bottom: 15px;">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'W_uOwoGcBuE', 'title': 'La Foule - Duo jazz manouche (accordéon / guitare)' } %}
+					</div>
 
-                <li>
-                    Nuages
-                </li>
+					<div class="col-md-6" style="margin-bottom: 15px;">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Trio jazz manouche - Accordéon / Guitare / Contrebasse' } %}
+					</div>
 
-				<li>
-					Manoir de mes Rêves
-				</li>
+					<div class="col-md-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Trio jazz manouche avec accordéon' } %}
+					</div>
 
-                <li>
-                    All of Me
-                </li>
+					<div class="col-md-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'pmZ80dJklu0', 'title': 'Trio jazz manouche avec accordéon' } %}
+					</div>
+				</div>
+			</div>
+		</div>
 
-                <li>
-                    Autumn Leaves
-                </li>
+		<div class="home-container-section">
+			<div class="container">
+				<h2 id="reviews" class="section-title section-title--centered">Ils nous ont fait confiance</h2>
 
-				<li>
-					Them there eyes
-				</li>
+				<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
 
-				<li>
-					Blues mineur
-				</li>
+				{% include 'partners.html.twig' %}
 
-				<li>
-					Daphné
-				</li>
+				<hr>
 
-				<li>
-					Cherokee
-				</li>
+				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+				<div class="elfsight-app-ec309407-5635-4d34-a076-6f44bf20acc8 reviews"></div>
+			</div>
+		</div>
 
-				<li>
-					I can't give you anything but love
-				</li>
+		<div class="home-container-section">
+			<div class="container">
+				<h2 class="section-title section-title--small">Votre événement</h2>
 
-				<li>
-					Made in France
-				</li>
+				<div class="row">
+					<div class="col-md-6">
+						<p>
+							L'organisation d'un événement n'est jamais chose facile, d'autant que le temps manque souvent. Régler les derniers préparatifs d'un mariage, s'assurer d'une soirée d'entreprise réussie, définir le thème d'une soirée privée... Autant d'éléments stressants qu'il vous faut gérer, et qui s'avèrent parfois compliqués.
+						</p>
 
-                <li>
-                    <i>Et bien d'autres...</i>
-                </li>
-            </ul>
+						<p>
+							Trouver un <a href="{{ path('musiciens_soirees') }}">groupe de musique</a> peut se révéler une tâche chronophage ; à l'heure d'internet, les propositions sont nombreuses et il est difficile de faire un choix. En tant que professionnels expérimentés, notre but est de vous <strong>faciliter</strong> toutes ces démarches ; nous pouvons prendre en charge l'animation musicale de votre soirée de A à Z. Nous vous proposons ici différentes formules types (toutes avec un <a href="{{ path('accordeon_jazz_manouche') }}">accordéoniste jazz manouche</a> bien sûr !), que vous pouvez modifier à votre guise pour créer votre <strong>orchestre jazz manouche</strong> sur mesure. Bien entendu, nous vous conseillerons en fonction du lieu que vous avez choisi, du nombre de personnes attendues à votre événement et de votre budget.
+						</p>
 
-			<h2 class="section-title section-title--small">Plus d'informations ? Un devis gratuit ?</h2>
+						<p>
+							Autonomes en matériel de sonorisation, notre <strong>groupe de jazz manouche</strong> prend également en charge la totalité de l'aspect technique ; vous n'avez plus qu'à apprécier votre soirée en profitant d'une musique d'ambiance chic et élégante.
+						</p>
+					</div>
+
+					<div class="col-md-6" style="text-align: center;">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/crillon.webp',
+																					'jpeg': 'img/crillon.jpg'
+																				},
+																		'default': 'img/crillon.jpg',
+																		'lazyload': true,
+																		'alt': 'Trio jazz manouche à l\'Hôtel Le Crillon',
+																		'title': 'Trio jazz manouche à l\'Hôtel Le Crillon',
+																		'class': 'img-fluid' } %}
+
+					</div>
+				</div>
+
+				<h2 class="section-title section-title--small">Le jazz manouche</h2>
+
+				<div class="row">
+					<div class="col-md-6">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/swingcocktail2.webp',
+																					'jpeg': 'img/swingcocktail2.jpg'
+																				},
+																		'default': 'img/swingcocktail2.jpg',
+																		'lazyload': true,
+																		'alt': 'Trio jazz avec chanteur pour vos événements',
+																		'title': 'Trio jazz avec chanteur pour vos événements',
+																		'class': 'img-fluid' } %}
+					</div>
+
+					<div class="col-md-6">
+						<p>
+							Retrouvez l'ambiance des années 30 lors de votre soirée avec notre <strong>orchestre jazz manouche</strong>, au son des standards du style popularisé par Django Reinhardt et Stéphane Grappelli. La guitare se fait tantôt rythmique, tantôt soliste, la contrebasse enchaîne les <i>walking bass</i>, l'accordéon s'envole par moments.. Le jazz manouche, musique virtuose s'il en est, apportera à votre réception une touche <i>vintage</i>, mais surtout très chic.
+						</p>
+
+						<p>
+							Vous avez forcément déjà entendu des morceaux comme <i>Minor Swing</i> ou <i>Les Yeux Noirs</i> ; intemporels, ils sont repris encore aujourd'hui dans presque tous les concerts de <strong>jazz manouche</strong>. Mais connaissez-vous des airs moins entendus, comme <i>Anniversary Song</i> ou <i>Lulu Swing</i> ? Notre répertoire balaie le style jazz manouche, des grands standards aux morceaux plus traditionnels et moins connus ; nous faisons également quelques incursions dans le jazz plus "classique", avec par exemple des reprises de Charlie Parker (<i>Billie's Bounce</i>, <i>Donna Lee</i>) ou Duke Ellington (<i>It don't mean a thing</i>, <i>Caravan</i>).
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="home-container-section">
+			<span id="formules"></span>
+
+			<div class="container">
+				<h2 class="section-title section-title--centered">Quelques formules jazz manouche pour vos événements</h2>
+				<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+
+            	<h3 class="section-title section-title--smaller">Duo jazz manouche (accordéon / guitare) - Jérémy Dutheil & Solal Poux</h3>
+
+				<div class="row">
+					<div class="col-md-6">
+						<p>
+							Le duo jazz manouche est la formule intimiste par excellence ! L'accordéon et la guitare étant tous deux des instruments rythmiques et solistes, vous avez ici l'essence du jazz manouche sans aucun superflu. Les rôles s'alternent au sein des morceaux, et les solos s'enchaînent avec une grande dynamique.
+						</p>
+
+						<p>
+							Acoustique ou sonorisé, les conditions techniques sont réduites au minimum ; plus facile à accueillir qu'un <strong>orchestre jazz manouche</strong>, notre duo trouvera très facilement sa place dans les plus petits lieux. L'ambiance musicale de votre soirée n'en restera pas moins très classe et élégante, alternant les balades langoureuses et les morceaux virtuoses.
+						</p>
+
+						<p>
+							Habitués à jouer ensemble, nous proposons avec Solal Poux un répertoire très vaste, qui emprunte notamment à la chanson française et au jazz plus "traditionnel". Nous nous produisons aussi bien lors d'événements privés (cocktails, mariages, ..) que publics (festivals, salles, ..).
+						</p>
+					</div>
+
+					<div class="col-md-6">
+						{% include 'utils/picture.html.twig' with { 'sources': { 'webp': 'img/manouchebg.webp',
+																					'jpeg': 'img/manouchebg.jpg'
+																				},
+																		'default': 'img/manouchebg.jpg',
+																		'lazyload': false,
+																		'alt': 'Jérémy Dutheil & Solal Poux',
+																		'title': 'Jérémy Dutheil & Solal Poux',
+																		'class': 'img-fluid' } %}
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6" style="margin-bottom: 15px;">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CWUY-repj8g', 'title': 'Duo jazz manouche avec accordéon' } %}
+					</div>
+
+					<div class="col-md-6" style="margin-bottom: 15px;">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'u8re-Ba8RQ0', 'title': 'Jazz manouche avec accordéon' } %}
+					</div>
+
+					<div class="col-md-6" style="margin-bottom: 15px;">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'Iklby0R-WyQ', 'title': 'Jazz manouche avec accordéon' } %}
+					</div>
+
+					<div class="col-md-6" style="margin-bottom: 15px;">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': '9b6zyj1e2cE', 'title': 'Jazz manouche avec accordéon' } %}
+					</div>
+				</div>
+
+				<h3 class="section-title section-title--smaller">Trio jazz manouche (accordéon / guitare / contrebasse)</h3>
+
+				<p>
+					Parmi nos <strong>groupes de jazz manouche</strong>, c'est la formule la plus courante et la plus "passe partout" ; la contrebasse vient ajouter une assise rythmique plus solide au duo, laissant plus grande liberté aux deux autres instrumentistes. Le trio reste facile et pratique à mettre en place pour votre événement, les conditions techniques étant limitées tout comme l'espace nécessaire.
+					<br>
+					On notera également l'apport visuel de la contrebasse (non négligeable), instrument emblématique du jazz manouche !
+				</p>
+
+				<p>
+					Le répertoire balaie les grands standards du jazz manouche, de Django Reinhardt à Biréli Lagrène, et nous proposons en moyenne 3h de musique pour votre événement. L'improvisation, indispensable au style jazz manouche, rend la musique vivante ; les musiciens adaptent leur jeu en fonction du déroulement de votre soirée, tandis que les invités sont eux-mêmes influencés par l'ambiance musicale. C'est un cercle vertueux, qui induit une interaction (même implicite) très forte entre le public et le groupe de musique.
+				</p>
+
+				<p>
+					Musique d'ambiance en fond sonore ou concert sur scène devant un public aguerri, notre <strong>trio jazz manouche</strong> saura s'adapter à toutes vos envies. Nous adaptons également notre répertoire en fonction de vos demandes, orientant la <i>setlist</i> vers plus de morceaux dans le style chanson française ou jazz traditionnel, par exemple.
+				</p>
+
+				<div class="row">
+					<div class="col-md-12">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'CXq4DWhwqSU', 'title': 'Jazz manouche avec accordéon' } %}
+						
+						<p class="text-center" style="margin-top: 15px;">
+							Quelques extraits en trio jazz manouche : Bossa Dorado, Autumn Leaves, All of Me, All the things you are, Fly me to the Moon
+						</p>
+					</div>
+				</div>
+
+				<h3 class="section-title section-title--smaller">Trio jazz manouche (accordéon / 2 guitares)</h3>
+
+				<p>
+					La guitare est l'instrument emblématique de la musique de Django Reinhardt, tout comme <strong>la pompe</strong>, rythmique essentielle du style jazz manouche. Avec deux guitaristes, les rôles sont répartis : l'un s'occupe de la rythmique, et l'autre des solos. Ainsi, la pompe est toujours présente et l'énergie décuplée !
+				</p>
+
+				<p>
+					Dans ce trio jazz manouche, on note bien sûr l'absence de contrebasse, qui est remplacée par la guitare rythmique ; les deux apportent des couleurs différentes, qui n'ont pas à s'envier l'une et l'autre. L'idéal étant bien sûr, si votre budget le permet, de s'orienter vers une formule en quartet où la guitare rythmique et la contrebasse sont présentes.
+				</p>
+
+				<div class="row">
+					<div class="col-md-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'NIvIUJcluU0', 'title': 'Jazz manouche avec accordéon' } %}
+					</div>
+
+					<div class="col-md-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'pmZ80dJklu0', 'title': 'Trio jazz manouche avec accordéon' } %}
+					</div>
+				</div>
+			
+				<h3 class="section-title section-title--smaller" style="margin-top: 15px;">Quartet et plus</h3>
+
+				<p>
+					Vous cherchez un <strong>groupe de jazz manouche</strong> plus conséquent pour <strong>votre événement</strong> ? Nous proposons également des prestations en <strong>quartet</strong> et avec orchestre plus complet encore.
+				</p>
+
+				<p>
+					Le premier instrument que nous conseillons est une <strong>seconde guitare</strong> qui assurera la rythmique ; <i>la pompe</i> est en effet un élément incontournable du jazz manouche. Grâce aux deux guitaristes, vous l'entendrez en permanence, même pendant les solos de guitare !
+					<br>
+					Pour assurer l'assise rythmique et harmonique, nous ajoutons également une <strong>contrebasse</strong> ; avec 2 guitares et une contrebasse, nous obtenons la formation classique du jazz manouche.
+					<br>
+					L'accordéon agit ici en tant qu'instrument mélodique principalement, et alterne les thèmes / chorus avec la guitare soliste.
+				</p>
+
+				<p>
+					À partir de 5 personnes, on peut commencer à ajouter d'autres instruments mélodiques : violon (très présent dans le jazz manouche), saxophone, ... Suivant vos envies et vos goûts, toujours ! Pourquoi ne pas prendre une chanteuse de jazz également ?
+				</p>
+
+				<p>
+					Bien sûr ce ne sont que des exemples, n'hésitez pas à nous contacter pour établir une formule sur mesure pour votre événement.
+				</p>
+
+				<div class="row">
+					<div class="col-md-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'D0Do3plUclI', 'title': 'Jazz manouche avec accordéon' } %}
+					</div>
+
+					<div class="col-md-6">
+						{% include 'utils/youtubelazy.html.twig' with { 'youtubeId': 'SB9a2AzZxww', 'title': 'Jazz manouche avec accordéon' } %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="home-container-section">
+			<div class="container">
+				<h2 class="section-title section-title--centered">Quelques titres du répertoire</h2>
+
+				<div class="hr hr-short hr-center"><span class="hr-inner "><span class="hr-inner-style"></span></span></div>
+
+				<ul>
+					<li>
+						Minor Swing
+					</li>
+
+					<li>
+						Bossa Dorado
+					</li>
+
+					<li>
+						Ménilmontant
+					</li>
+
+					<li>
+						Danube (Anniversary Song)
+					</li>
+
+					<li>
+						Indifférence
+					</li>
+
+					<li>
+						Lulu Swing
+					</li>
+
+					<li>
+						Sunny Side of the Street
+					</li>
+
+					<li>
+						Nuages
+					</li>
+
+					<li>
+						Manoir de mes Rêves
+					</li>
+
+					<li>
+						All of Me
+					</li>
+
+					<li>
+						Autumn Leaves
+					</li>
+
+					<li>
+						Them there eyes
+					</li>
+
+					<li>
+						Blues mineur
+					</li>
+
+					<li>
+						Daphné
+					</li>
+
+					<li>
+						Cherokee
+					</li>
+
+					<li>
+						I can't give you anything but love
+					</li>
+
+					<li>
+						Made in France
+					</li>
+
+					<li>
+						<i>Et bien d'autres...</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2 class="section-title section-title--small section-title--centered">Plus d'informations ? Un devis gratuit ?</h2>
 
 			{{ include('utils/contact-cta.html.twig') }}
         </div>
