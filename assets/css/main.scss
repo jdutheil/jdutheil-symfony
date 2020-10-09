@@ -411,6 +411,12 @@ a:hover { color: $orange; text-decoration: none; }
 		display: none;
 	}
 
+	.blog .section-title {
+		text-align: center;
+
+		&:after { display: none; }
+	}
+
 /**
  * Sideman
  */
