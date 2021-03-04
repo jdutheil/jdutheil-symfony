@@ -433,6 +433,12 @@ a:hover {
   display: none;
 }
 
+	.blog .section-title {
+		text-align: center;
+
+		&:after { display: none; }
+	}
+
 /**
  * Sideman
  */
